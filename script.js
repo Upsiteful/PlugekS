@@ -1,0 +1,249 @@
+
+(function(){
+  const DATA = window.SITE_DATA || {nodes:{},products:{},menuTree:[]};
+  const NODES = DATA.nodes || {};
+  const PRODUCTS = DATA.products || {};
+  const MENU_TREE = DATA.menuTree || [];
+  const PHONE = '+381621948387';
+
+  function qs(sel, root=document){ return root.querySelector(sel); }
+  function qsa(sel, root=document){ return [...root.querySelectorAll(sel)]; }
+  function text(v){ return document.createTextNode(v); }
+
+  function nodeHref(id){
+    const map = {
+      'delovi-za-masine':'delovi-za-masine.html',
+      'plugovi':'plugovi.html',
+      'podrivaci':'podrivaci.html',
+      'drljace':'drljace.html',
+      'freze':'freze.html',
+      'setvospremaci':'setvospremaci.html',
+      'plugovi-raonici':'plugovi-raonici.html',
+      'plugovi-daske':'plugovi-daske.html',
+      'plugovi-plazovi':'plugovi-plazovi.html',
+      'plugovi-spicevi':'plugovi-spicevi.html',
+      'plugovi-grudi':'plugovi-grudi.html',
+      'plugovi-nastavci':'plugovi-nastavci.html',
+      'plugovi-povisenja':'plugovi-povisenja.html',
+      'plugovi-resetke':'plugovi-resetke.html',
+      'setvospremaci-opruge':'setvospremaci-opruge.html',
+      'setvospremaci-drzaci':'setvospremaci-drzaci.html',
+      'setvospremaci-brisaci':'setvospremaci-brisaci.html',
+      'setvospremaci-motike':'setvospremaci-motike.html',
+      'setvospremaci-rotori':'setvospremaci-rotori.html'
+    };
+    return map[id] || ('pregled.html?node=' + encodeURIComponent(id));
+  }
+  function productHref(id){ return 'proizvod.html?id=' + encodeURIComponent(id); }
+
+  function currentNodeId(){
+    const bodyNode = document.body.dataset.node;
+    if(bodyNode) return bodyNode;
+    const params = new URLSearchParams(location.search);
+    return params.get('node');
+  }
+  function currentProductId(){
+    const params = new URLSearchParams(location.search);
+    return params.get('id');
+  }
+
+  function breadcrumbForNode(nodeId){
+    const parts=['Početna'];
+    let cur = NODES[nodeId];
+    const stack = [];
+    while(cur){
+      stack.push(cur.title);
+      cur = cur.parent ? NODES[cur.parent] : null;
+    }
+    stack.reverse().forEach(v=>parts.push(v));
+    return parts.join(' / ');
+  }
+  function breadcrumbForProduct(product){
+    const parts=['Početna','Delovi za mašine'];
+    if(product.section === 'Plugovi'){
+      parts.push('Delovi za plugove');
+      parts.push(product.category);
+      if(product.group) parts.push(product.group);
+    } else if(product.section === 'Podrivači'){
+      parts.push('Delovi za podrivače');
+    } else if(product.section === 'Drljače'){
+      parts.push('Delovi za drljače');
+    } else if(product.section === 'Freze'){
+      parts.push('Noževi za freze');
+    } else if(product.section === 'Setvospremači'){
+      parts.push('Delovi za setvospremače');
+      parts.push(product.category);
+    }
+    parts.push(product.name);
+    return parts.join(' / ');
+  }
+
+  function createSectionCard(title, href, count){
+    const a = document.createElement('a');
+    a.className='section-card';
+    a.href=href;
+    const left = document.createElement('div');
+    const h = document.createElement('h3'); h.textContent=title; left.appendChild(h);
+    const sm = document.createElement('small'); sm.textContent = count != null ? ('Broj proizvoda: ' + count) : 'Otvori pregled'; left.appendChild(sm);
+    a.appendChild(left);
+    const btn = document.createElement('span'); btn.className='card-btn'; btn.textContent='Pogledaj'; a.appendChild(btn);
+    return a;
+  }
+
+  function groupProductCount(nodeId){
+    const node = NODES[nodeId];
+    if(!node) return 0;
+    if(node.kind === 'products') return node.products.length;
+    return node.children.reduce((sum, cid)=> sum + groupProductCount(cid), 0);
+  }
+
+  function renderNodePage(){
+    const nodeId = currentNodeId();
+    const node = NODES[nodeId];
+    if(!node) return;
+    document.title = node.title + ' | Plugeks';
+    qs('#breadcrumb').textContent = breadcrumbForNode(nodeId);
+    qs('#pageTitle').textContent = node.title;
+    qs('#backLink').href = node.parent ? nodeHref(node.parent) : 'delovi-za-masine.html';
+    qs('#nodeDesc').textContent = node.desc || '';
+    qs('#statCount').textContent = (node.kind === 'products' ? node.products.length : groupProductCount(nodeId)) + ' proizvoda';
+    const content = qs('#nodeContent');
+    content.innerHTML='';
+
+    if(node.kind === 'links'){
+      const wrap = document.createElement('div'); wrap.className='node-list';
+      node.children.forEach(cid=>{
+        const child = NODES[cid];
+        wrap.appendChild(createSectionCard(child.title, nodeHref(cid), groupProductCount(cid)));
+      });
+      content.appendChild(wrap);
+    } else if(node.kind === 'products'){
+      const wrap = document.createElement('div'); wrap.className='product-list';
+      node.products.forEach(pid=>{
+        const p = PRODUCTS[pid];
+        const row = document.createElement('div'); row.className='product-row';
+        const left = document.createElement('div');
+        const h = document.createElement('h3'); h.textContent = p.name; left.appendChild(h);
+        const meta = document.createElement('div'); meta.className='product-meta-mini';
+        meta.textContent = [p.group, p.category].filter(Boolean).join(' • ');
+        left.appendChild(meta);
+        row.appendChild(left);
+        const btn = document.createElement('a'); btn.className='card-btn'; btn.href = productHref(pid); btn.textContent='Detalji';
+        row.appendChild(btn);
+        wrap.appendChild(row);
+      });
+      content.appendChild(wrap);
+    }
+  }
+
+  function renderProductPage(){
+    const pid = currentProductId();
+    const product = PRODUCTS[pid];
+    if(!product) return;
+    document.title = product.name + ' | Plugeks';
+    qs('#breadcrumb').textContent = breadcrumbForProduct(product);
+    qs('#backLink').href = inferBackLink(product);
+    qs('#prodTitle').textContent = product.name;
+    qs('#prodText').textContent = 'Za više informacija i dostupnost pozovite nas.';
+    qs('#metaSection').textContent = product.section;
+    qs('#metaCategory').textContent = product.category;
+    qs('#metaGroup').textContent = product.group || 'Direktan proizvod';
+    qs('#imageSlot').innerHTML = '<img src="images/' + product.id + '.jpg" alt="' + escapeHtml(product.name) + '" onerror="this.style.display=\'none\';this.parentNode.textContent=\'MESTO ZA SLIKU PROIZVODA\';">';
+      }
+  function inferBackLink(product){
+    if(product.section === 'Plugovi'){
+      const map = {
+        'Raonici':'plugovi-raonici.html',
+        'Daske za plug':'plugovi-daske.html',
+        'Plazovi':'plugovi-plazovi.html',
+        'Vrh / špic raonika':'plugovi-spicevi.html',
+        'Umetak / grudi daske':'plugovi-grudi.html',
+        'Nastavak / produžetak daske':'plugovi-nastavci.html',
+        'Deflektor / povišenje daske':'plugovi-povisenja.html',
+        'Rešetke daske':'plugovi-resetke.html'
+      };
+      for(const [k,v] of Object.entries(map)){
+        if(product.category === k) return product.group ? ('pregled.html?node=' + encodeURIComponent(findGroupNodeId(v.replace('.html',''), product.group))) : v;
+      }
+    }
+    if(product.section === 'Podrivači') return 'podrivaci.html';
+    if(product.section === 'Drljače') return 'drljace.html';
+    if(product.section === 'Freze') return 'freze.html';
+    if(product.section === 'Setvospremači'){
+      const map = {
+        'Opruge':'setvospremaci-opruge.html',
+        'Držači / nosači':'setvospremaci-drzaci.html',
+        'Brisači traga':'setvospremaci-brisaci.html',
+        'Motike i radni delovi':'setvospremaci-motike.html',
+        'Rotori i delovi':'setvospremaci-rotori.html'
+      };
+      return map[product.category] || 'setvospremaci.html';
+    }
+    return 'delovi-za-masine.html';
+  }
+  function findGroupNodeId(catId, group){
+    const node = NODES[catId];
+    if(!node) return catId;
+    const found = node.children.find(cid => NODES[cid].title === group);
+    return found || catId;
+  }
+  function escapeHtml(s){ return String(s).replace(/[&<>"]/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[m])); }
+
+  function setupDrawer(){
+    const btn=document.getElementById('menuToggle');
+    const drawer=document.getElementById('mobileDrawer');
+    const overlay=document.getElementById('drawerOverlay');
+    const closeBtn=document.getElementById('drawerClose');
+    const list=document.getElementById('drawerList');
+    const title=document.getElementById('drawerTitle');
+    if(!drawer || !list || !title) return;
+    let stack=[];
+    function closeDrawer(){drawer.classList.remove('open');document.body.style.overflow='';stack=[];renderLevel(MENU_TREE,'Meni');}
+    function openDrawer(){drawer.classList.add('open');document.body.style.overflow='hidden';renderLevel(MENU_TREE,'Meni');}
+    function renderLevel(items, heading){
+      title.textContent = heading;
+      list.innerHTML='';
+      if(stack.length){
+        const back=document.createElement('div');back.className='drawer-backbar';
+        const backBtn=document.createElement('button');backBtn.className='drawer-back';backBtn.innerHTML='&#8249;';
+        backBtn.onclick=function(){const prev=stack.pop(); renderLevel(prev.items, prev.heading);};
+        const backTitle=document.createElement('div');backTitle.className='drawer-title-mini';backTitle.textContent=heading;
+        back.appendChild(backBtn); back.appendChild(backTitle); list.appendChild(back);
+      }
+      items.forEach(function(item){
+        const row=document.createElement('div'); row.className='drawer-row';
+        const link=document.createElement('a'); link.className='drawer-link'; link.textContent=item.title; link.href=item.href || '#';
+        link.addEventListener('click', closeDrawer);
+        row.appendChild(link);
+        if(item.children && item.children.length){
+          const arrow=document.createElement('button'); arrow.className='drawer-arrow'; arrow.innerHTML='&#8250;';
+          arrow.onclick=function(e){e.preventDefault(); stack.push({items, heading}); renderLevel(item.children, item.title);};
+          row.appendChild(arrow);
+        }
+        list.appendChild(row);
+      });
+    }
+    renderLevel(MENU_TREE,'Meni');
+    btn && btn.addEventListener('click', function(e){e.preventDefault(); openDrawer();});
+    closeBtn && closeBtn.addEventListener('click', closeDrawer);
+    overlay && overlay.addEventListener('click', closeDrawer);
+    document.addEventListener('keydown', function(e){if(e.key==='Escape') closeDrawer();});
+    try{if('scrollRestoration' in history){history.scrollRestoration='manual';}}catch(e){}
+    window.addEventListener('pageshow', function(){window.scrollTo(0,0); closeDrawer();});
+  }
+
+  function setupPhoneFab(){
+    const fab = qs('.phone-fab');
+    if(fab){
+      fab.href = 'tel:' + PHONE.replace(/[^\d+]/g,'');
+      fab.textContent = 'Pozovite nas';
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', function(){
+    setupDrawer();
+    setupPhoneFab();
+    if(document.body.dataset.template === 'node') renderNodePage();
+    if(document.body.dataset.template === 'product') renderProductPage();
+  });
+})();
