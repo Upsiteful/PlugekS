@@ -49,3 +49,11 @@
 
 .phone-fab::before{content:'📞';font-size:20px;line-height:1}
 @media(max-width:560px){.phone-fab{min-width:142px;height:48px;font-size:17px;padding:0 16px}.home-topbar-inner{padding:12px 14px}.hero-logo-slot{height:120px;width:320px}}
+
+
+
+
+.hero-logo-slot {
+  border: none !important;
+ background: transparent !important;
+}
