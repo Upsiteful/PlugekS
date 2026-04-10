@@ -104,7 +104,7 @@
     document.title = node.title + ' | Plugeks';
     qs('#breadcrumb').textContent = breadcrumbForNode(nodeId);
     qs('#pageTitle').textContent = node.title;
-    qs('#backLink').href = node.parent ? nodeHref(node.parent) : 'delovi-za-masine.html';
+    qs('#backLink').href = node.parent ? nodeHref(node.parent) : 'index.html';
     qs('#nodeDesc').textContent = node.desc || '';
     qs('#statCount').textContent = (node.kind === 'products' ? node.products.length : groupProductCount(nodeId)) + ' proizvoda';
     const content = qs('#nodeContent');
@@ -247,3 +247,12 @@
     if(document.body.dataset.template === 'product') renderProductPage();
   });
 })();
+
+
+
+
+
+
+
+
+
