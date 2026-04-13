@@ -148,7 +148,28 @@
     qs('#metaSection').textContent = product.section;
     qs('#metaCategory').textContent = product.category;
     qs('#metaGroup').textContent = product.group || 'Direktan proizvod';
-    qs('#imageSlot').innerHTML = '<img src="images/' + product.id + '.jpg" alt="' + escapeHtml(product.name) + '" onerror="this.style.display=\'none\';this.parentNode.textContent=\'MESTO ZA SLIKU PROIZVODA\';">';
+   const formats = ["jpg", "png", "webp"];
+let imgFound = false;
+
+for (let ext of formats) {
+  const img = new Image();
+  img.src = "images/" + product.id + "." + ext;
+
+  img.onload = function () {
+    if (!imgFound) {
+      qs('#imageSlot').innerHTML =
+        '<img src="' + img.src + '" style="width:100%;max-width:500px;border-radius:8px;">';
+      imgFound = true;
+    }
+  };
+}
+
+setTimeout(() => {
+  if (!imgFound) {
+    qs('#imageSlot').innerHTML =
+      '<div style="padding:40px;text-align:center;color:#888;">Slika uskoro</div>';
+  }
+}, 300);
       }
   function inferBackLink(product){
     if(product.section === 'Plugovi'){
@@ -247,7 +268,6 @@
     if(document.body.dataset.template === 'product') renderProductPage();
   });
 })();
-
 
 
 
