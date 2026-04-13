@@ -106,7 +106,7 @@
     qs('#pageTitle').textContent = node.title;
     qs('#backLink').href = node.parent ? nodeHref(node.parent) : 'index.html';
     qs('#nodeDesc').textContent =  '';
-    qs('#statCount').textContent = (node.kind === 'products' ? node.products.length : groupProductCount(nodeId)) + ' proizvoda';
+    // qs('#statCount').textContent = (node.kind === 'products' ? node.products.length : groupProductCount(nodeId)) + ' proizvoda';
     const content = qs('#nodeContent');
     content.innerHTML='';
 
