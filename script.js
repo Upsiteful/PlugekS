@@ -84,7 +84,7 @@
     a.href=href;
     const left = document.createElement('div');
     const h = document.createElement('h3'); h.textContent=title; left.appendChild(h);
-    const sm = document.createElement('small'); sm.textContent = count != null ? ('Broj proizvoda: ' + count) : 'Otvori pregled'; left.appendChild(sm);
+    // const sm = document.createElement('small'); sm.textContent = count != null ? ('Broj proizvoda: ' + count) : 'Otvori pregled'; left.appendChild(sm);
     a.appendChild(left);
     const btn = document.createElement('span'); btn.className='card-btn'; btn.textContent='Pogledaj'; a.appendChild(btn);
     return a;
@@ -105,7 +105,7 @@
     qs('#breadcrumb').textContent = breadcrumbForNode(nodeId);
     qs('#pageTitle').textContent = node.title;
     qs('#backLink').href = node.parent ? nodeHref(node.parent) : 'index.html';
-    qs('#nodeDesc').textContent = node.desc || '';
+    qs('#nodeDesc').textContent =  '';
     qs('#statCount').textContent = (node.kind === 'products' ? node.products.length : groupProductCount(nodeId)) + ' proizvoda';
     const content = qs('#nodeContent');
     content.innerHTML='';
@@ -118,21 +118,47 @@
       });
       content.appendChild(wrap);
     } else if(node.kind === 'products'){
-      const wrap = document.createElement('div'); wrap.className='product-list';
-      node.products.forEach(pid=>{
-        const p = PRODUCTS[pid];
-        const row = document.createElement('div'); row.className='product-row';
-        const left = document.createElement('div');
-        const h = document.createElement('h3'); h.textContent = p.name; left.appendChild(h);
-        const meta = document.createElement('div'); meta.className='product-meta-mini';
-        meta.textContent = [p.group, p.category].filter(Boolean).join(' • ');
-        left.appendChild(meta);
-        row.appendChild(left);
-        const btn = document.createElement('a'); btn.className='card-btn'; btn.href = productHref(pid); btn.textContent='Detalji';
-        row.appendChild(btn);
-        wrap.appendChild(row);
-      });
-      content.appendChild(wrap);
+      const wrap = document.createElement('div');
+wrap.className = 'product-grid';
+
+node.products.forEach(pid => {
+  const p = PRODUCTS[pid];
+
+  const card = document.createElement('a');
+  card.className = 'product-card';
+  card.href = productHref(pid);
+
+  const imageWrap = document.createElement('div');
+  imageWrap.className = 'product-card-image';
+
+  const img = document.createElement('img');
+  img.src = 'images/' + p.id + '.jpg';
+  img.alt = p.name;
+  img.onerror = function () {
+    this.onerror = null;
+    this.src = 'images/' + p.id + '.png';
+    this.onerror = function () {
+      this.onerror = null;
+      this.src = 'images/' + p.id + '.webp';
+      this.onerror = function () {
+        imageWrap.innerHTML = '<div class="product-card-placeholder">Slika</div>';
+      };
+    };
+  };
+
+  imageWrap.appendChild(img);
+
+  const title = document.createElement('h3');
+  title.className = 'product-card-title';
+  title.textContent = p.name;
+
+  card.appendChild(imageWrap);
+  card.appendChild(title);
+
+  wrap.appendChild(card);
+});
+
+content.appendChild(wrap);
     }
   }
 
