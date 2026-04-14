@@ -50,26 +50,7 @@
 .phone-fab::before{content:'📞';font-size:20px;line-height:1}
 @media(max-width:560px){.phone-fab{min-width:142px;height:48px;font-size:17px;padding:0 16px}.home-topbar-inner{padding:12px 14px}.hero-logo-slot{height:120px;width:320px}}
 
-.hero-logo-slot {
-  margin: 0 auto;
-  width: 100%;
-   /* 👈 OVO KONTROLIŠE ŠIRINU NA KOMPU */
-  height: auto;
-  padding: 10px 0;
-  border: none;
-}
-.hero-logo {
-    width: 95% !important;
-    max-width: 900px !important;
-    display: block !important;
-    margin: 0 auto 20px auto !important;
-}
-@media (max-width: 640px) {
-    .hero-logo {
-        width: 100%;
-        max-width: none;
-    }
-}
+
 .product-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -136,8 +117,43 @@
     font-size: 15px;
   }
 }
-.hero-logo-slot img {
-  width: 100%;
-  height: 300px;       /* 👈 OVO SMANJUJE VISINU */
-  object-fit: contain; /* da se ne deformiše */
+
+.hero-logo-slot{
+  margin:0 auto;
+  width:100%;
+  max-width:900px;
+  height:220px; /* desktop */
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:10px;
+  border:none;
+  background:#fff;
+}
+.hero-logo{
+  display:block;
+  width:100%;
+  height:100%;
+  object-fit:contain;
+}
+
+@media (max-width: 640px){
+  .hero-logo-slot{
+    max-width:340px;
+    min-height:110px;
+    padding:8px 12px;
+  }
+
+  .hero-logo{
+    max-height:95px;
+  }
+}
+
+
+@media (max-width:640px){
+  .hero-logo-slot{
+    height:170px; /* VEĆE nego pre */
+    max-width:100%;
+    padding:6px;
+  }
 }
