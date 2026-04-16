@@ -1,7 +1,19 @@
-window.SITE_DATA = {"menuTree": [{"title": "Početna", "href": "index.html"}, {"title": "Mašine", "href": "masine.html"}, {"title": "Delovi za mašine", "href": "delovi-za-masine.html", "children": [{"title": "Plugovi", "href": "plugovi.html", "children": [{"title": "Raonici", "href": "plugovi-raonici.html"}, {"title": "Daske za plug", "href": "plugovi-daske.html"}, {"title": "Plazovi", "href": "plugovi-plazovi.html"}, {"title": "Vrh / špic raonika", "href": "plugovi-spicevi.html"}, {"title": "Umetak / grudi daske", "href": "plugovi-grudi.html"}, {"title": "Nastavak / produžetak daske", "href": "plugovi-nastavci.html"}, {"title": "Deflektor / povišenje daske", "href": "plugovi-povisenja.html"}, {"title": "Rešetke daske", "href": "plugovi-resetke.html"}]}, {"title": "Podrivači", "href": "podrivaci.html"}, {"title": "Drljače", "href": "drljace.html"}, {"title": "Noževi za freze", "href": "freze.html"}, {"title": "Setvospremači", "href": "setvospremaci.html", "children": [{"title": "Opruge", "href": "setvospremaci-opruge.html"}, {"title": "Držači / nosači", "href": "setvospremaci-drzaci.html"}, {"title": "Brisači traga", "href": "setvospremaci-brisaci.html"}, {"title": "Motike i radni delovi", "href": "setvospremaci-motike.html"}, {"title": "Rotori i delovi", "href": "setvospremaci-rotori.html"}]}]}, {"title": "Kontakt", "href": "kontakt.html"}], "nodes": { "masine": {
+window.SITE_DATA = {"menuTree": [{"title": "Početna", "href": "index.html"}, {"title": "Mašine", "href": "masine.html"}, {"title": "Delovi za mašine", "href": "delovi-za-masine.html", "children": [{"title": "Plugovi", "href": "plugovi.html", "children": [{"title": "Raonici", "href": "plugovi-raonici.html"}, {"title": "Daske za plug", "href": "plugovi-daske.html"}, {"title": "Plazovi", "href": "plugovi-plazovi.html"}, {"title": "Vrh / špic raonika", "href": "plugovi-spicevi.html"}, {"title": "Umetak / grudi daske", "href": "plugovi-grudi.html"}, {"title": "Nastavak / produžetak daske", "href": "plugovi-nastavci.html"}, {"title": "Deflektor / povišenje daske", "href": "plugovi-povisenja.html"}, {"title": "Rešetke daske", "href": "plugovi-resetke.html"}]}, {"title": "Podrivači", "href": "podrivaci.html"}, {"title": "Drljače", "href": "drljace.html"}, {"title": "Noževi za freze", "href": "freze.html"}, {"title": "Setvospremači", "href": "setvospremaci.html", "children": [{"title": "Opruge", "href": "setvospremaci-opruge.html"}, {"title": "Držači / nosači", "href": "setvospremaci-drzaci.html"}, {"title": "Brisači traga", "href": "setvospremaci-brisaci.html"}, {"title": "Motike i radni delovi", "href": "setvospremaci-motike.html"}, {"title": "Rotori i delovi", "href": "setvospremaci-rotori.html"}]}]}, {"title": "Kontakt", "href": "kontakt.html"}], "nodes": { 
+"masine": {
   "id": "masine",
   "title": "Mašine",
   "parent": null,
+  "kind": "links",
+  "children": ["malceri"],
+  "products": [],
+  "breadcrumb": [],
+  "desc": "Izaberite kategoriju mašina."
+},
+
+"malceri": {
+  "id": "malceri",
+  "title": "Malčeri",
+  "parent": "masine",
   "kind": "products",
   "children": [],
   "products": [
@@ -17,7 +29,7 @@ window.SITE_DATA = {"menuTree": [{"title": "Početna", "href": "index.html"}, {"
     "masine-bem-model-180cm"
   ],
   "breadcrumb": [],
-  "desc": ""
+  "desc": "Pregled svih modela malčera."
 }, "delovi-za-masine": {"id": "delovi-za-masine", "title": "Delovi za mašine", "parent": null, "kind": "links", "children": ["plugovi", "podrivaci", "drljace", "freze", "setvospremaci"], "products": [], "breadcrumb": [], "desc": "Izaberite grupu delova za mašine."}, "plugovi": {"id": "plugovi", "title": "Delovi za plugove", "parent": "delovi-za-masine", "kind": "links", "children": ["plugovi-raonici", "plugovi-daske", "plugovi-plazovi", "plugovi-spicevi", "plugovi-grudi", "plugovi-nastavci", "plugovi-povisenja", "plugovi-resetke"], "products": [], "breadcrumb": [], "desc": "Sve sekcije delova za plugove, razvrstane po vrsti dela."}, "podrivaci": {"id": "podrivaci", "title": "Delovi za podrivače", "parent": "delovi-za-masine", "kind": "products", "children": [], "products":
      ["podrivaci-direktni-proizvodi-opruga-20x20", 
         "podrivaci-direktni-proizvodi-opruga-25x25", 
