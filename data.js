@@ -1552,15 +1552,85 @@ window.SITE_DATA = {"menuTree": [{"title": "Početna", "href": "index.html"}, {"
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "setvospremaci-rotori-i-delovi-rozetna-disk-rotora": {"id": "setvospremaci-rotori-i-delovi-rozetna-disk-rotora", "name": "Rožetna - disk rotora", "section": "Setvospremači", "category": "Rotori i delovi", "group": null},
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "setvospremaci-rotori-i-delovi-zica-rotora": {"id": "setvospremaci-rotori-i-delovi-zica-rotora", "name": "Žica rotora", "section": "Setvospremači", "category": "Rotori i delovi", "group": null},
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            "setvospremaci-rotori-i-delovi-kompletan-rotor-2-3-4-5-6-7-polja": {"id": "setvospremaci-rotori-i-delovi-kompletan-rotor-2-3-4-5-6-7-polja", "name": "Kompletan rotor (2,3,4,5,6,7 polja)", "section": "Setvospremači", "category": "Rotori i delovi", "group": null}, 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        "masine-bel-model-80cm": { "id": "masine-bel-model-80cm", "name": "BEL model 80 cm" },
-"masine-bel-model-100cm": { "id": "masine-bel-model-100cm", "name": "BEL model 100 cm" },
-"masine-bel-model-120cm": { "id": "masine-bel-model-120cm", "name": "BEL model 120 cm" },
-"masine-bel-model-140cm": { "id": "masine-bel-model-140cm", "name": "BEL model 140 cm" },
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        "masine-bel-model-80cm": {
+  "id": "masine-bel-model-80cm",
+  "name": "BEL model 80 cm",
+  "section": "Mašine",
+  "category": "Malčeri",
+  "group": "FRANNEGI BEL",
+  "description": "TEHNIČKA SPECIFIKACIJA:\nMODEL: FRANNEGI BEL80\nPOTREBNA SNAGA TRAKTORA: 15-25 KS\nRADNA ŠIRINA: 80 cm\nTEŽINA: 123 kg\nKOLIČINA ČEKIĆA: 12x\nPOGONSKI REMEN: 2x\nSNAGA GETRIBE NA MALČERU: 30 KS\nBRZINA OKRETNOG MOMENTA KARDANA: 540 rpm\nKARDAN UKLJUČEN\nGARANCIJA: 12 MESECI"
+},
+"masine-bel-model-100cm": {
+  "id": "masine-bel-model-100cm",
+  "name": "BEL model 100 cm",
+  "section": "Mašine",
+  "category": "Malčeri",
+  "group": "FRANNEGI BEL",
+  "description": "TEHNIČKA SPECIFIKACIJA:\nMODEL: FRANNEGI BEL100\nPOTREBNA SNAGA TRAKTORA: 20-30 KS\nRADNA ŠIRINA: 100 cm\nTEŽINA: 136 kg\nKOLIČINA ČEKIĆA: 14x\nPOGONSKI REMEN: 2x\nSNAGA GETRIBE NA MALČERU: 30 KS\nBRZINA OKRETNOG MOMENTA KARDANA: 540 rpm\nKARDAN UKLJUČEN\nGARANCIJA: 12 MESECI"
+},
+"masine-bel-model-120cm": {
+  "id": "masine-bel-model-120cm",
+  "name": "BEL model 120 cm",
+  "section": "Mašine",
+  "category": "Malčeri",
+  "group": "FRANNEGI BEL",
+  "description": "TEHNIČKA SPECIFIKACIJA:\nMODEL: FRANNEGI BEL120\nPOTREBNA SNAGA TRAKTORA: 25-35 KS\nRADNA ŠIRINA: 120 cm\nTEŽINA: 148 kg\nKOLIČINA ČEKIĆA: 18x\nPOGONSKI REMEN: 3x\nSNAGA GETRIBE NA MALČERU: 30 KS\nBRZINA OKRETNOG MOMENTA KARDANA: 540 rpm\nKARDAN UKLJUČEN\nGARANCIJA: 12 MESECI"
+},
+"masine-bel-model-140cm": {
+  "id": "masine-bel-model-140cm",
+  "name": "BEL model 140 cm",
+  "section": "Mašine",
+  "category": "Malčeri",
+  "group": "FRANNEGI BEL",
+  "description": "TEHNIČKA SPECIFIKACIJA:\nMODEL: FRANNEGI BEL140\nPOTREBNA SNAGA TRAKTORA: 30-40 KS\nRADNA ŠIRINA: 140 cm\nTEŽINA: 164 kg\nKOLIČINA ČEKIĆA: 22x\nPOGONSKI REMEN: 3x\nSNAGA GETRIBE NA MALČERU: 30 KS\nBRZINA OKRETNOG MOMENTA KARDANA: 540 rpm\nKARDAN UKLJUČEN\nGARANCIJA: 12 MESECI"
+},
 
-"masine-belm-model-na-pomeranje-100cm": { "id": "masine-belm-model-na-pomeranje-100cm", "name": "BELM model (na pomeranje) 100 cm" },
-"masine-belm-model-na-pomeranje-120cm": { "id": "masine-belm-model-na-pomeranje-120cm", "name": "BELM model (na pomeranje) 120 cm" },
-"masine-belm-model-na-pomeranje-140cm": { "id": "masine-belm-model-na-pomeranje-140cm", "name": "BELM model (na pomeranje) 140 cm" },
+"masine-belm-model-na-pomeranje-100cm": {
+  "id": "masine-belm-model-na-pomeranje-100cm",
+  "name": "BELM model (na pomeranje) 100 cm",
+  "section": "Mašine",
+  "category": "Malčeri",
+  "group": "FRANNEGI BELM",
+  "description": "TEHNIČKA SPECIFIKACIJA:\nMODEL: FRANNEGI BELM100\nPOTREBNA SNAGA TRAKTORA: 20-30 KS\nRADNA ŠIRINA: 100 cm\nTEŽINA: 157 kg\nKOLIČINA ČEKIĆA: 14x\nPOGONSKI REMEN: 2x\nSNAGA GETRIBE NA MALČERU: 30 KS\nBRZINA OKRETNOG MOMENTA KARDANA: 540 rpm\nKARDAN UKLJUČEN\nGARANCIJA: 12 MESECI"
+},
+"masine-belm-model-na-pomeranje-120cm": {
+  "id": "masine-belm-model-na-pomeranje-120cm",
+  "name": "BELM model (na pomeranje) 120 cm",
+  "section": "Mašine",
+  "category": "Malčeri",
+  "group": "FRANNEGI BELM",
+  "description": "TEHNIČKA SPECIFIKACIJA:\nMODEL: FRANNEGI BELM120\nPOTREBNA SNAGA TRAKTORA: 25-35 KS\nRADNA ŠIRINA: 120 cm\nTEŽINA: 168 kg\nKOLIČINA ČEKIĆA: 18x\nPOGONSKI REMEN: 3x\nSNAGA GETRIBE NA MALČERU: 30 KS\nBRZINA OKRETNOG MOMENTA KARDANA: 540 rpm\nKARDAN UKLJUČEN\nGARANCIJA: 12 MESECI"
+},
+"masine-belm-model-na-pomeranje-140cm": {
+  "id": "masine-belm-model-na-pomeranje-140cm",
+  "name": "BELM model (na pomeranje) 140 cm",
+  "section": "Mašine",
+  "category": "Malčeri",
+  "group": "FRANNEGI BELM",
+  "description": "TEHNIČKA SPECIFIKACIJA:\nMODEL: FRANNEGI BELM140\nPOTREBNA SNAGA TRAKTORA: 30-40 KS\nRADNA ŠIRINA: 140 cm\nTEŽINA: 185 kg\nKOLIČINA ČEKIĆA: 22x\nPOGONSKI REMEN: 3x\nSNAGA GETRIBE NA MALČERU: 30 KS\nBRZINA OKRETNOG MOMENTA KARDANA: 540 rpm\nKARDAN UKLJUČEN\nGARANCIJA: 12 MESECI"
+},
 
-"masine-bem-model-120cm": { "id": "masine-bem-model-120cm", "name": "BEM model 120 cm" },
-"masine-bem-model-150cm": { "id": "masine-bem-model-150cm", "name": "BEM model 150 cm" },
-"masine-bem-model-180cm": { "id": "masine-bem-model-180cm", "name": "BEM model 180 cm" }}};
+"masine-bem-model-120cm": {
+  "id": "masine-bem-model-120cm",
+  "name": "BEM model 120 cm",
+  "section": "Mašine",
+  "category": "Malčeri",
+  "group": "FRANNEGI BEM",
+  "description": "TEHNIČKA SPECIFIKACIJA:\nMODEL: FRANNEGI BEM120\nPOTREBNA SNAGA TRAKTORA: 20-55 KS\nRADNA ŠIRINA: 120 cm\nTEŽINA: 253 kg\nKOLIČINA ČEKIĆA: 14x\nPOGONSKI REMEN: 3x\nSNAGA GETRIBE NA MALČERU: 50 KS\nBRZINA OKRETNOG MOMENTA KARDANA: 540 rpm\nKARDAN UKLJUČEN\nGARANCIJA: 12 MESECI"
+},
+"masine-bem-model-150cm": {
+  "id": "masine-bem-model-150cm",
+  "name": "BEM model 150 cm",
+  "section": "Mašine",
+  "category": "Malčeri",
+  "group": "FRANNEGI BEM",
+  "description": "TEHNIČKA SPECIFIKACIJA:\nMODEL: FRANNEGI BEM150\nPOTREBNA SNAGA TRAKTORA: 20-60 KS\nRADNA ŠIRINA: 150 cm\nTEŽINA: 284 kg\nKOLIČINA ČEKIĆA: 18x\nPOGONSKI REMEN: 3x\nSNAGA GETRIBE NA MALČERU: 50 KS\nBRZINA OKRETNOG MOMENTA KARDANA: 540 rpm\nKARDAN UKLJUČEN\nGARANCIJA: 12 MESECI"
+},
+"masine-bem-model-180cm": {
+  "id": "masine-bem-model-180cm",
+  "name": "BEM model 180 cm",
+  "section": "Mašine",
+  "category": "Malčeri",
+  "group": "FRANNEGI BEM",
+  "description": "TEHNIČKA SPECIFIKACIJA:\nMODEL: FRANNEGI BEM180\nPOTREBNA SNAGA TRAKTORA: 25-65 KS\nRADNA ŠIRINA: 180 cm\nTEŽINA: 309 kg\nKOLIČINA ČEKIĆA: 22x\nPOGONSKI REMEN: 4x\nSNAGA GETRIBE NA MALČERU: 50 KS\nBRZINA OKRETNOG MOMENTA KARDANA: 540 rpm\nKARDAN UKLJUČEN\nGARANCIJA: 12 MESECI"
+}}};
