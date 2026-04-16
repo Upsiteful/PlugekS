@@ -169,11 +169,11 @@ content.appendChild(wrap);
     document.title = product.name + ' | Plugeks';
     qs('#breadcrumb').textContent = breadcrumbForProduct(product);
     qs('#backLink').href = inferBackLink(product);
-    qs('#prodTitle').textContent = product.name;
-    qs('#prodText').textContent = 'Za više informacija i dostupnost pozovite nas.';
-    qs('#metaSection').textContent = product.section;
-    qs('#metaCategory').textContent = product.category;
-    qs('#metaGroup').textContent = product.group || 'Direktan proizvod';
+   qs('#prodTitle').textContent = product.name;
+qs('#prodText').innerHTML = (product.description || 'Za više informacija i dostupnost pozovite nas.').replace(/\n/g, '<br>');
+qs('#metaSection').textContent = product.section;
+qs('#metaCategory').textContent = product.category;
+qs('#metaGroup').textContent = product.group || 'Direktan proizvod';
    const formats = ["jpg", "png", "webp"];
 let imgFound = false;
 
@@ -196,6 +196,30 @@ setTimeout(() => {
       '<div style="padding:40px;text-align:center;color:#888;">Slika uskoro</div>';
   }
 }, 300);
+if(product.images && product.images.length){
+  document.querySelector('#imageSlot').innerHTML = `<img src="${product.images[0]}">`;
+}
+const thumbs = document.querySelector('.product-thumbs');
+
+if(product.images && thumbs){
+  thumbs.innerHTML = '';
+
+  product.images.forEach(src => {
+    const div = document.createElement('div');
+    div.className = 'thumb-slot';
+
+    const img = document.createElement('img');
+    img.src = src;
+
+    div.appendChild(img);
+
+    div.onclick = () => {
+      document.querySelector('#imageSlot').innerHTML = `<img src="${src}">`;
+    };
+
+    thumbs.appendChild(div);
+  });
+}
       }
   function inferBackLink(product){
     if(product.section === 'Plugovi'){
