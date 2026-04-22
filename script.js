@@ -47,6 +47,130 @@
     return params.get('id');
   }
 
+
+
+
+
+
+
+
+
+function breadcrumbHtmlForNode(nodeId){
+  const parts = [{ title: 'Početna', href: 'index.html' }];
+  let cur = NODES[nodeId];
+  const stack = [];
+
+  while(cur){
+    stack.push(cur);
+    cur = cur.parent ? NODES[cur.parent] : null;
+  }
+
+  stack.reverse().forEach(node => {
+    parts.push({
+      title: node.title,
+      href: nodeHref(node.id)
+    });
+  });
+
+  return parts.map((part, index) => {
+    if(index === parts.length - 1){
+      return '<span>' + escapeHtml(part.title) + '</span>';
+    }
+    return '<a href="' + part.href + '">' + escapeHtml(part.title) + '</a>';
+  }).join(' / ');
+}
+
+function breadcrumbHtmlForProduct(product){
+  const parts = [{ title: 'Početna', href: 'index.html' }];
+
+  if(product.section === 'Mašine'){
+    parts.push({ title: 'Mašine', href: 'masine.html' });
+    parts.push({ title: 'Malčeri', href: 'malceri.html' });
+  } else {
+    parts.push({ title: 'Delovi za mašine', href: 'delovi-za-masine.html' });
+
+    if(product.section === 'Plugovi'){
+      parts.push({ title: 'Delovi za plugove', href: 'plugovi.html' });
+
+      const map = {
+        'Raonici':'plugovi-raonici.html',
+        'Daske za plug':'plugovi-daske.html',
+        'Plazovi':'plugovi-plazovi.html',
+        'Vrh / špic raonika':'plugovi-spicevi.html',
+        'Umetak / grudi daske':'plugovi-grudi.html',
+        'Nastavak / produžetak daske':'plugovi-nastavci.html',
+        'Deflektor / povišenje daske':'plugovi-povisenja.html',
+        'Rešetke daske':'plugovi-resetke.html'
+      };
+
+      if(map[product.category]){
+        parts.push({ title: product.category, href: map[product.category] });
+      }
+
+      if(product.group){
+        const categoryNodeMap = {
+          'Raonici':'plugovi-raonici',
+          'Daske za plug':'plugovi-daske',
+          'Plazovi':'plugovi-plazovi',
+          'Vrh / špic raonika':'plugovi-spicevi',
+          'Umetak / grudi daske':'plugovi-grudi',
+          'Nastavak / produžetak daske':'plugovi-nastavci',
+          'Deflektor / povišenje daske':'plugovi-povisenja',
+          'Rešetke daske':'plugovi-resetke'
+        };
+
+        const catId = categoryNodeMap[product.category];
+        if(catId){
+          const groupNodeId = findGroupNodeId(catId, product.group);
+          parts.push({
+            title: product.group,
+            href: nodeHref(groupNodeId)
+          });
+        }
+      }
+    } else if(product.section === 'Podrivači'){
+      parts.push({ title: 'Delovi za podrivače', href: 'podrivaci.html' });
+    } else if(product.section === 'Drljače'){
+      parts.push({ title: 'Delovi za drljače', href: 'drljace.html' });
+    } else if(product.section === 'Freze'){
+      parts.push({ title: 'Noževi za freze', href: 'freze.html' });
+    } else if(product.section === 'Setvospremači'){
+      parts.push({ title: 'Delovi za setvospremače', href: 'setvospremaci.html' });
+
+      const map = {
+        'Opruge':'setvospremaci-opruge.html',
+        'Držači / nosači':'setvospremaci-drzaci.html',
+        'Brisači traga':'setvospremaci-brisaci.html',
+        'Motike i radni delovi':'setvospremaci-motike.html',
+        'Rotori i delovi':'setvospremaci-rotori.html'
+      };
+
+      if(map[product.category]){
+        parts.push({ title: product.category, href: map[product.category] });
+      }
+    }
+  }
+
+  parts.push({ title: product.name, href: null });
+
+  return parts.map((part, index) => {
+    if(index === parts.length - 1 || !part.href){
+      return '<span>' + escapeHtml(part.title) + '</span>';
+    }
+    return '<a href="' + part.href + '">' + escapeHtml(part.title) + '</a>';
+  }).join(' / ');
+}
+
+
+
+
+
+
+
+
+
+
+
   function breadcrumbForNode(nodeId){
     const parts=['Početna'];
     let cur = NODES[nodeId];
@@ -102,7 +226,7 @@
     const node = NODES[nodeId];
     if(!node) return;
     document.title = node.title + ' | Plugeks';
-    qs('#breadcrumb').textContent = breadcrumbForNode(nodeId);
+qs('#breadcrumb').innerHTML = breadcrumbHtmlForNode(nodeId);
     qs('#pageTitle').textContent = node.title;
     qs('#backLink').href = node.parent ? nodeHref(node.parent) : 'index.html';
     qs('#nodeDesc').textContent =  '';
@@ -167,7 +291,7 @@ content.appendChild(wrap);
     const product = PRODUCTS[pid];
     if(!product) return;
     document.title = product.name + ' | Plugeks';
-    qs('#breadcrumb').textContent = breadcrumbForProduct(product);
+qs('#breadcrumb').innerHTML = breadcrumbHtmlForProduct(product);
     qs('#backLink').href = inferBackLink(product);
    qs('#prodTitle').textContent = product.name;
 qs('#prodText').innerHTML = (product.description || 'Za više informacija i dostupnost pozovite nas.').replace(/\n/g, '<br>');
