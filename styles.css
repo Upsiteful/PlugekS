@@ -472,5 +472,7 @@
 
 
 .hero-logo{
-  transform: scale(2.3); /* 👈 povećaj ovde */
+  transform: scale(2.3);
+  transform-origin: center;
+  will-change: transform;
 }
