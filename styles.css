@@ -37,7 +37,7 @@
 .logo-slot img{width:100%;height:100%;object-fit:contain}
 .home-contact{flex:1;max-width:880px;text-align:center;font-size:18px;line-height:1.5;color:#444}
 
-.hero{position:relative;min-height:320px;background:linear-gradient(rgba(255,255,255,.18),rgba(255,255,255,.18)),url('https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=1800&q=80') center/cover no-repeat;display:flex;align-items:center;justify-content:center}
+.hero{position:relative;min-height:320px;background:linear-gradient(rgba(255,255,255,.18),rgba(255,255,255,.18)),url('images/pozadina.png') center/cover no-repeat;display:flex;align-items:center;justify-content:center}
 .hero-card{background:transparent;padding:28px 34px;max-width:1120px;width:calc(100% - 40px);text-align:center;}
 .hero-card h1{display:none}
 .hero-card p{margin:0;font-size:20px;color:#4a4a4a}
@@ -467,7 +467,6 @@
 
   background:transparent; /* 👈 OVO */
 }
-
 
 
 
