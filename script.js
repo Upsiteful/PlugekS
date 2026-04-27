@@ -202,17 +202,74 @@ function breadcrumbHtmlForProduct(product){
     return parts.join(' / ');
   }
 
-  function createSectionCard(title, href, count){
-    const a = document.createElement('a');
-    a.className='section-card';
-    a.href=href;
-    const left = document.createElement('div');
-    const h = document.createElement('h3'); h.textContent=title; left.appendChild(h);
-    // const sm = document.createElement('small'); sm.textContent = count != null ? ('Broj proizvoda: ' + count) : 'Otvori pregled'; left.appendChild(sm);
-    a.appendChild(left);
-    const btn = document.createElement('span'); btn.className='card-btn'; btn.textContent='Pogledaj'; a.appendChild(btn);
-    return a;
+function createSectionCard(title, href, count){
+  const a = document.createElement('a');
+  a.className = 'category-card';
+  a.href = href;
+
+  const imageWrap = document.createElement('div');
+  imageWrap.className = 'category-card-image';
+
+  const img = document.createElement('img');
+ let imgName = href;
+
+if(href.includes('.html')){
+  imgName = href.replace('.html','');
+}
+
+if(href.includes('node=')){
+  imgName = href.split('node=')[1];
+}
+
+/* Brendovi - jedna slika za isti brend */
+const brandMap = {
+  'Lemken': 'lemken',
+  'Kverneland': 'kverneland',
+  'IMT': 'imt',
+  'Kuhn': 'kuhn',
+  'Vogel & Noot': 'vogel-noot',
+  'Regent': 'regent',
+  'Overum': 'overum',
+  'OLT': 'olt',
+  'Rabewerk': 'rabewerk',
+  'Pöttinger-Landsberg': 'pottinger-landsberg',
+  'Gregoire Besson': 'gregoire-besson',
+  'Eberhardt': 'eberhardt',
+  'Gassner': 'gassner',
+  'Niemeyer': 'niemeyer',
+  'Krone': 'krone',
+  'Frost': 'frost',
+};
+
+if(brandMap[title]){
+  img.src = 'images/brands/' + brandMap[title] + '.png';
+} else {
+  img.src = 'images/' + imgName + '.jpg';
+}
+img.onerror = function(){
+  this.onerror = null;
+
+  if(brandMap[title]){
+    this.src = 'images/brands/' + brandMap[title] + '.jpg';
+  } else {
+    this.src = 'images/' + imgName + '.png';
   }
+
+  this.onerror = function(){
+    imageWrap.innerHTML = '<div class="category-card-placeholder">Slika</div>';
+  };
+};
+  imageWrap.appendChild(img);
+
+  const titleDiv = document.createElement('div');
+  titleDiv.className = 'category-card-title';
+  titleDiv.textContent = title;
+
+  a.appendChild(imageWrap);
+  a.appendChild(titleDiv);
+
+  return a;
+}
 
   function groupProductCount(nodeId){
     const node = NODES[nodeId];
@@ -235,7 +292,7 @@ qs('#breadcrumb').innerHTML = breadcrumbHtmlForNode(nodeId);
     content.innerHTML='';
 
     if(node.kind === 'links'){
-      const wrap = document.createElement('div'); wrap.className='node-list';
+      const wrap = document.createElement('div'); wrap.className='category-grid';
       node.children.forEach(cid=>{
         const child = NODES[cid];
         wrap.appendChild(createSectionCard(child.title, nodeHref(cid), groupProductCount(cid)));
