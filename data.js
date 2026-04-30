@@ -1572,7 +1572,7 @@ window.SITE_DATA = {"menuTree": [{"title": "Početna", "href": "index.html"}, {"
   "group": "FRANNEGI BEL",
   "description": "TEHNIČKA SPECIFIKACIJA:\nMODEL: FRANNEGI BEL80\nPOTREBNA SNAGA TRAKTORA: 15-25 KS\nRADNA ŠIRINA: 80 cm\nTEŽINA: 123 kg\nKOLIČINA ČEKIĆA: 12x\nPOGONSKI REMEN: 2x\nSNAGA GETRIBE NA MALČERU: 30 KS\nBRZINA OKRETNOG MOMENTA KARDANA: 540 rpm\nKARDAN UKLJUČEN\nGARANCIJA: 12 MESECI"
 , "images": [
-    "images/BEL.jpg",
+    "images/masine-bel-model-80cm.png",
     "images/BEL 2.jpg",
     "images/BEL 3.jpg"
   ]
@@ -1585,7 +1585,7 @@ window.SITE_DATA = {"menuTree": [{"title": "Početna", "href": "index.html"}, {"
   "group": "FRANNEGI BEL",
   "description": "TEHNIČKA SPECIFIKACIJA:\nMODEL: FRANNEGI BEL100\nPOTREBNA SNAGA TRAKTORA: 20-30 KS\nRADNA ŠIRINA: 100 cm\nTEŽINA: 136 kg\nKOLIČINA ČEKIĆA: 14x\nPOGONSKI REMEN: 2x\nSNAGA GETRIBE NA MALČERU: 30 KS\nBRZINA OKRETNOG MOMENTA KARDANA: 540 rpm\nKARDAN UKLJUČEN\nGARANCIJA: 12 MESECI"
 , "images": [
-    "images/BEL.jpg",
+    "images/masine-bel-model-100cm.png",
     "images/BEL 2.jpg",
     "images/BEL 3.jpg"
   ]
@@ -1598,7 +1598,7 @@ window.SITE_DATA = {"menuTree": [{"title": "Početna", "href": "index.html"}, {"
   "group": "FRANNEGI BEL",
   "description": "TEHNIČKA SPECIFIKACIJA:\nMODEL: FRANNEGI BEL120\nPOTREBNA SNAGA TRAKTORA: 25-35 KS\nRADNA ŠIRINA: 120 cm\nTEŽINA: 148 kg\nKOLIČINA ČEKIĆA: 18x\nPOGONSKI REMEN: 3x\nSNAGA GETRIBE NA MALČERU: 30 KS\nBRZINA OKRETNOG MOMENTA KARDANA: 540 rpm\nKARDAN UKLJUČEN\nGARANCIJA: 12 MESECI"
 , "images": [
-    "images/BEL.jpg",
+    "images/masine-bel-model-120cm.png",
     "images/BEL 2.jpg",
     "images/BEL 3.jpg"
   ]
@@ -1611,7 +1611,7 @@ window.SITE_DATA = {"menuTree": [{"title": "Početna", "href": "index.html"}, {"
   "group": "FRANNEGI BEL",
   "description": "TEHNIČKA SPECIFIKACIJA:\nMODEL: FRANNEGI BEL140\nPOTREBNA SNAGA TRAKTORA: 30-40 KS\nRADNA ŠIRINA: 140 cm\nTEŽINA: 164 kg\nKOLIČINA ČEKIĆA: 22x\nPOGONSKI REMEN: 3x\nSNAGA GETRIBE NA MALČERU: 30 KS\nBRZINA OKRETNOG MOMENTA KARDANA: 540 rpm\nKARDAN UKLJUČEN\nGARANCIJA: 12 MESECI"
 , "images": [
-    "images/BEL.jpg",
+    "images/masine-bel-model-140cm.png ",
     "images/BEL 2.jpg",
     "images/BEL 3.jpg"
   ]
@@ -1626,7 +1626,7 @@ window.SITE_DATA = {"menuTree": [{"title": "Početna", "href": "index.html"}, {"
   "description": "TEHNIČKA SPECIFIKACIJA:\nMODEL: FRANNEGI BELM100\nPOTREBNA SNAGA TRAKTORA: 20-30 KS\nRADNA ŠIRINA: 100 cm\nTEŽINA: 157 kg\nKOLIČINA ČEKIĆA: 14x\nPOGONSKI REMEN: 2x\nSNAGA GETRIBE NA MALČERU: 30 KS\nBRZINA OKRETNOG MOMENTA KARDANA: 540 rpm\nKARDAN UKLJUČEN\nGARANCIJA: 12 MESECI"
 
 , "images": [
-    "images/BELM.jpg",
+    "images/masine-belm-model-na-pomeranje-100cm.png",
     "images/BELM 4.jpg",
     "images/BELM 3.jpg"
   ]},
@@ -1639,7 +1639,7 @@ window.SITE_DATA = {"menuTree": [{"title": "Početna", "href": "index.html"}, {"
   "description": "TEHNIČKA SPECIFIKACIJA:\nMODEL: FRANNEGI BELM120\nPOTREBNA SNAGA TRAKTORA: 25-35 KS\nRADNA ŠIRINA: 120 cm\nTEŽINA: 168 kg\nKOLIČINA ČEKIĆA: 18x\nPOGONSKI REMEN: 3x\nSNAGA GETRIBE NA MALČERU: 30 KS\nBRZINA OKRETNOG MOMENTA KARDANA: 540 rpm\nKARDAN UKLJUČEN\nGARANCIJA: 12 MESECI"
 
 , "images": [
-    "images/BELM.jpg",
+    "images/masine-belm-model-na-pomeranje-120cm.png",
     "images/BELM 4.jpg",
     "images/BELM 3.jpg"
   ]},
@@ -1652,7 +1652,7 @@ window.SITE_DATA = {"menuTree": [{"title": "Početna", "href": "index.html"}, {"
   "description": "TEHNIČKA SPECIFIKACIJA:\nMODEL: FRANNEGI BELM140\nPOTREBNA SNAGA TRAKTORA: 30-40 KS\nRADNA ŠIRINA: 140 cm\nTEŽINA: 185 kg\nKOLIČINA ČEKIĆA: 22x\nPOGONSKI REMEN: 3x\nSNAGA GETRIBE NA MALČERU: 30 KS\nBRZINA OKRETNOG MOMENTA KARDANA: 540 rpm\nKARDAN UKLJUČEN\nGARANCIJA: 12 MESECI"
 
 , "images": [
-    "images/BELM.jpg",
+    "images/masine-belm-model-na-pomeranje-140cm.png ",
     "images/BELM 4.jpg",
     "images/BELM 3.jpg"
   ]},
@@ -1666,7 +1666,7 @@ window.SITE_DATA = {"menuTree": [{"title": "Početna", "href": "index.html"}, {"
   "description": "TEHNIČKA SPECIFIKACIJA:\nMODEL: FRANNEGI BEM120\nPOTREBNA SNAGA TRAKTORA: 20-55 KS\nRADNA ŠIRINA: 120 cm\nTEŽINA: 253 kg\nKOLIČINA ČEKIĆA: 14x\nPOGONSKI REMEN: 3x\nSNAGA GETRIBE NA MALČERU: 50 KS\nBRZINA OKRETNOG MOMENTA KARDANA: 540 rpm\nKARDAN UKLJUČEN\nGARANCIJA: 12 MESECI"
 
 , "images": [
-    "images/BEM.jpg",
+    "images/masine-bem-model-120cm.png",
     "images/BEM 2.jpg",
     "images/BEM 3.jpg"
   ]},
@@ -1679,7 +1679,7 @@ window.SITE_DATA = {"menuTree": [{"title": "Početna", "href": "index.html"}, {"
   "description": "TEHNIČKA SPECIFIKACIJA:\nMODEL: FRANNEGI BEM150\nPOTREBNA SNAGA TRAKTORA: 20-60 KS\nRADNA ŠIRINA: 150 cm\nTEŽINA: 284 kg\nKOLIČINA ČEKIĆA: 18x\nPOGONSKI REMEN: 3x\nSNAGA GETRIBE NA MALČERU: 50 KS\nBRZINA OKRETNOG MOMENTA KARDANA: 540 rpm\nKARDAN UKLJUČEN\nGARANCIJA: 12 MESECI"
 
 , "images": [
-    "images/BEM.jpg",
+    "images/masine-bem-model-150cm.png",
     "images/BEM 2.jpg",
     "images/BEM 3.jpg"
   ]},
@@ -1692,7 +1692,7 @@ window.SITE_DATA = {"menuTree": [{"title": "Početna", "href": "index.html"}, {"
   "description": "TEHNIČKA SPECIFIKACIJA:\nMODEL: FRANNEGI BEM180\nPOTREBNA SNAGA TRAKTORA: 25-65 KS\nRADNA ŠIRINA: 180 cm\nTEŽINA: 309 kg\nKOLIČINA ČEKIĆA: 22x\nPOGONSKI REMEN: 4x\nSNAGA GETRIBE NA MALČERU: 50 KS\nBRZINA OKRETNOG MOMENTA KARDANA: 540 rpm\nKARDAN UKLJUČEN\nGARANCIJA: 12 MESECI"
 
 , "images": [
-    "images/BEM.jpg",
+    "images/masine-bem-model-180cm.png ",
     "images/BEM 2.jpg",
     "images/BEM 3.jpg"
   ]}}};
