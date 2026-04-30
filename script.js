@@ -30,6 +30,8 @@
       'setvospremaci-drzaci':'setvospremaci-drzaci.html',
       'setvospremaci-brisaci':'setvospremaci-brisaci.html',
       'setvospremaci-motike':'setvospremaci-motike.html',
+      'masine':'masine.html',
+    
       'setvospremaci-rotori':'setvospremaci-rotori.html'
     };
     return map[id] || ('pregled.html?node=' + encodeURIComponent(id));
@@ -85,7 +87,7 @@ function breadcrumbHtmlForProduct(product){
 
   if(product.section === 'Mašine'){
     parts.push({ title: 'Mašine', href: 'masine.html' });
-    parts.push({ title: 'Malčeri', href: 'malceri.html' });
+    parts.push({ title: 'Malčeri', href: 'pregled.html?node=malceri' });
   } else {
     parts.push({ title: 'Delovi za mašine', href: 'delovi-za-masine.html' });
 
@@ -364,8 +366,8 @@ for (let ext of formats) {
 
   img.onload = function () {
     if (!imgFound) {
-      qs('#imageSlot').innerHTML =
-        '<img src="' + img.src + '" style="width:100%;max-width:500px;border-radius:8px;">';
+     qs('#imageSlot').innerHTML =
+  '<img src="' + img.src + '" alt="' + product.name + '">';
       imgFound = true;
     }
   };
@@ -403,6 +405,9 @@ if(product.images && thumbs){
 }
       }
   function inferBackLink(product){
+    if(product.section === 'Mašine'){
+  return 'pregled.html?node=malceri';
+}
     if(product.section === 'Plugovi'){
       const map = {
         'Raonici':'plugovi-raonici.html',
