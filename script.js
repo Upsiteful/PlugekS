@@ -85,10 +85,15 @@ function breadcrumbHtmlForNode(nodeId){
 function breadcrumbHtmlForProduct(product){
   const parts = [{ title: 'Početna', href: 'index.html' }];
 
-  if(product.section === 'Mašine'){
-    parts.push({ title: 'Mašine', href: 'masine.html' });
-    parts.push({ title: 'Malčeri', href: 'pregled.html?node=malceri' });
+ if(product.section === 'Mašine'){
+  parts.push({ title: 'Mašine', href: 'masine.html' });
+
+  if(product.category === 'Malčeri za bagere'){
+    parts.push({ title: 'Malčeri za bagere', href: 'pregled.html?node=malceri-za-bagere' });
   } else {
+    parts.push({ title: 'Malčeri', href: 'pregled.html?node=malceri' });
+  }
+} else {
     parts.push({ title: 'Delovi za mašine', href: 'delovi-za-masine.html' });
 
     if(product.section === 'Plugovi'){
@@ -406,6 +411,9 @@ if(product.images && thumbs){
       }
   function inferBackLink(product){
     if(product.section === 'Mašine'){
+  if(product.category === 'Malčeri za bagere'){
+    return 'pregled.html?node=malceri-za-bagere';
+  }
   return 'pregled.html?node=malceri';
 }
     if(product.section === 'Plugovi'){
