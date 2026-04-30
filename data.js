@@ -4,7 +4,7 @@ window.SITE_DATA = {"menuTree": [{"title": "Početna", "href": "index.html"}, {"
   "title": "Mašine",
   "parent": null,
   "kind": "links",
-  "children": ["malceri"],
+  "children": ["malceri", "malceri-za-bagere"],
   "products": [],
   "breadcrumb": [],
   "desc": "Izaberite kategoriju mašina."
@@ -30,7 +30,24 @@ window.SITE_DATA = {"menuTree": [{"title": "Početna", "href": "index.html"}, {"
   ],
   "breadcrumb": [],
   "desc": "Pregled svih modela malčera."
-}, "delovi-za-masine": {"id": "delovi-za-masine", "title": "Delovi za mašine", "parent": null, "kind": "links", "children": ["plugovi", "podrivaci", "drljace", "freze", "setvospremaci"], "products": [], "breadcrumb": [], "desc": "Izaberite grupu delova za mašine."}, "plugovi": {"id": "plugovi", "title": "Delovi za plugove", "parent": "delovi-za-masine", "kind": "links", "children": ["plugovi-raonici", "plugovi-daske", "plugovi-plazovi", "plugovi-spicevi", "plugovi-grudi", "plugovi-nastavci", "plugovi-povisenja", "plugovi-resetke"], "products": [], "breadcrumb": [], "desc": "Sve sekcije delova za plugove, razvrstane po vrsti dela."}, "podrivaci": {"id": "podrivaci", "title": "Delovi za podrivače", "parent": "delovi-za-masine", "kind": "products", "children": [], "products":
+}, 
+"malceri-za-bagere": {
+  "id": "malceri-za-bagere",
+  "title": "Malčeri za bagere",
+  "parent": "masine",
+  "kind": "products",
+  "children": [],
+  "products": [
+    "masine-bager-wg1200",
+    "masine-bager-wg600",
+    "masine-bager-wg1500",
+    "masine-bager-wg1000",
+    "masine-bager-wg800"
+  ],
+  "breadcrumb": [],
+  "desc": "Pregled malčera za bagere."
+},
+"delovi-za-masine": {"id": "delovi-za-masine", "title": "Delovi za mašine", "parent": null, "kind": "links", "children": ["plugovi", "podrivaci", "drljace", "freze", "setvospremaci"], "products": [], "breadcrumb": [], "desc": "Izaberite grupu delova za mašine."}, "plugovi": {"id": "plugovi", "title": "Delovi za plugove", "parent": "delovi-za-masine", "kind": "links", "children": ["plugovi-raonici", "plugovi-daske", "plugovi-plazovi", "plugovi-spicevi", "plugovi-grudi", "plugovi-nastavci", "plugovi-povisenja", "plugovi-resetke"], "products": [], "breadcrumb": [], "desc": "Sve sekcije delova za plugove, razvrstane po vrsti dela."}, "podrivaci": {"id": "podrivaci", "title": "Delovi za podrivače", "parent": "delovi-za-masine", "kind": "products", "children": [], "products":
      ["podrivaci-direktni-proizvodi-opruga-20x20", 
         "podrivaci-direktni-proizvodi-opruga-25x25", 
         "podrivaci-direktni-proizvodi-opruga-30x30", 
@@ -1695,4 +1712,74 @@ window.SITE_DATA = {"menuTree": [{"title": "Početna", "href": "index.html"}, {"
     "images/masine-bem-model-180cm.png ",
     "images/BEM 2.jpg",
     "images/BEM 3.jpg"
-  ]}}};
+  ]},
+  "masine-bager-wg1200": {
+  "id": "masine-bager-wg1200",
+  "name": "MALČER ZA BAGER WG1200mm",
+  "section": "Mašine",
+  "category": "Malčeri za bagere",
+  "group": null,
+  "description": "SPECIFIKACIJE:\n\nRADNA ŠIRINA: 1200mm\nMINI BAGER: 5-10 ton\nČEKIĆA: 14x\nKAPACITET MOTORA - PROTOK ULJA: 50-90 L/min\nBRZINA MOTORA: 1000-2800 r/min\nRADNI PRITISAK: 20Mpa\nTEŽINA: 360kg\nGARANCIJA: 12 MJESECI",
+"images": [
+  "images/masine-bager-wg1200.png",
+  "images/masine-bager-wg1200-2.jpg",
+  "images/masine-bager-wg1200-3.jpg"
+]
+},
+
+"masine-bager-wg600": {
+  "id": "masine-bager-wg600",
+  "name": "MALČER ZA BAGER WG600mm",
+  "section": "Mašine",
+  "category": "Malčeri za bagere",
+  "group": null,
+  "images": [
+  "images/masine-bager-wg600.png",
+  "images/masine-bager-wg600-2.jpg",
+  "images/masine-bager-wg600-3.jpg"
+],
+  "description": "SPECIFIKACIJE:\n\nRADNA ŠIRINA: 600mm\nMINI BAGER: 0,8-2 tone\nČEKIĆA: 8x\nKAPACITET MOTORA - PROTOK ULJA: 16-35 L/min\nBRZINA MOTORA: 1000-2500 r/min\nRADNI PRITISAK: 18Mpa\nTEŽINA: 135kg\nGARANCIJA: 12 MJESECI"
+},
+
+"masine-bager-wg1500": {
+  "id": "masine-bager-wg1500",
+  "name": "MALČER ZA BAGER WG1500mm",
+  "section": "Mašine",
+  "category": "Malčeri za bagere",
+  "group": null,
+  "images": [
+  "images/masine-bager-wg1500.png",
+  "images/masine-bager-wg1500-2.jpg",
+  "images/masine-bager-wg1500-3.jpg"
+],
+  "description": "SPECIFIKACIJE:\n\nRADNA ŠIRINA: 1500mm\nMINI BAGER: 6-12 tone\nČEKIĆA: 18x\nKAPACITET MOTORA - PROTOK ULJA: 60-120 L/min\nBRZINA MOTORA: 1000-2800 r/min\nRADNI PRITISAK: 20Mpa\nTEŽINA: 400kg\nGARANCIJA: 12 MJESECI"
+},
+
+"masine-bager-wg1000": {
+  "id": "masine-bager-wg1000",
+  "name": "MALČER ZA BAGER WG1000mm",
+  "section": "Mašine",
+  "category": "Malčeri za bagere",
+  "group": null,
+  "images": [
+  "images/masine-bager-wg1000.png",
+  "images/masine-bager-wg1000-2.jpg",
+  "images/masine-bager-wg1000-3.jpg"
+],
+  "description": "SPECIFIKACIJE:\n\nRADNA ŠIRINA: 1000mm\nMINI BAGER: 2-7 tone\nČEKIĆA: 12x\nKAPACITET MOTORA - PROTOK ULJA: 20-50 L/min\nBRZINA MOTORA: 1000-2500 r/min\nRADNI PRITISAK: 18Mpa\nTEŽINA: 230kg\nGARANCIJA: 12 MJESECI"
+},
+
+"masine-bager-wg800": {
+  "id": "masine-bager-wg800",
+  "name": "MALČER ZA BAGER WG800mm",
+  "section": "Mašine",
+  "category": "Malčeri za bagere",
+  "group": null,
+  "images": [
+  "images/masine-bager-wg800.png",
+  "images/masine-bager-wg800-2.jpg",
+  "images/masine-bager-wg800-3.jpg"
+],
+ "description": "SPECIFIKACIJE:\n\nRADNA ŠIRINA: 800mm\nMINI BAGER: 1,8-5 ton\nČEKIĆA: 10x\nKAPACITET MOTORA - PROTOK ULJA: 20-50 L/min\nBRZINA MOTORA: 1000-2800 r/min\nRADNI PRITISAK: 18Mpa\nTEŽINA: 230kg\nGARANCIJA: 12 MJESECI"
+},
+}};
