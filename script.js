@@ -510,6 +510,29 @@ if(product.images && thumbs){
     setupPhoneFab();
     if(document.body.dataset.template === 'node') renderNodePage();
     if(document.body.dataset.template === 'product') renderProductPage();
+  
+  
+  
+  const topSlider = document.querySelector('.top-products-grid');
+
+if(topSlider && window.innerWidth < 768){
+  let index = 0;
+
+  setInterval(() => {
+    const cards = topSlider.querySelectorAll('.top-product-card');
+    if(!cards.length) return;
+
+    index = (index + 1) % cards.length;
+
+    cards[index].scrollIntoView({
+      behavior: 'smooth',
+      inline: 'center',
+      block: 'nearest'
+    });
+  }, 3000);
+}
+  
+  
   });
 })();
 
