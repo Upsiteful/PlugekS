@@ -753,3 +753,53 @@
     display:none;
   }
 }
+
+
+
+
+
+
+
+
+
+
+.contact-mobile-apps{
+  display:flex;
+  gap:10px;
+  justify-content:center;
+  margin-top:12px;
+}
+
+.contact-app{
+  display:inline-block;
+  padding:12px 18px;
+  color:#fff;
+  font-weight:700;
+  border-radius:6px;
+  font-size:16px;
+}
+
+/* Viber */
+.contact-app.viber{
+  background:#7360f2;
+}
+
+/* WhatsApp */
+.contact-app.whatsapp{
+  background:#25D366;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+  .contact-desktop{
+    display:none;
+  }
+}
+
+/* DESKTOP */
+@media(min-width:769px){
+  .contact-btn,
+  .contact-mobile-apps{
+    display:none;
+  }
+}
