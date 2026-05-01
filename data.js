@@ -1,4 +1,422 @@
 window.SITE_DATA = {"menuTree": [{"title": "Početna", "href": "index.html"}, {"title": "Mašine", "href": "masine.html"}, {"title": "Delovi za mašine", "href": "delovi-za-masine.html", "children": [{"title": "Plugovi", "href": "plugovi.html", "children": [{"title": "Raonici", "href": "plugovi-raonici.html"}, {"title": "Daske za plug", "href": "plugovi-daske.html"}, {"title": "Plazovi", "href": "plugovi-plazovi.html"}, {"title": "Vrh / špic raonika", "href": "plugovi-spicevi.html"}, {"title": "Umetak / grudi daske", "href": "plugovi-grudi.html"}, {"title": "Nastavak / produžetak daske", "href": "plugovi-nastavci.html"}, {"title": "Deflektor / povišenje daske", "href": "plugovi-povisenja.html"}, {"title": "Rešetke daske", "href": "plugovi-resetke.html"}]}, {"title": "Podrivači", "href": "podrivaci.html"}, {"title": "Drljače", "href": "drljace.html"}, {"title": "Noževi za freze", "href": "freze.html"}, {"title": "Setvospremači", "href": "setvospremaci.html", "children": [{"title": "Opruge", "href": "setvospremaci-opruge.html"}, {"title": "Držači / nosači", "href": "setvospremaci-drzaci.html"}, {"title": "Brisači traga", "href": "setvospremaci-brisaci.html"}, {"title": "Motike i radni delovi", "href": "setvospremaci-motike.html"}, {"title": "Rotori i delovi", "href": "setvospremaci-rotori.html"}]}]}, {"title": "Kontakt", "href": "kontakt.html"}], "nodes": { 
+
+
+
+
+"roto-drljace": {
+  "id": "roto-drljace",
+  "title": "Noževi i klinovi za roto drljače",
+  "parent": "delovi-za-masine",
+  "kind": "links",
+  "children": [
+    "roto-alpego",
+    "roto-amazone",
+    "roto-artera",
+    "roto-breviglieri",
+    "roto-carraro",
+    "roto-celli",
+    "roto-eberhardt",
+    "roto-euroma",
+    "roto-feraboli",
+    "roto-forigo",
+    "roto-frandent",
+    "roto-howard",
+    "roto-kuhn",
+    "roto-kverneland",
+    "roto-lemken",
+    "roto-maletti",
+    "roto-maschio",
+    "roto-morra",
+    "roto-niemeyer",
+    "roto-pegoraro",
+    "roto-perugini",
+    "roto-rabewerk",
+    "roto-remac",
+    "roto-sicma",
+    "roto-vigolo",
+    "roto-krone",
+    "roto-lely"
+  ],
+  "products": [],
+  "breadcrumb": [],
+  "desc": "Noževi i klinovi za roto drljače razvrstani po brendovima."
+},
+
+"roto-alpego": {
+  "id": "roto-alpego",
+  "title": "Alpego",
+  "parent": "roto-drljace",
+  "kind": "products",
+  "children": [],
+  "products": [
+    "roto-alpego-noz",
+    "roto-alpego-noz-d312"
+  ],
+  "breadcrumb": [],
+  "desc": "Noževi i klinovi za roto drljače – Alpego."
+},
+
+"roto-amazone": {
+  "id": "roto-amazone",
+  "title": "Amazone",
+  "parent": "roto-drljace",
+  "kind": "products",
+  "children": [],
+  "products": [
+    "roto-amazone-noz",
+    "roto-amazone-noz-cultimix"
+  ],
+  "breadcrumb": [],
+  "desc": "Noževi i klinovi za roto drljače – Amazone."
+},
+
+"roto-artera": {
+  "id": "roto-artera",
+  "title": "Artera",
+  "parent": "roto-drljace",
+  "kind": "products",
+  "children": [],
+  "products": [
+    "roto-artera-noz",
+    "roto-artera-noz-brzo-menjajuci"
+  ],
+  "breadcrumb": [],
+  "desc": "Noževi i klinovi za roto drljače – Artera."
+},
+
+"roto-breviglieri": {
+  "id": "roto-breviglieri",
+  "title": "Breviglieri",
+  "parent": "roto-drljace",
+  "kind": "products",
+  "children": [],
+  "products": [
+    "roto-breviglieri-noz",
+    "roto-breviglieri-klin"
+  ],
+  "breadcrumb": [],
+  "desc": "Noževi i klinovi za roto drljače – Breviglieri."
+},
+
+"roto-carraro": {
+  "id": "roto-carraro",
+  "title": "Carraro",
+  "parent": "roto-drljace",
+  "kind": "products",
+  "children": [],
+  "products": [
+    "roto-carraro-noz",
+    "roto-carraro-klin"
+  ],
+  "breadcrumb": [],
+  "desc": "Noževi i klinovi za roto drljače – Carraro."
+},
+
+"roto-celli": {
+  "id": "roto-celli",
+  "title": "Celli",
+  "parent": "roto-drljace",
+  "kind": "products",
+  "children": [],
+  "products": [
+    "roto-celli-noz",
+    "roto-celli-klin"
+  ],
+  "breadcrumb": [],
+  "desc": "Noževi i klinovi za roto drljače – Celli."
+},
+
+"roto-eberhardt": {
+  "id": "roto-eberhardt",
+  "title": "Eberhardt",
+  "parent": "roto-drljace",
+  "kind": "products",
+  "children": [],
+  "products": [
+    "roto-eberhardt-klin-46",
+    "roto-eberhardt-klin-51"
+  ],
+  "breadcrumb": [],
+  "desc": "Klinovi za roto drljače – Eberhardt."
+},
+
+"roto-euroma": {
+  "id": "roto-euroma",
+  "title": "Euroma",
+  "parent": "roto-drljace",
+  "kind": "products",
+  "children": [],
+  "products": [
+    "roto-euroma-klin"
+  ],
+  "breadcrumb": [],
+  "desc": "Klinovi za roto drljače – Euroma."
+},
+
+"roto-feraboli": {
+  "id": "roto-feraboli",
+  "title": "Feraboli",
+  "parent": "roto-drljace",
+  "kind": "products",
+  "children": [],
+  "products": [
+    "roto-feraboli-noz",
+    "roto-feraboli-klin-lb25",
+    "roto-feraboli-klin-lb6"
+  ],
+  "breadcrumb": [],
+  "desc": "Noževi i klinovi za roto drljače – Feraboli."
+},
+
+"roto-forigo": {
+  "id": "roto-forigo",
+  "title": "Forigo",
+  "parent": "roto-drljace",
+  "kind": "products",
+  "children": [],
+  "products": [
+    "roto-forigo-noz"
+  ],
+  "breadcrumb": [],
+  "desc": "Noževi za roto drljače – Forigo."
+},
+
+"roto-frandent": {
+  "id": "roto-frandent",
+  "title": "Frandent",
+  "parent": "roto-drljace",
+  "kind": "products",
+  "children": [],
+  "products": [
+    "roto-frandent-noz"
+  ],
+  "breadcrumb": [],
+  "desc": "Noževi za roto drljače – Frandent."
+},
+
+"roto-howard": {
+  "id": "roto-howard",
+  "title": "Howard",
+  "parent": "roto-drljace",
+  "kind": "products",
+  "children": [],
+  "products": [
+    "roto-howard-noz"
+  ],
+  "breadcrumb": [],
+  "desc": "Noževi za roto drljače – Howard."
+},
+
+"roto-kuhn": {
+  "id": "roto-kuhn",
+  "title": "Kuhn",
+  "parent": "roto-drljace",
+  "kind": "products",
+  "children": [],
+  "products": [
+    "roto-kuhn-noz",
+    "roto-kuhn-noz-ravni",
+    "roto-kuhn-kverneland-noz"
+  ],
+  "breadcrumb": [],
+  "desc": "Noževi za roto drljače – Kuhn."
+},
+
+"roto-kverneland": {
+  "id": "roto-kverneland",
+  "title": "Kverneland",
+  "parent": "roto-drljace",
+  "kind": "products",
+  "children": [],
+  "products": [
+    "roto-kverneland-noz"
+  ],
+  "breadcrumb": [],
+  "desc": "Noževi za roto drljače – Kverneland."
+},
+
+"roto-lemken": {
+  "id": "roto-lemken",
+  "title": "Lemken",
+  "parent": "roto-drljace",
+  "kind": "products",
+  "children": [],
+  "products": [
+    "roto-lemken-noz"
+  ],
+  "breadcrumb": [],
+  "desc": "Noževi za roto drljače – Lemken."
+},
+
+"roto-maletti": {
+  "id": "roto-maletti",
+  "title": "Maletti",
+  "parent": "roto-drljace",
+  "kind": "products",
+  "children": [],
+  "products": [
+    "roto-maletti-noz",
+    "roto-maletti-klin"
+  ],
+  "breadcrumb": [],
+  "desc": "Noževi i klinovi za roto drljače – Maletti."
+},
+
+"roto-maschio": {
+  "id": "roto-maschio",
+  "title": "Maschio",
+  "parent": "roto-drljace",
+  "kind": "products",
+  "children": [],
+  "products": [
+    "roto-maschio-noz",
+    "roto-maschio-noz-l390",
+    "roto-maschio-noz-quickfit",
+    "roto-maschio-zastita-noza"
+  ],
+  "breadcrumb": [],
+  "desc": "Noževi za roto drljače – Maschio."
+},
+
+"roto-morra": {
+  "id": "roto-morra",
+  "title": "Morra",
+  "parent": "roto-drljace",
+  "kind": "products",
+  "children": [],
+  "products": [
+    "roto-morra-klin"
+  ],
+  "breadcrumb": [],
+  "desc": "Klinovi za roto drljače – Morra."
+},
+
+"roto-niemeyer": {
+  "id": "roto-niemeyer",
+  "title": "Niemeyer",
+  "parent": "roto-drljace",
+  "kind": "products",
+  "children": [],
+  "products": [
+    "roto-niemeyer-noz"
+  ],
+  "breadcrumb": [],
+  "desc": "Noževi za roto drljače – Niemeyer."
+},
+
+"roto-pegoraro": {
+  "id": "roto-pegoraro",
+  "title": "Pegoraro",
+  "parent": "roto-drljace",
+  "kind": "products",
+  "children": [],
+  "products": [
+    "roto-pegoraro-noz",
+    "roto-pegoraro-klin"
+  ],
+  "breadcrumb": [],
+  "desc": "Noževi i klinovi za roto drljače – Pegoraro."
+},
+
+"roto-perugini": {
+  "id": "roto-perugini",
+  "title": "Perugini",
+  "parent": "roto-drljace",
+  "kind": "products",
+  "children": [],
+  "products": [
+    "roto-perugini-noz",
+    "roto-perugini-klin-rh88"
+  ],
+  "breadcrumb": [],
+  "desc": "Noževi i klinovi za roto drljače – Perugini."
+},
+
+"roto-rabewerk": {
+  "id": "roto-rabewerk",
+  "title": "Rabewerk",
+  "parent": "roto-drljace",
+  "kind": "products",
+  "children": [],
+  "products": [
+    "roto-rabewerk-noz",
+    "roto-rabewerk-noz-kg26",
+    "roto-rabewerk-noz-kg30"
+  ],
+  "breadcrumb": [],
+  "desc": "Noževi za roto drljače – Rabe."
+},
+
+"roto-remac": {
+  "id": "roto-remac",
+  "title": "Remac",
+  "parent": "roto-drljace",
+  "kind": "products",
+  "children": [],
+  "products": [
+    "roto-remac-klin"
+  ],
+  "breadcrumb": [],
+  "desc": "Klinovi za roto drljače – Remac."
+},
+
+"roto-sicma": {
+  "id": "roto-sicma",
+  "title": "Sicma / Landsberg",
+  "parent": "roto-drljace",
+  "kind": "products",
+  "children": [],
+  "products": [
+    "roto-sicma-landsberg-klin-lb24"
+  ],
+  "breadcrumb": [],
+  "desc": "Klinovi za roto drljače – Sicma / Landsberg."
+},
+
+"roto-vigolo": {
+  "id": "roto-vigolo",
+  "title": "Vigolo",
+  "parent": "roto-drljace",
+  "kind": "products",
+  "children": [],
+  "products": [
+    "roto-vigolo-klin"
+  ],
+  "breadcrumb": [],
+  "desc": "Klinovi za roto drljače – Vigolo."
+},
+
+"roto-krone": {
+  "id": "roto-krone",
+  "title": "Krone",
+  "parent": "roto-drljace",
+  "kind": "products",
+  "children": [],
+  "products": [
+    "roto-krone-klin"
+  ],
+  "breadcrumb": [],
+  "desc": "Klinovi za roto drljače – Krone."
+},
+
+"roto-lely": {
+  "id": "roto-lely",
+  "title": "Lely",
+  "parent": "roto-drljace",
+  "kind": "products",
+  "children": [],
+  "products": [
+    "roto-lely-klin",
+    "roto-lely-klin-35"
+  ],
+  "breadcrumb": [],
+  "desc": "Klinovi za roto drljače – Lely."
+},
+
+
+
+
+
 "masine": {
   "id": "masine",
   "title": "Mašine",
@@ -47,7 +465,7 @@ window.SITE_DATA = {"menuTree": [{"title": "Početna", "href": "index.html"}, {"
   "breadcrumb": [],
   "desc": "Pregled malčera za bagere."
 },
-"delovi-za-masine": {"id": "delovi-za-masine", "title": "Delovi za mašine", "parent": null, "kind": "links", "children": ["plugovi", "podrivaci", "drljace", "freze", "setvospremaci"], "products": [], "breadcrumb": [], "desc": "Izaberite grupu delova za mašine."}, "plugovi": {"id": "plugovi", "title": "Delovi za plugove", "parent": "delovi-za-masine", "kind": "links", "children": ["plugovi-raonici", "plugovi-daske", "plugovi-plazovi", "plugovi-spicevi", "plugovi-grudi", "plugovi-nastavci", "plugovi-povisenja", "plugovi-resetke"], "products": [], "breadcrumb": [], "desc": "Sve sekcije delova za plugove, razvrstane po vrsti dela."}, "podrivaci": {"id": "podrivaci", "title": "Delovi za podrivače", "parent": "delovi-za-masine", "kind": "products", "children": [], "products":
+"delovi-za-masine": {"id": "delovi-za-masine", "title": "Delovi za mašine", "parent": null, "kind": "links", "children": ["plugovi", "podrivaci", "drljace", "freze", "setvospremaci", "roto-drljace"], "products": [], "breadcrumb": [], "desc": "Izaberite grupu delova za mašine."}, "plugovi": {"id": "plugovi", "title": "Delovi za plugove", "parent": "delovi-za-masine", "kind": "links", "children": ["plugovi-raonici", "plugovi-daske", "plugovi-plazovi", "plugovi-spicevi", "plugovi-grudi", "plugovi-nastavci", "plugovi-povisenja", "plugovi-resetke"], "products": [], "breadcrumb": [], "desc": "Sve sekcije delova za plugove, razvrstane po vrsti dela."}, "podrivaci": {"id": "podrivaci", "title": "Delovi za podrivače", "parent": "delovi-za-masine", "kind": "products", "children": [], "products":
      ["podrivaci-direktni-proizvodi-opruga-20x20", 
         "podrivaci-direktni-proizvodi-opruga-25x25", 
         "podrivaci-direktni-proizvodi-opruga-30x30", 
@@ -952,7 +1370,434 @@ window.SITE_DATA = {"menuTree": [{"title": "Početna", "href": "index.html"}, {"
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "setvospremaci-rotori-i-delovi-kompletan-rotor-2-3-4-5-6-7-polja"],
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            "breadcrumb": [],
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             "desc": "Pregled proizvoda za: rotori i delovi."}}, 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            "products": {"plugovi-raonici-vogel-noot-raonik-pluga-v-n-un-350-desni-zamena-so": {"id": "plugovi-raonici-vogel-noot-raonik-pluga-v-n-un-350-desni-zamena-so", "name": "Raonik pluga V&N UN 350 desni zamena SO", "section": "Plugovi", "category": "Raonici", "group": "Vogel & Noot"}, "plugovi-raonici-vogel-noot-raonik-pluga-v-n-un-400-zamena-so":
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            "products":
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             {
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              "roto-alpego-noz": {
+  "id": "roto-alpego-noz",
+  "name": "NOŽ ROTO DRLJAČE ALPEGO",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Alpego",
+  "description": ""
+},
+
+"roto-alpego-noz-d312": {
+  "id": "roto-alpego-noz-d312",
+  "name": "NOŽ ROTO DRLJAČE ALPEGO D312",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Alpego",
+  "description": ""
+},
+
+"roto-amazone-noz": {
+  "id": "roto-amazone-noz",
+  "name": "NOŽ ROTO DRLJAČE AMAZONE",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Amazone",
+  "description": ""
+},
+
+"roto-amazone-noz-cultimix": {
+  "id": "roto-amazone-noz-cultimix",
+  "name": "NOŽ ROTO DRLJAČE AMAZONE CULTIMIX",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Amazone",
+  "description": ""
+},
+
+"roto-artera-noz": {
+  "id": "roto-artera-noz",
+  "name": "NOŽ ROTO DRLJAČE ARTERA",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Artera",
+  "description": ""
+},
+
+"roto-artera-noz-brzo-menjajuci": {
+  "id": "roto-artera-noz-brzo-menjajuci",
+  "name": "NOŽ ROTO DRLJAČE ARTERA BRZO MENJAJUĆI",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Artera",
+  "description": ""
+},
+
+"roto-breviglieri-noz": {
+  "id": "roto-breviglieri-noz",
+  "name": "NOŽ ROTO DRLJAČE BREVIGLIERI",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Breviglieri",
+  "description": ""
+},
+
+"roto-breviglieri-klin": {
+  "id": "roto-breviglieri-klin",
+  "name": "KLIN ROTO DRLJAČE BREVIGLIERI",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Breviglieri",
+  "description": ""
+},
+
+"roto-carraro-noz": {
+  "id": "roto-carraro-noz",
+  "name": "NOŽ ROTO DRLJAČE CARRARO",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Carraro",
+  "description": ""
+},
+
+"roto-carraro-klin": {
+  "id": "roto-carraro-klin",
+  "name": "KLIN ROTO DRLJAČE CARRARO",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Carraro",
+  "description": ""
+},
+
+"roto-celli-noz": {
+  "id": "roto-celli-noz",
+  "name": "NOŽ ROTO DRLJAČE CELLI",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Celli",
+  "description": ""
+},
+
+"roto-celli-klin": {
+  "id": "roto-celli-klin",
+  "name": "KLIN ROTO DRLJAČE CELLI",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Celli",
+  "description": ""
+},
+
+"roto-eberhardt-klin-46": {
+  "id": "roto-eberhardt-klin-46",
+  "name": "KLIN ROTO DRLJAČE EBERHARDT 46",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Eberhardt",
+  "description": ""
+},
+
+"roto-eberhardt-klin-51": {
+  "id": "roto-eberhardt-klin-51",
+  "name": "KLIN ROTO DRLJAČE EBERHARDT 51",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Eberhardt",
+  "description": ""
+},
+
+"roto-euroma-klin": {
+  "id": "roto-euroma-klin",
+  "name": "KLIN ROTO DRLJAČE EUROMA",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Euroma",
+  "description": ""
+},
+
+"roto-feraboli-noz": {
+  "id": "roto-feraboli-noz",
+  "name": "NOŽ ROTO DRLJAČE FERABOLI",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Feraboli",
+  "description": ""
+},
+
+"roto-feraboli-klin-lb25": {
+  "id": "roto-feraboli-klin-lb25",
+  "name": "KLIN ROTO DRLJAČE FERABOLI LB25",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Feraboli",
+  "description": ""
+},
+
+"roto-feraboli-klin-lb6": {
+  "id": "roto-feraboli-klin-lb6",
+  "name": "KLIN ROTO DRLJAČE FERABOLI LB6",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Feraboli",
+  "description": ""
+},
+
+"roto-forigo-noz": {
+  "id": "roto-forigo-noz",
+  "name": "NOŽ ROTO DRLJAČE FORIGO",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Forigo",
+  "description": ""
+},
+
+"roto-frandent-noz": {
+  "id": "roto-frandent-noz",
+  "name": "NOŽ ROTO DRLJAČE FRANDENT",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Frandent",
+  "description": ""
+},
+
+"roto-howard-noz": {
+  "id": "roto-howard-noz",
+  "name": "NOŽ ROTO DRLJAČE HOWARD",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Howard",
+  "description": ""
+},
+
+"roto-kuhn-noz": {
+  "id": "roto-kuhn-noz",
+  "name": "NOŽ ROTO DRLJAČE KUHN",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Kuhn",
+  "description": ""
+},
+
+"roto-kuhn-noz-ravni": {
+  "id": "roto-kuhn-noz-ravni",
+  "name": "NOŽ ROTO DRLJAČE KUHN RAVNI",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Kuhn",
+  "description": ""
+},
+
+"roto-kuhn-kverneland-noz": {
+  "id": "roto-kuhn-kverneland-noz",
+  "name": "NOŽ ROTO DRLJAČE KUHN / KVERNELAND",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Kuhn / Kverneland",
+  "description": ""
+},
+
+"roto-kverneland-noz": {
+  "id": "roto-kverneland-noz",
+  "name": "NOŽ ROTO DRLJAČE KVERNELAND",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Kverneland",
+  "description": ""
+},
+
+"roto-lemken-noz": {
+  "id": "roto-lemken-noz",
+  "name": "NOŽ ROTO DRLJAČE LEMKEN",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Lemken",
+  "description": ""
+},
+
+"roto-maletti-noz": {
+  "id": "roto-maletti-noz",
+  "name": "NOŽ ROTO DRLJAČE MALETTI",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Maletti",
+  "description": ""
+},
+
+"roto-maletti-klin": {
+  "id": "roto-maletti-klin",
+  "name": "KLIN ROTO DRLJAČE MALETTI",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Maletti",
+  "description": ""
+},
+
+"roto-maschio-noz": {
+  "id": "roto-maschio-noz",
+  "name": "NOŽ ROTO DRLJAČE MASCHIO",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Maschio",
+  "description": ""
+},
+
+"roto-maschio-noz-l390": {
+  "id": "roto-maschio-noz-l390",
+  "name": "NOŽ ROTO DRLJAČE MASCHIO L390",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Maschio",
+  "description": ""
+},
+
+"roto-maschio-noz-quickfit": {
+  "id": "roto-maschio-noz-quickfit",
+  "name": "NOŽ ROTO DRLJAČE MASCHIO QUICKFIT",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Maschio",
+  "description": ""
+},
+
+"roto-maschio-zastita-noza": {
+  "id": "roto-maschio-zastita-noza",
+  "name": "ZAŠTITA NOŽA ROTO DRLJAČE MASCHIO",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Maschio",
+  "description": ""
+},
+
+"roto-morra-klin": {
+  "id": "roto-morra-klin",
+  "name": "KLIN ROTO DRLJAČE MORRA",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Morra",
+  "description": ""
+},
+
+"roto-niemeyer-noz": {
+  "id": "roto-niemeyer-noz",
+  "name": "NOŽ ROTO DRLJAČE NIEMEYER",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Niemeyer",
+  "description": ""
+},
+
+"roto-pegoraro-noz": {
+  "id": "roto-pegoraro-noz",
+  "name": "NOŽ ROTO DRLJAČE PEGORARO",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Pegoraro",
+  "description": ""
+},
+
+"roto-pegoraro-klin": {
+  "id": "roto-pegoraro-klin",
+  "name": "KLIN ROTO DRLJAČE PEGORARO",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Pegoraro",
+  "description": ""
+},
+
+"roto-perugini-noz": {
+  "id": "roto-perugini-noz",
+  "name": "NOŽ ROTO DRLJAČE PERUGINI",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Perugini",
+  "description": ""
+},
+
+"roto-perugini-klin-rh88": {
+  "id": "roto-perugini-klin-rh88",
+  "name": "KLIN ROTO DRLJAČE PERUGINI RH88",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Perugini",
+  "description": ""
+},
+
+"roto-rabewerk-noz": {
+  "id": "roto-rabewerk-noz",
+  "name": "NOŽ ROTO DRLJAČE RABEWORK",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Rabe",
+  "description": ""
+},
+
+"roto-rabewerk-noz-kg26": {
+  "id": "roto-rabewerk-noz-kg26",
+  "name": "NOŽ ROTO DRLJAČE RABEWORK KG26",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Rabe",
+  "description": ""
+},
+
+"roto-rabewerk-noz-kg30": {
+  "id": "roto-rabewerk-noz-kg30",
+  "name": "NOŽ ROTO DRLJAČE RABEWORK KG30",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Rabe",
+  "description": ""
+},
+
+"roto-remac-klin": {
+  "id": "roto-remac-klin",
+  "name": "KLIN ROTO DRLJAČE REMAC",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Remac",
+  "description": ""
+},
+
+"roto-sicma-landsberg-klin-lb24": {
+  "id": "roto-sicma-landsberg-klin-lb24",
+  "name": "KLIN ROTO DRLJAČE SICMA / LANDSBERG LB24",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Sicma / Landsberg",
+  "description": ""
+},
+
+"roto-vigolo-klin": {
+  "id": "roto-vigolo-klin",
+  "name": "KLIN ROTO DRLJAČE VIGOLO",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Vigolo",
+  "description": ""
+},
+
+"roto-krone-klin": {
+  "id": "roto-krone-klin",
+  "name": "KLIN ROTO DRLJAČE KRONE",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Krone",
+  "description": ""
+},
+
+"roto-lely-klin": {
+  "id": "roto-lely-klin",
+  "name": "KLIN ROTO DRLJAČE LELY",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Lely",
+  "description": ""
+},
+
+"roto-lely-klin-35": {
+  "id": "roto-lely-klin-35",
+  "name": "KLIN ROTO DRLJAČE LELY 35",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Lely",
+  "description": ""
+},
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              "plugovi-raonici-vogel-noot-raonik-pluga-v-n-un-350-desni-zamena-so": {"id": "plugovi-raonici-vogel-noot-raonik-pluga-v-n-un-350-desni-zamena-so", "name": "Raonik pluga V&N UN 350 desni zamena SO", "section": "Plugovi", "category": "Raonici", "group": "Vogel & Noot"}, "plugovi-raonici-vogel-noot-raonik-pluga-v-n-un-400-zamena-so":
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              {"id": "plugovi-raonici-vogel-noot-raonik-pluga-v-n-un-400-zamena-so", "name": "Raonik pluga V&N UN 400 zamena SO", "section": "Plugovi", "category": "Raonici", "group": "Vogel & Noot"}, "plugovi-raonici-vogel-noot-raonik-prednji-v-n-desni": 
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              {"id": "plugovi-raonici-vogel-noot-raonik-prednji-v-n-desni", "name": "Raonik pretplužnjaka V&N desni", "section": "Plugovi", "category": "Raonici", "group": "Vogel & Noot"},
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               "plugovi-raonici-vogel-noot-raonik-prednji-v-n-levi": {"id": "plugovi-raonici-vogel-noot-raonik-prednji-v-n-levi", "name": "Raonik pretplužnjaka V&N levi", "section": "Plugovi", "category": "Raonici", "group": "Vogel & Noot"}, 
@@ -1723,20 +2568,6 @@ window.SITE_DATA = {"menuTree": [{"title": "Početna", "href": "index.html"}, {"
   "description": "SPECIFIKACIJE:\n\nRADNA ŠIRINA: 1200mm\nMINI BAGER: 5-10 ton\nČEKIĆA: 14x\nKAPACITET MOTORA - PROTOK ULJA: 50-90 L/min\nBRZINA MOTORA: 1000-2800 r/min\nRADNI PRITISAK: 20Mpa\nTEŽINA: 360kg\nGARANCIJA: 12 MJESECI",
 "images": [
   "images/masine-bager-wg1200.png",
-  "images/masine-bager-wg1200-2.jpg",
-  "images/masine-bager-wg1200-3.jpg"
-]
-},
-
-"masine-bager-wg1200": {
-  "id": "masine-bager-wg1200",
-  "name": "MALČER ZA BAGER WG1200mm",
-  "section": "Mašine",
-  "category": "Malčeri za bagere",
-  "group": null,
-  "description": "SPECIFIKACIJE:\n\nRADNA ŠIRINA: 1200mm\nMINI BAGER: 5-10 ton\nČEKIĆA: 14x\nKAPACITET MOTORA - PROTOK ULJA: 50-90 L/min\nBRZINA MOTORA: 1000-2800 r/min\nRADNI PRITISAK: 20Mpa\nTEŽINA: 360kg\nGARANCIJA: 12 MJESECI",
-"images": [
-  "images/masine-bager-wg1200.png",
   "images/masine-bager-wg1200-2.png",
   "images/masine-bager-wg1200-3.png"
 ]
@@ -1796,5 +2627,5 @@ window.SITE_DATA = {"menuTree": [{"title": "Početna", "href": "index.html"}, {"
   "images/masine-bager-wg800-3.png"
 ],
  "description": "SPECIFIKACIJE:\n\nRADNA ŠIRINA: 800mm\nMINI BAGER: 1,8-5 ton\nČEKIĆA: 10x\nKAPACITET MOTORA - PROTOK ULJA: 20-50 L/min\nBRZINA MOTORA: 1000-2800 r/min\nRADNI PRITISAK: 18Mpa\nTEŽINA: 230kg\nGARANCIJA: 12 MJESECI"
-}
+},
 }};
