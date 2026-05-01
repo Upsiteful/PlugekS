@@ -663,3 +663,45 @@
   }
 }
 
+
+
+
+
+
+
+
+
+@media(max-width:768px){
+  .product-focus{
+    display:flex;
+    flex-direction:column;
+  }
+
+  .product-info-box{
+    display:contents;
+  }
+
+  #prodTitle{
+    order:1;
+    font-size:30px;
+    line-height:1.2;
+    margin:0 0 14px;
+    text-align:center;
+  }
+
+  .product-gallery{
+    order:2;
+  }
+
+  #prodText{
+    order:3;
+    background:#f7f7f7;
+    border:1px solid #ececec;
+    padding:20px;
+    max-width:none;
+  }
+
+  .product-meta{
+    order:4;
+  }
+}
