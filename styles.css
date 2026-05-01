@@ -705,3 +705,51 @@
     order:4;
   }
 }
+
+
+
+
+
+.product-contact{
+  margin-top:24px;
+  text-align:center;
+}
+
+/* dugme (telefon) */
+.contact-btn{
+  display:inline-block;
+  background:#1d8f3a;
+  color:#fff;
+  padding:16px 26px;
+  font-size:20px;
+  font-weight:700;
+  border-radius:6px;
+  box-shadow:0 6px 14px rgba(0,0,0,.12);
+}
+
+/* desktop info */
+.contact-desktop{
+  margin-top:14px;
+  font-size:18px;
+  color:#555;
+  line-height:1.6;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+  .contact-desktop{
+    display:none;
+  }
+
+  .contact-btn{
+    width:100%;
+    font-size:18px;
+  }
+}
+
+/* DESKTOP */
+@media(min-width:769px){
+  .contact-btn{
+    display:none;
+  }
+}
