@@ -803,3 +803,35 @@
     display:none;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:768px){
+
+  .mobile-brand{
+    display:none !important;
+  }
+
+  .mobile-nav-inner{
+    justify-content:flex-end !important;
+  }
+
+  .hamburger{
+    margin-left:auto;
+  }
+
+}
