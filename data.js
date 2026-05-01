@@ -1728,6 +1728,20 @@ window.SITE_DATA = {"menuTree": [{"title": "Početna", "href": "index.html"}, {"
 ]
 },
 
+"masine-bager-wg1200": {
+  "id": "masine-bager-wg1200",
+  "name": "MALČER ZA BAGER WG1200mm",
+  "section": "Mašine",
+  "category": "Malčeri za bagere",
+  "group": null,
+  "description": "SPECIFIKACIJE:\n\nRADNA ŠIRINA: 1200mm\nMINI BAGER: 5-10 ton\nČEKIĆA: 14x\nKAPACITET MOTORA - PROTOK ULJA: 50-90 L/min\nBRZINA MOTORA: 1000-2800 r/min\nRADNI PRITISAK: 20Mpa\nTEŽINA: 360kg\nGARANCIJA: 12 MJESECI",
+"images": [
+  "images/masine-bager-wg1200.png",
+  "images/masine-bager-wg1200-2.png",
+  "images/masine-bager-wg1200-3.png"
+]
+},
+
 "masine-bager-wg600": {
   "id": "masine-bager-wg600",
   "name": "MALČER ZA BAGER WG600mm",
@@ -1736,8 +1750,8 @@ window.SITE_DATA = {"menuTree": [{"title": "Početna", "href": "index.html"}, {"
   "group": null,
   "images": [
   "images/masine-bager-wg600.png",
-  "images/masine-bager-wg600-2.jpg",
-  "images/masine-bager-wg600-3.jpg"
+  "images/masine-bager-wg600-2.png",
+  "images/masine-bager-wg600-3.png"
 ],
   "description": "SPECIFIKACIJE:\n\nRADNA ŠIRINA: 600mm\nMINI BAGER: 0,8-2 tone\nČEKIĆA: 8x\nKAPACITET MOTORA - PROTOK ULJA: 16-35 L/min\nBRZINA MOTORA: 1000-2500 r/min\nRADNI PRITISAK: 18Mpa\nTEŽINA: 135kg\nGARANCIJA: 12 MJESECI"
 },
@@ -1750,8 +1764,8 @@ window.SITE_DATA = {"menuTree": [{"title": "Početna", "href": "index.html"}, {"
   "group": null,
   "images": [
   "images/masine-bager-wg1500.png",
-  "images/masine-bager-wg1500-2.jpg",
-  "images/masine-bager-wg1500-3.jpg"
+  "images/masine-bager-wg1500-2.png",
+  "images/masine-bager-wg1500-3.png"
 ],
   "description": "SPECIFIKACIJE:\n\nRADNA ŠIRINA: 1500mm\nMINI BAGER: 6-12 tone\nČEKIĆA: 18x\nKAPACITET MOTORA - PROTOK ULJA: 60-120 L/min\nBRZINA MOTORA: 1000-2800 r/min\nRADNI PRITISAK: 20Mpa\nTEŽINA: 400kg\nGARANCIJA: 12 MJESECI"
 },
@@ -1764,8 +1778,8 @@ window.SITE_DATA = {"menuTree": [{"title": "Početna", "href": "index.html"}, {"
   "group": null,
   "images": [
   "images/masine-bager-wg1000.png",
-  "images/masine-bager-wg1000-2.jpg",
-  "images/masine-bager-wg1000-3.jpg"
+  "images/masine-bager-wg1000-2.png",
+  "images/masine-bager-wg1000-3.png"
 ],
   "description": "SPECIFIKACIJE:\n\nRADNA ŠIRINA: 1000mm\nMINI BAGER: 2-7 tone\nČEKIĆA: 12x\nKAPACITET MOTORA - PROTOK ULJA: 20-50 L/min\nBRZINA MOTORA: 1000-2500 r/min\nRADNI PRITISAK: 18Mpa\nTEŽINA: 230kg\nGARANCIJA: 12 MJESECI"
 },
@@ -1778,9 +1792,9 @@ window.SITE_DATA = {"menuTree": [{"title": "Početna", "href": "index.html"}, {"
   "group": null,
   "images": [
   "images/masine-bager-wg800.png",
-  "images/masine-bager-wg800-2.jpg",
-  "images/masine-bager-wg800-3.jpg"
+  "images/masine-bager-wg800-2.png",
+  "images/masine-bager-wg800-3.png"
 ],
  "description": "SPECIFIKACIJE:\n\nRADNA ŠIRINA: 800mm\nMINI BAGER: 1,8-5 ton\nČEKIĆA: 10x\nKAPACITET MOTORA - PROTOK ULJA: 20-50 L/min\nBRZINA MOTORA: 1000-2800 r/min\nRADNI PRITISAK: 18Mpa\nTEŽINA: 230kg\nGARANCIJA: 12 MJESECI"
-},
+}
 }};
