@@ -629,3 +629,37 @@
     grid-template-columns:repeat(2, 1fr);
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:768px){
+  .top-products-grid{
+    display:flex;
+    overflow-x:auto;
+    gap:14px;
+    scroll-snap-type:x mandatory;
+    scroll-behavior:smooth;
+    -webkit-overflow-scrolling:touch;
+    padding-bottom:14px;
+  }
+
+  .top-product-card{
+    flex:0 0 82%;
+    scroll-snap-align:center;
+  }
+}
+
