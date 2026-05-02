@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://plugeks.rs/sitemap.xml

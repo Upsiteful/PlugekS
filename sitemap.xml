@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- MAIN -->
+  <url><loc>https://plugeks.rs/</loc><priority>1.0</priority></url>
+  <url><loc>https://plugeks.rs/masine.html</loc><priority>0.9</priority></url>
+  <url><loc>https://plugeks.rs/delovi-za-masine.html</loc><priority>0.9</priority></url>
+  <url><loc>https://plugeks.rs/kontakt.html</loc><priority>0.8</priority></url>
+
+  <!-- CATEGORIES -->
+  <url><loc>https://plugeks.rs/plugovi.html</loc><priority>0.9</priority></url>
+  <url><loc>https://plugeks.rs/plugovi-raonici.html</loc><priority>0.8</priority></url>
+  <url><loc>https://plugeks.rs/drljace.html</loc><priority>0.8</priority></url>
+  <url><loc>https://plugeks.rs/freze.html</loc><priority>0.8</priority></url>
+  <url><loc>https://plugeks.rs/podrivaci.html</loc><priority>0.8</priority></url>
+  <url><loc>https://plugeks.rs/setvospremaci.html</loc><priority>0.8</priority></url>
+
+  <!-- TOP PRODUCTS -->
+
+  <!-- FREZE -->
+  <url><loc>https://plugeks.rs/proizvod.html?id=freze-nozevi-za-freze-noz-za-frezu-imt-619</loc></url>
+  <url><loc>https://plugeks.rs/proizvod.html?id=freze-nozevi-za-freze-noz-za-frezu-imt-507</loc></url>
+  <url><loc>https://plugeks.rs/proizvod.html?id=freze-nozevi-za-freze-noz-za-frezu-imt-506</loc></url>
+  <url><loc>https://plugeks.rs/proizvod.html?id=freze-nozevi-za-freze-noz-za-frezu-goldoni-8ks</loc></url>
+  <url><loc>https://plugeks.rs/proizvod.html?id=freze-nozevi-za-freze-noz-za-frezu-goldoni-10ks</loc></url>
+  <url><loc>https://plugeks.rs/proizvod.html?id=freze-nozevi-za-freze-noz-za-frezu-maschio</loc></url>
+
+  <!-- DRLJACE -->
+  <url><loc>https://plugeks.rs/proizvod.html?id=drljace-direktni-proizvodi-klin-20x20-obican</loc></url>
+  <url><loc>https://plugeks.rs/proizvod.html?id=drljace-direktni-proizvodi-klin-20x20-sa-pecurkom</loc></url>
+  <url><loc>https://plugeks.rs/proizvod.html?id=drljace-direktni-proizvodi-klin-25x25-vise-vrsta</loc></url>
+  <url><loc>https://plugeks.rs/proizvod.html?id=drljace-direktni-proizvodi-klin-30x30-vise-vrsta</loc></url>
+
+  <!-- PODRIVACI -->
+  <url><loc>https://plugeks.rs/proizvod.html?id=podrivaci-direktni-proizvodi-opruga-20x20</loc></url>
+  <url><loc>https://plugeks.rs/proizvod.html?id=podrivaci-direktni-proizvodi-opruga-25x25</loc></url>
+  <url><loc>https://plugeks.rs/proizvod.html?id=podrivaci-direktni-proizvodi-opruga-30x30</loc></url>
+  <url><loc>https://plugeks.rs/proizvod.html?id=podrivaci-direktni-proizvodi-opruga-40x40</loc></url>
+  <url><loc>https://plugeks.rs/proizvod.html?id=podrivaci-direktni-proizvodi-motika-za-podrivac</loc></url>
+
+  <!-- PLUGOVI -->
+  <url><loc>https://plugeks.rs/proizvod.html?id=plugovi-raonici-imt-raonik-imt-755-6-10-12-samoostreci</loc></url>
+  <url><loc>https://plugeks.rs/proizvod.html?id=plugovi-raonici-imt-raonik-imt-754-10-12-samoostreci-ravan</loc></url>
+  <url><loc>https://plugeks.rs/proizvod.html?id=plugovi-raonici-olt-raonik-olt-posavac-obican-ravan</loc></url>
+  <url><loc>https://plugeks.rs/proizvod.html?id=plugovi-raonici-lemken-raonik-lemken-14-desni-sb36</loc></url>
+  <url><loc>https://plugeks.rs/proizvod.html?id=plugovi-raonici-lemken-raonik-lemken-14-levi-sb36</loc></url>
+
+  <!-- SETVOSPREMACI -->
+  <url><loc>https://plugeks.rs/proizvod.html?id=setvospremaci-opruge</loc></url>
+  <url><loc>https://plugeks.rs/proizvod.html?id=setvospremaci-motike</loc></url>
+  <url><loc>https://plugeks.rs/proizvod.html?id=setvospremaci-rotori</loc></url>
+
+  <!-- ROTO DRLJACE -->
+  <url><loc>https://plugeks.rs/proizvod.html?id=roto-maschio-noz</loc></url>
+  <url><loc>https://plugeks.rs/proizvod.html?id=roto-kuhn-noz</loc></url>
+  <url><loc>https://plugeks.rs/proizvod.html?id=roto-lemken-noz</loc></url>
+  <url><loc>https://plugeks.rs/proizvod.html?id=roto-kverneland-noz</loc></url>
+
+</urlset>
