@@ -705,10 +705,9 @@ if(topSlider && window.innerWidth < 768){
 
     index = (index + 1) % cards.length;
 
-    cards[index].scrollIntoView({
-      behavior: 'smooth',
-      inline: 'center',
-      block: 'nearest'
+    topSlider.scrollTo({
+      left: cards[index].offsetLeft - topSlider.offsetLeft,
+      behavior: 'smooth'
     });
   }, 3000);
 }
