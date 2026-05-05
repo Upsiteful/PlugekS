@@ -882,3 +882,34 @@
   text-align: center;
   opacity: 0.9;
 }
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:768px){
+
+  .mobile-nav-inner{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+  }
+
+  .mobile-top-logo{
+    display:flex;
+    align-items:center;
+  }
+
+  .mobile-top-logo img{
+    height:38px;
+    width:auto;
+    object-fit:contain;
+  }
+
+}
