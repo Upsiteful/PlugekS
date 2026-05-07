@@ -14,8 +14,8 @@
   <style>
 
     .hero-large{
-      min-height:520px;
-      padding:70px 18px 80px;
+      min-height:calc(100vh - 120px);
+      padding:40px 18px 70px;
       display:flex;
       align-items:center;
       justify-content:center;
@@ -30,13 +30,15 @@
     }
 
     .hero-logo{
-      max-width:260px;
+      width:min(280px,70vw);
+      height:auto;
+      display:block;
     }
 
     .home-search{
-      width:min(760px,92vw);
+      width:min(760px,100%);
       position:relative;
-      z-index:5;
+      z-index:20;
     }
 
     .home-search-form{
@@ -51,8 +53,9 @@
     }
 
     .home-search-icon{
-      font-size:24px;
+      font-size:22px;
       color:#6b7280;
+      flex-shrink:0;
     }
 
     .home-search-form input{
@@ -62,6 +65,7 @@
       background:transparent;
       font-size:16px;
       color:#111;
+      min-width:0;
     }
 
     .home-search-form button{
@@ -72,6 +76,8 @@
       color:#fff;
       font-weight:700;
       cursor:pointer;
+      white-space:nowrap;
+      flex-shrink:0;
     }
 
     .home-search-results{
@@ -110,6 +116,49 @@
       margin-top:4px;
     }
 
+    @media (max-width:768px){
+
+      .nav-desktop{
+        display:none;
+      }
+
+      .hero-large{
+        min-height:auto;
+        padding:40px 16px 60px;
+      }
+
+      .hero-card-search{
+        gap:24px;
+      }
+
+      .hero-logo{
+        width:min(220px,72vw);
+      }
+
+      .home-search-form{
+        padding:8px 8px 8px 14px;
+        gap:8px;
+      }
+
+      .home-search-form input{
+        font-size:15px;
+      }
+
+      .home-search-form button{
+        padding:11px 16px;
+        font-size:14px;
+      }
+
+      .home-search-results{
+        border-radius:18px;
+      }
+
+      .category-buttons{
+        padding:0 16px 40px;
+      }
+
+    }
+
   </style>
 </head>
 
@@ -126,19 +175,82 @@
   </div>
 </nav>
 
+<div class="mobile-nav">
+  <div class="mobile-nav-inner">
+
+    <a href="index.html" class="mobile-top-logo">
+      <img src="images/logo.png" alt="Plugeks">
+    </a>
+
+    <div class="mobile-brand">
+      ⌂ <span>Meni</span>
+    </div>
+
+    <button class="hamburger" id="menuToggle" aria-label="Meni">
+      <span></span>
+    </button>
+
+  </div>
+</div>
+
+<div class="mobile-drawer" id="mobileDrawer">
+
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+
+  <div class="drawer-panel">
+
+    <div class="drawer-header">
+
+      <div class="drawer-logo">
+        <img
+          src="images/logo.png"
+          alt="Logo"
+          onerror="this.style.display='none';"
+        >
+      </div>
+
+      <button
+        class="drawer-close"
+        id="drawerClose"
+        aria-label="Zatvori"
+      >
+        ×
+      </button>
+
+    </div>
+
+    <div class="drawer-title">
+      Meni
+    </div>
+
+    <div class="drawer-list">
+
+      <a href="index.html">Početna</a>
+      <a href="masine.html">Mašine</a>
+      <a href="delovi-za-masine.html">Delovi za mašine</a>
+      <a href="kontakt.html">Kontakt</a>
+
+    </div>
+
+  </div>
+
+</div>
+
 <section class="hero hero-large">
 
   <div class="hero-card hero-card-search">
 
     <div class="hero-logo-slot">
+
       <img
         class="hero-logo"
         src="images/logo.png"
         alt="Plugeks logo"
       >
+
     </div>
 
-    <div class="home-search" id="homeSearchBox">
+    <div class="home-search">
 
       <form
         class="home-search-form"
@@ -151,7 +263,7 @@
         <input
           id="homeSearchInput"
           type="search"
-          placeholder="Pretražite proizvode, delove, kategorije..."
+          placeholder="Pretražite proizvode..."
         >
 
         <button type="submit">
@@ -172,6 +284,7 @@
 </section>
 
 <section class="category-strip">
+
   <div class="category-buttons">
 
     <a class="big-link" href="masine.html">
@@ -183,6 +296,7 @@
     </a>
 
   </div>
+
 </section>
 
 <script src="data.js"></script>
@@ -289,6 +403,33 @@ document.addEventListener('click', function(e){
   }
 
 });
+
+/* MOBILE MENU */
+
+const menuToggle = document.getElementById('menuToggle');
+const mobileDrawer = document.getElementById('mobileDrawer');
+const drawerOverlay = document.getElementById('drawerOverlay');
+const drawerClose = document.getElementById('drawerClose');
+
+function closeDrawer(){
+  mobileDrawer.classList.remove('open');
+}
+
+function openDrawer(){
+  mobileDrawer.classList.add('open');
+}
+
+if(menuToggle){
+  menuToggle.addEventListener('click', openDrawer);
+}
+
+if(drawerOverlay){
+  drawerOverlay.addEventListener('click', closeDrawer);
+}
+
+if(drawerClose){
+  drawerClose.addEventListener('click', closeDrawer);
+}
 
 </script>
 
