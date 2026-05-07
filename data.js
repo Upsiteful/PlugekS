@@ -456,11 +456,13 @@ window.SITE_DATA = {"menuTree": [{"title": "Početna", "href": "index.html"}, {"
   "kind": "products",
   "children": [],
   "products": [
-    "masine-bager-wg1200",
     "masine-bager-wg600",
-    "masine-bager-wg1500",
+    "masine-bager-wg800",
     "masine-bager-wg1000",
-    "masine-bager-wg800"
+    "masine-bager-wg1200",
+    "masine-bager-wg1500",
+    
+    
   ],
   "breadcrumb": [],
   "desc": "Pregled malčera za bagere."
