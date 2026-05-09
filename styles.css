@@ -1042,6 +1042,22 @@
 
 
 
-.hero-logo{
-  width:min(220px,72vw);
+
+
+
+
+
+
+
+@media (max-width:768px){
+
+  .hero-large{
+    min-height:auto;
+    padding:4px 10px 10px;
+  }
+
+  .hero-logo{
+    width:min(120px,42vw);
+  }
+
 }
