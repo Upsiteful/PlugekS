@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="sr">
 <head>
-  <link rel="icon" href="images/logo2.png">
+  <link rel="icon" href="images/logo.png">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -161,24 +161,24 @@
 
     }
 
-
-
- @media (max-width:768px){
-
-  .hero-large{
-    min-height:auto;
-    padding:4px 10px 10px;
-  }
-
-  .hero-logo{
-    width:min(120px,42vw);
-  }
-
-}
   </style>
 </head>
 
 <body>
+
+
+
+
+
+  <div class="tractor-intro" id="tractorIntro">
+  <div class="intro-cover intro-cover-top"></div>
+  <div class="intro-cover intro-cover-middle"></div>
+  <div class="intro-cover intro-cover-bottom"></div>
+
+  <img src="images/traktor.png" class="intro-tractor tractor-top" alt="">
+  <img src="images/traktor.png" class="intro-tractor tractor-middle" alt="">
+  <img src="images/traktor.png" class="intro-tractor tractor-bottom" alt="">
+</div>
 
 <nav class="nav-desktop">
   <div class="nav-wrap">
@@ -482,5 +482,25 @@ if(drawerClose){
 <script src="data2.js"></script>
 
 <script src="script.js"></script>
+
+
+
+
+<script>
+  const tractorIntro = document.getElementById('tractorIntro');
+
+  if(tractorIntro){
+    requestAnimationFrame(() => {
+      tractorIntro.classList.add('play');
+    });
+
+    setTimeout(() => {
+      tractorIntro.classList.add('hide');
+    }, 3200);
+  }
+</script>
+
+
+
 </body>
 </html>
