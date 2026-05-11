@@ -1141,7 +1141,6 @@
 .tractor-intro.play .intro-cover-middle{
   animation:wipeWidth 1.7s linear forwards;
 }
-
 @keyframes wipeWidth{
   from{ width:100%; }
   to{ width:0%; }
@@ -1300,4 +1299,51 @@
       height:0%;
     }
   }
+}
+
+
+
+
+.product-nav{
+  display:flex;
+  gap:14px;
+  justify-content:center;
+  margin-top:34px;
+  flex-wrap:wrap;
+}
+
+.product-nav-btn{
+  border:0;
+  background:#1d8f3a;
+  color:#fff;
+  padding:16px 24px;
+  font-size:18px;
+  font-weight:700;
+  cursor:pointer;
+  transition:.2s ease;
+  border-radius:6px;
+}
+
+.product-nav-btn:hover{
+  transform:translateY(-2px);
+  box-shadow:0 8px 18px rgba(0,0,0,.12);
+}
+
+.product-nav-btn:disabled{
+  opacity:.45;
+  cursor:not-allowed;
+  transform:none;
+  box-shadow:none;
+}
+
+@media(max-width:768px){
+
+  .product-nav{
+    flex-direction:column;
+  }
+
+  .product-nav-btn{
+    width:100%;
+  }
+
 }
