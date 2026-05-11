@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="sr">
 <head>
+
+  <link rel="preload" as="image" href="images/traktor.png">
+<link rel="preload" as="image" href="images/zemlja.png">
   <link rel="icon" href="images/logo.png">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -489,14 +492,30 @@ if(drawerClose){
 <script>
   const tractorIntro = document.getElementById('tractorIntro');
 
-  if(tractorIntro){
-    requestAnimationFrame(() => {
-      tractorIntro.classList.add('play');
-    });
+  function preloadImages(srcs){
+    return Promise.all(
+      srcs.map(src => new Promise(resolve => {
+        const img = new Image();
+        img.onload = resolve;
+        img.onerror = resolve;
+        img.src = src;
+      }))
+    );
+  }
 
-    setTimeout(() => {
-      tractorIntro.classList.add('hide');
-    }, 3200);
+  if(tractorIntro){
+    preloadImages([
+      'images/traktor.png',
+      'images/zemlja.png'
+    ]).then(() => {
+      requestAnimationFrame(() => {
+        tractorIntro.classList.add('play');
+      });
+
+      setTimeout(() => {
+        tractorIntro.classList.add('hide');
+      }, 1900);
+    });
   }
 </script>
 
