@@ -1347,3 +1347,36 @@
   }
 
 }
+
+
+
+
+.product-share{
+  margin-top:18px;
+  text-align:center;
+}
+
+.share-product-btn{
+  border:1px solid #dcdcdc;
+  background:#fff;
+  color:#333;
+  padding:14px 22px;
+  font-size:17px;
+  font-weight:700;
+  cursor:pointer;
+  border-radius:6px;
+  transition:.2s ease;
+}
+
+.share-product-btn:hover{
+  transform:translateY(-2px);
+  box-shadow:0 8px 18px rgba(0,0,0,.08);
+}
+
+@media(max-width:768px){
+
+  .share-product-btn{
+    width:100%;
+  }
+
+}
