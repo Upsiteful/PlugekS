@@ -361,7 +361,12 @@ img.onerror = function(){
     if(!node) return;
     document.title = node.title + ' | Plugeks';
 qs('#breadcrumb').innerHTML = breadcrumbHtmlForNode(nodeId);
-    qs('#pageTitle').textContent = node.title;
+   qs('#pageTitle').textContent =
+  node.title + ' (' +
+  (node.kind === 'products'
+    ? node.products.length
+    : groupProductCount(nodeId)
+  ) + ')';
     qs('#backLink').href = node.parent ? nodeHref(node.parent) : 'index.html';
     qs('#nodeDesc').textContent =  '';
     // qs('#statCount').textContent = (node.kind === 'products' ? node.products.length : groupProductCount(nodeId)) + ' proizvoda';
@@ -589,6 +594,7 @@ productSchema.textContent = JSON.stringify({
 });
 
 document.head.appendChild(productSchema);
+setupProductNavigation(pid);
       }
   function inferBackLink(product){
     if(product.section === 'Mašine'){
@@ -634,6 +640,58 @@ document.head.appendChild(productSchema);
     return found || catId;
   }
   function escapeHtml(s){ return String(s).replace(/[&<>"]/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[m])); }
+
+
+
+
+
+
+function setupProductNavigation(currentProductId){
+  const prevBtn = document.getElementById("prevProductBtn");
+  const nextBtn = document.getElementById("nextProductBtn");
+
+  if(!prevBtn || !nextBtn) return;
+
+  let productList = [];
+
+  Object.values(NODES).forEach(node => {
+    if(node.kind === "products" && node.products && node.products.includes(currentProductId)){
+      productList = node.products;
+    }
+  });
+
+  const currentIndex = productList.indexOf(currentProductId);
+
+  if(currentIndex === -1) return;
+
+  if(currentIndex > 0){
+    prevBtn.onclick = function(){
+      window.location.href = productHref(productList[currentIndex - 1]);
+    };
+  } else {
+    prevBtn.disabled = true;
+  }
+
+  if(currentIndex < productList.length - 1){
+    nextBtn.onclick = function(){
+      window.location.href = productHref(productList[currentIndex + 1]);
+    };
+  } else {
+    nextBtn.disabled = true;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
   function setupDrawer(){
     const btn=document.getElementById('menuToggle');
@@ -723,3 +781,95 @@ if(topSlider && window.innerWidth < 768){
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function setupProductNavigation(currentProductId){
+  const prevBtn = document.getElementById("prevProductBtn");
+  const nextBtn = document.getElementById("nextProductBtn");
+
+  if(!prevBtn || !nextBtn) return;
+
+  let productList = [];
+
+  Object.values(NODES).forEach(node => {
+    if(node.kind === "products" && node.products && node.products.includes(currentProductId)){
+      productList = node.products;
+    }
+  });
+
+  const currentIndex = productList.indexOf(currentProductId);
+
+  if(currentIndex === -1) return;
+
+  if(currentIndex > 0){
+    prevBtn.onclick = function(){
+      window.location.href = productHref(productList[currentIndex - 1]);
+    };
+  } else {
+    prevBtn.disabled = true;
+  }
+
+  if(currentIndex < productList.length - 1){
+    nextBtn.onclick = function(){
+      window.location.href = productHref(productList[currentIndex + 1]);
+    };
+  } else {
+    nextBtn.disabled = true;
+  }
+}
