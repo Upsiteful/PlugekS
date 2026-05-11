@@ -528,19 +528,31 @@ if(drawerClose){
 
 <script>
 
+document.documentElement.classList.add('intro-loading');
+
 window.addEventListener('load', () => {
 
   const tractorIntro = document.getElementById('tractorIntro');
 
+  // prvo prikazi SAMO intro
   document.documentElement.classList.remove('intro-loading');
   document.documentElement.classList.add('intro-ready');
 
+  // sacekaj 1 frame da browser nacrta intro
   requestAnimationFrame(() => {
-    tractorIntro.classList.add('play');
+
+    requestAnimationFrame(() => {
+
+      tractorIntro.classList.add('play');
+
+    });
+
   });
 
   setTimeout(() => {
+
     tractorIntro.classList.add('hide');
+
   }, 2200);
 
 });
