@@ -527,24 +527,24 @@ if(drawerClose){
 
 
 <script>
+
+window.addEventListener('load', () => {
+
   const tractorIntro = document.getElementById('tractorIntro');
+
+  document.documentElement.classList.remove('intro-loading');
+  document.documentElement.classList.add('intro-ready');
 
   requestAnimationFrame(() => {
     tractorIntro.classList.add('play');
   });
 
-  window.addEventListener('load', () => {
+  setTimeout(() => {
+    tractorIntro.classList.add('hide');
+  }, 2200);
 
-    setTimeout(() => {
+});
 
-      document.body.classList.remove('intro-loading');
-      document.body.classList.add('intro-ready');
-
-      tractorIntro.classList.add('hide');
-
-    }, 3200);
-
-  });
 </script>
 
 
