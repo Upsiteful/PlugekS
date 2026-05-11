@@ -1125,21 +1125,21 @@
 /* animacije */
 .tractor-intro.play .tractor-top,
 .tractor-intro.play .tractor-bottom{
-  animation:tractorGoRight 3.5s linear forwards;
+  animation:tractorGoRight 2s linear forwards;
 }
 
 .tractor-intro.play .tractor-middle{
-  animation:tractorGoLeft 3.5s linear forwards;
+  animation:tractorGoLeft 2s linear forwards;
 }
 
 
 .tractor-intro.play .intro-cover-top,
 .tractor-intro.play .intro-cover-bottom{
-  animation:wipeWidth 3s linear forwards;
+  animation:wipeWidth 1.7s linear forwards;
 }
 
 .tractor-intro.play .intro-cover-middle{
-  animation:wipeWidth 3s linear forwards;
+  animation:wipeWidth 1.7s linear forwards;
 }
 
 @keyframes wipeWidth{
