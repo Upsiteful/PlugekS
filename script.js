@@ -595,6 +595,7 @@ productSchema.textContent = JSON.stringify({
 
 document.head.appendChild(productSchema);
 setupProductNavigation(pid);
+setupProductShare(product);
       }
   function inferBackLink(product){
     if(product.section === 'Mašine'){
@@ -688,6 +689,58 @@ function setupProductNavigation(currentProductId){
 
 
 
+
+
+
+
+
+function setupProductShare(product){
+
+  const btn = document.getElementById("shareProductBtn");
+
+  if(!btn) return;
+
+  btn.addEventListener("click", async () => {
+
+    const shareData = {
+      title: product.name + " | Plugeks",
+      text: product.name,
+      url: window.location.href
+    };
+
+    // TELEFON
+    if(navigator.share){
+
+      try{
+        await navigator.share(shareData);
+      } catch(err){}
+
+    }
+
+    // DESKTOP FALLBACK
+    else{
+
+      try{
+
+        await navigator.clipboard.writeText(window.location.href);
+
+        btn.textContent = "Link kopiran";
+
+        setTimeout(() => {
+          btn.textContent = "Podeli proizvod";
+        }, 2000);
+
+      } catch(err){
+
+        alert(window.location.href);
+
+      }
+
+    }
+
+  });
+
+}
 
 
 
