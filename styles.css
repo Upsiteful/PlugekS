@@ -1272,7 +1272,7 @@
 
   /* zemlja se briše vertikalno odozgo nadole */
   .tractor-intro.play .intro-cover-top{
-    animation:wipeHeightMobile 1.9s linear forwards;
+    animation:wipeHeightMobile 1.8s linear forwards;
   }
 
   @keyframes tractorGoDownMobile{
@@ -1488,4 +1488,27 @@
   padding:0 !important;
   box-sizing:border-box;
 }
+}
+
+
+
+
+
+body.intro-loading main,
+body.intro-loading header,
+body.intro-loading footer,
+body.intro-loading section,
+body.intro-loading .hero,
+body.intro-loading .page-shell{
+  opacity:0;
+}
+
+body.intro-ready main,
+body.intro-ready header,
+body.intro-ready footer,
+body.intro-ready section,
+body.intro-ready .hero,
+body.intro-ready .page-shell{
+  opacity:1;
+  transition:opacity .35s ease;
 }
