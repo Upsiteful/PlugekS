@@ -1272,7 +1272,7 @@
 
   /* zemlja se briše vertikalno odozgo nadole */
   .tractor-intro.play .intro-cover-top{
-    animation:wipeHeightMobile 1.8s linear forwards;
+    animation:wipeHeightMobile 1.9s linear forwards;
   }
 
   @keyframes tractorGoDownMobile{
