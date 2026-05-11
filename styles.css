@@ -1504,3 +1504,28 @@ html.intro-loading .tractor-intro{
 html.intro-ready body{
   visibility:visible;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.tractor-intro{
+  opacity:0;
+}
+
+html.intro-ready .tractor-intro{
+  opacity:1;
+}
