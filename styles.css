@@ -1492,23 +1492,15 @@
 
 
 
-
-
-body.intro-loading main,
-body.intro-loading header,
-body.intro-loading footer,
-body.intro-loading section,
-body.intro-loading .hero,
-body.intro-loading .page-shell{
-  opacity:0;
+html.intro-loading body{
+  visibility:hidden;
+  overflow:hidden;
 }
 
-body.intro-ready main,
-body.intro-ready header,
-body.intro-ready footer,
-body.intro-ready section,
-body.intro-ready .hero,
-body.intro-ready .page-shell{
-  opacity:1;
-  transition:opacity .35s ease;
+html.intro-loading .tractor-intro{
+  visibility:visible;
+}
+
+html.intro-ready body{
+  visibility:visible;
 }
