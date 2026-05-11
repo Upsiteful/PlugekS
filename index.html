@@ -1,525 +1,1491 @@
-<!DOCTYPE html>
-<html lang="sr">
-<head>
-
-  <link rel="preload" as="image" href="images/traktor.png">
-<link rel="preload" as="image" href="images/zemlja.png">
-  <link rel="icon" href="images/logo.png">
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Delovi za poljoprivredne mašine | Prodaja Srbija | Plugeks</title>
-
-  <meta name="description" content="Prodaja delova za poljoprivredne mašine i mašina u Srbiji: plugovi, drljače, freze, podrivači i setvospremači.">
-
-  <link rel="stylesheet" href="styles.css">
-
-  <style>
-
-    .hero-large{
-      min-height:calc(100vh - 120px);
-      padding:40px 18px 70px;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-    }
-
-    .home-search{
-      width:min(980px,100%);
-      display:flex;
-      flex-direction:column;
-      align-items:center;
-      gap:28px;
-    }
-
-    .hero-logo{
-      width:min(280px,70vw);
-      height:auto;
-      display:block;
-    }
-
-    .home-search{
-      width:min(760px,100%);
-      position:relative;
-      z-index:20;
-      padding: 20px 0;
-      width: 100%;
-    }
-
-    .home-search-form{
-      display:flex;
-      align-items:center;
-      gap:10px;
-      background:#fff;
-      border:1px solid rgba(0,0,0,.08);
-      border-radius:999px;
-      padding:10px 12px 10px 18px;
-      box-shadow:0 18px 45px rgba(0,0,0,.18);
-    }
-
-    .home-search-icon{
-      font-size:22px;
-      color:#6b7280;
-      flex-shrink:0;
-    }
-
-    .home-search-form input{
-      flex:1;
-      border:0;
-      outline:0;
-      background:transparent;
-      font-size:16px;
-      color:#111;
-      min-width:0;
-    }
-
-    .home-search-form button{
-      border:0;
-      border-radius:999px;
-      padding:12px 22px;
-      background:#1f3d2b;
-      color:#fff;
-      font-weight:700;
-      cursor:pointer;
-      white-space:nowrap;
-      flex-shrink:0;
-    }
-
-    .home-search-results{
-      display:none;
-      position:absolute;
-      left:0;
-      right:0;
-      top:calc(100% + 10px);
-      background:#fff;
-      border-radius:22px;
-      box-shadow:0 22px 55px rgba(0,0,0,.22);
-      overflow:hidden;
-      max-height:390px;
-      overflow-y:auto;
-    }
-
-    .home-search-results.open{
-      display:block;
-    }
-
-    .search-item{
-      display:block;
-      padding:14px 18px;
-      border-bottom:1px solid #eee;
-      color:#111;
-      text-decoration:none;
-    }
-
-    .search-item:hover{
-      background:#f4f7f2;
-    }
-
-    .search-meta{
-      font-size:13px;
-      color:#777;
-      margin-top:4px;
-    }
-
-    @media (max-width:768px){
-
-      .nav-desktop{
-        display:none;
-      }
-
-      .hero-large{
-        min-height:auto;
-        padding:40px 16px 60px;
-      }
-
-      .hero-card-search{
-        gap:24px;
-      }
-
-      .hero-logo{
-        width:min(220px,72vw);
-      }
-
-      .home-search-form{
-        padding:8px 8px 8px 14px;
-        gap:8px;
-      }
-
-      .home-search-form input{
-        font-size:15px;
-      }
-
-      .home-search-form button{
-        padding:11px 16px;
-        font-size:14px;
-      }
-
-      .home-search-results{
-        border-radius:18px;
-      }
-
-      .category-buttons{
-        padding:0 16px 40px;
-      }
-
-    }
-
-  </style>
-</head>
-
-<body>
-
-
-
-
-
-  <div class="tractor-intro" id="tractorIntro">
-  <div class="intro-cover intro-cover-top"></div>
-  <div class="intro-cover intro-cover-middle"></div>
-  <div class="intro-cover intro-cover-bottom"></div>
-
-  <img src="images/traktor.png" class="intro-tractor tractor-top" alt="">
-  <img src="images/traktor.png" class="intro-tractor tractor-middle" alt="">
-  <img src="images/traktor.png" class="intro-tractor tractor-bottom" alt="">
-</div>
-
-<nav class="nav-desktop">
-  <div class="nav-wrap">
-    <div class="nav-links">
-      <a href="index.html">Početna</a>
-      <a href="masine.html">Mašine</a>
-      <a href="delovi-za-masine.html">Delovi za mašine</a>
-      <a href="kontakt.html">Kontakt</a>
-    </div>
-  </div>
-</nav>
-
-<div class="mobile-nav">
-  <div class="mobile-nav-inner">
-
-    <a href="index.html" class="mobile-top-logo">
-      <img src="images/logo2.png" alt="Plugeks">
-    </a>
-
-    <div class="mobile-brand">
-      ⌂ <span>Meni</span>
-    </div>
-
-    <button class="hamburger" id="menuToggle" aria-label="Meni">
-      <span></span>
-    </button>
-
-  </div>
-</div>
-
-<div class="mobile-drawer" id="mobileDrawer">
-  <div class="drawer-overlay" id="drawerOverlay"></div>
-
-  <div class="drawer-panel">
-    <div class="drawer-header">
-      <div class="drawer-logo">
-        <img src="images/logo.png" alt="Logo" onerror="this.style.display='none';">
-      </div>
-
-      <button class="drawer-close" id="drawerClose" aria-label="Zatvori">×</button>
-    </div>
-
-    <div class="drawer-title" id="drawerTitle">Meni</div>
-
-    <div class="drawer-list" id="drawerList"></div>
-  </div>
-</div>
- <div class="home-search">
-
-      <form
-        class="home-search-form"
-        id="homeSearchForm"
-        autocomplete="off"
-      >
-
-        <span class="home-search-icon">⌕</span>
-
-        <input
-          id="homeSearchInput"
-          type="search"
-          placeholder="Pretražite proizvode..."
-        >
-
-        <button type="submit">
-          Pretraži
-        </button>
-
-      </form>
-
-      <div
-        class="home-search-results"
-        id="homeSearchResults"
-      ></div>
-
-    </div>
-<section class="hero hero-large">
-
-  <div class="hero-card hero-card-search">
-
-    <div class="hero-logo-slot">
-
-      <img
-        class="hero-logo"
-        src="images/logo.png"
-        alt="Plugeks logo"
-      >
-
-    </div>
-
-   
-
-  </div>
-
-</section>
-
-<section class="category-strip">
-
-  <div class="category-buttons">
-
-    <a class="big-link" href="masine.html">
-      Poljoprivredne mašine
-    </a>
-
-    <a class="big-link" href="delovi-za-masine.html">
-      Delovi za poljoprivredne mašine
-    </a>
-
-  </div>
-
-</section>
-
-<script src="data.js"></script>
-<script src="data2.js"></script>
-<script src="script.js"></script>
-
-<script>
-
-const PRODUCTS = (window.SITE_DATA && window.SITE_DATA.products)
-  ? window.SITE_DATA.products
-  : {};
-
-function productHref(id){
-  return 'proizvod.html?id=' + encodeURIComponent(id);
+*{box-sizing:border-box}html,body{margin:0;padding:0}body{font-family:Arial,Helvetica,sans-serif;background:#efefef;color:#333}a{text-decoration:none;color:inherit}img{max-width:100%;display:block}
+:root{--green:#1d8f3a;--dark:#2f2f2f;--blue:#1e5d92;--light:#f5f5f5;--border:#dcdcdc;--text:#414141}
+
+.nav-desktop{background:#1d8f3a;color:#fff;display:none}
+.nav-wrap{max-width:1280px;margin:0 auto;padding:0 20px;display:flex;align-items:center;justify-content:space-between;height:58px}
+.nav-links{display:flex;gap:22px;font-weight:700;letter-spacing:.03em;font-size:16px}
+.nav-links a{opacity:.96}
+
+.mobile-nav{background:#1d8f3a;color:#fff;position:sticky;top:0;z-index:120;box-shadow:0 2px 8px rgba(0,0,0,.08)}
+.mobile-nav-inner{display:flex;align-items:center;justify-content:space-between;padding:10px 16px;min-height:58px}
+.mobile-brand{font-size:22px;font-weight:300;display:flex;align-items:center;gap:10px}
+.hamburger{width:64px;height:46px;border-radius:2px;border:1px solid rgba(255,255,255,.18);display:flex;align-items:center;justify-content:center;background:rgba(255,255,255,.04)}
+.hamburger span,.hamburger span:before,.hamburger span:after{display:block;content:"";width:30px;height:4px;background:#f0f0f0;border-radius:4px;position:relative}
+.hamburger span:before{position:absolute;top:-10px}
+.hamburger span:after{position:absolute;top:10px}
+
+.mobile-drawer{position:fixed;inset:0;z-index:150;display:none}
+.mobile-drawer.open{display:block}
+.drawer-overlay{position:absolute;inset:0;background:rgba(0,0,0,.28)}
+.drawer-panel{position:absolute;top:0;left:0;width:min(92vw,420px);height:100%;background:#fff;box-shadow:8px 0 24px rgba(0,0,0,.18);display:flex;flex-direction:column}
+.drawer-header{display:flex;align-items:center;justify-content:space-between;padding:18px 18px;border-bottom:1px solid #e6e6e6}
+.drawer-logo{height:46px;display:flex;align-items:center}
+.drawer-logo img{max-height:40px;width:auto}
+.drawer-close{border:0;background:none;font-size:42px;line-height:1;color:#2b318f;padding:0 6px;cursor:pointer}
+.drawer-title{font-size:26px;color:#59ba85;text-align:center;padding:20px 16px 12px;border-bottom:1px solid #ececec;font-weight:300}
+.drawer-list{overflow:auto;flex:1}
+.drawer-row{display:grid;grid-template-columns:1fr 74px;align-items:center;border-bottom:1px solid #e8e8e8;min-height:76px}
+.drawer-link,.drawer-arrow,.drawer-back{display:flex;align-items:center;min-height:76px}
+.drawer-link{padding:0 18px;font-size:24px;color:#2c318d}
+.drawer-arrow,.drawer-back{justify-content:center;border-left:1px solid #e3e3e3;background:#fff;color:#2c318d;font-size:32px;cursor:pointer}
+.drawer-backbar{display:grid;grid-template-columns:74px 1fr;border-bottom:1px solid #e8e8e8}
+.drawer-backbar .drawer-title-mini{display:flex;align-items:center;justify-content:center;font-size:26px;color:#59ba85;font-weight:300}
+
+.home-topbar{background:#f5f5f5;border-bottom:1px solid #ddd}
+.home-topbar-inner{max-width:1280px;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:20px;padding:14px 20px}
+.logo-slot{width:220px;height:78px;background:#fff;border:2px dashed #c8c8c8;display:flex;align-items:center;justify-content:center;color:#8a8a8a;font-weight:700;flex-shrink:0;overflow:hidden}
+.logo-slot img{width:100%;height:100%;object-fit:contain}
+.home-contact{flex:1;max-width:880px;text-align:center;font-size:18px;line-height:1.5;color:#444}
+
+.hero{position:relative;min-height:450px;background:linear-gradient(rgba(255,255,255,.18),rgba(255,255,255,.18)),url('images/pozadina.png') center/cover no-repeat;display:flex;align-items:center;justify-content:center}
+.hero-card{background:transparent;padding:28px 34px;max-width:1120px;width:calc(100% - 40px);text-align:center;}
+
+.hero-card p{margin:0;font-size:20px;color:#4a4a4a}
+.hero-logo-slot{margin:0 auto;width:100%;max-width:900px;height:220px;display:flex;align-items:center;justify-content:center;padding:10px;border:none;background:#fff}
+.hero-logo{display:block;width:100%;height:100%;object-fit:contain}
+
+.category-strip{padding:28px 20px 18px}
+.category-buttons{max-width:1280px;margin:0 auto;display:grid;gap:24px}
+.big-link{background:var(--green);color:#fff;text-align:center;padding:28px 20px;font-size:34px;font-weight:800;letter-spacing:.03em;text-transform:uppercase;box-shadow:0 6px 18px rgba(0,0,0,.08)}
+
+.section-wrap{max-width:1280px;margin:0 auto;padding:30px 20px 50px}
+.section-title{font-size:48px;font-weight:300;letter-spacing:.02em;margin:10px 0 26px}
+.cta-banner{background:linear-gradient(90deg,#208f3a,#2c6d17);color:#fff;padding:18px 24px;margin:0 0 22px;display:flex;align-items:center;justify-content:space-between;gap:16px;box-shadow:0 6px 16px rgba(0,0,0,.08)}
+.cta-banner strong{font-size:24px;letter-spacing:.04em;text-transform:uppercase}
+.cta-banner span{font-size:18px;opacity:.95}
+
+.top-offer-slider{display:flex;gap:18px;overflow-x:auto;padding:8px 2px 20px;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;touch-action:pan-x}
+.top-offer-slider::-webkit-scrollbar{height:8px}
+.top-offer-slider::-webkit-scrollbar-thumb{background:#c0c0c0;border-radius:20px}
+.offer-card{scroll-snap-align:start;flex:0 0 min(360px,82vw);background:#fff;padding:22px;min-height:220px;box-shadow:0 8px 20px rgba(0,0,0,.06);display:flex;flex-direction:column;justify-content:space-between;border:1px solid #ececec}
+.offer-tag{display:inline-block;background:#1d8f3a;color:#fff;padding:7px 12px;font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;align-self:flex-start}
+.offer-card h3{font-size:24px;font-weight:400;line-height:1.25;margin:16px 0 10px}
+.offer-btn{display:inline-block;background:#1d8f3a;color:#fff;padding:14px 28px;font-size:22px;align-self:flex-start}
+
+.page-banner{position:relative;min-height:120px;background:linear-gradient(rgba(255,255,255,.50),rgba(255,255,255,.50)),url('https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=1800&q=80') center/cover no-repeat}
+.page-shell{max-width:1280px;margin:0 auto;padding:18px 20px 50px}
+.breadcrumb{font-size:20px;color:#6a6a6a;margin:0 0 14px}
+.page-title{font-size:54px;font-weight:300;margin:0 0 18px}
+.back-btn{display:inline-block;background:#1e5d92;color:#fff;padding:16px 30px;font-size:20px;margin:0 0 20px}
+.divider{border-top:1px solid #d7d7d7;margin:18px 0 24px}
+
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.card{background:#f9f9f9;border:1px solid #ececec;min-height:210px;padding:16px;display:flex;flex-direction:column;justify-content:space-between}
+.card-title{font-size:20px;line-height:1.2;font-weight:400;text-transform:uppercase;margin:0 0 10px}
+.thumb{height:70px;background:linear-gradient(135deg,#f0f0f0,#e4e4e4);border:1px solid #e0e0e0;margin:0 0 10px}
+.card-btn{display:inline-block;background:#1d8f3a;color:#fff;padding:12px 26px;font-size:18px;align-self:flex-start}
+
+.tall-list{display:flex;flex-direction:column;gap:12px}
+.list-item{background:#f4f4f4;border:1px solid #e2e2e2;padding:18px 20px;font-size:26px;color:#676767;line-height:1.25;box-shadow:0 4px 10px rgba(0,0,0,.03)}
+.list-item:hover{background:#f1f1f1}
+
+.filters-layout{display:grid;grid-template-columns:300px minmax(0,1fr);gap:24px}
+.filter-box,.results-box{background:#fff;border:1px solid #ececec;box-shadow:0 8px 20px rgba(0,0,0,.05)}
+.filter-box{padding:22px;position:sticky;top:72px;height:max-content}
+.filter-title{font-size:26px;font-weight:300;margin:0 0 18px}
+.filter-group{margin-bottom:24px}
+.filter-label{display:block;font-size:18px;color:#666;margin-bottom:10px}
+.range-readout{display:flex;justify-content:space-between;font-size:15px;color:#888;margin:8px 0 10px}
+.range-wrap input[type=range]{width:100%}
+.check-list{display:flex;flex-direction:column;gap:10px;max-height:280px;overflow:auto;padding-right:4px}
+.check-list label{display:flex;align-items:center;gap:10px;font-size:17px;color:#555}
+.results-box{padding:22px}
+.results-count{font-size:16px;color:#666;margin:0 0 18px}
+.results-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.product-card{background:#f7f7f7;border:1px solid #ececec;padding:18px;display:flex;flex-direction:column;gap:12px}
+.product-card h3{margin:0;font-size:22px;font-weight:400}
+.product-brand{font-size:16px;color:#7b7b7b}
+.product-price{font-size:22px;color:#1d8f3a;font-weight:700}
+.product-action{align-self:flex-start;background:#1d8f3a;color:#fff;padding:12px 22px;font-size:18px}
+
+.product-focus{display:grid;grid-template-columns:1.05fr .95fr;gap:34px;align-items:start}
+.product-gallery{background:transparent;padding:24px;border:1px solid #ececec}
+.product-main-image{display:flex;align-items:center;justify-content:center;background:#fff;border:1px solid #ddd;color:#8b8b8b;min-height:420px;font-size:24px;font-weight:300;text-align:center;padding:20px}
+.product-main-image img{max-width:100%;max-height:520px;object-fit:contain}
+
+/* GLAVNA IZMENA ZA PROIZVOD */
+.product-info-box{
+  background:#f7f7f7;
+  padding:28px 26px 30px;
+  border:1px solid #ececec;
+
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  text-align:center;
+}
+.product-info-box h2{
+  font-size:42px;
+  font-weight:300;
+  margin:0;
+  line-height:1.15;
+}
+.product-info-box p{
+  font-size:18px;
+  line-height:1.7;
+  color:#666;
+  margin:0;
+  white-space:pre-line;
+}
+.product-meta{
+  display:grid;
+  gap:14px;
+  margin-top:22px;
+  grid-column:1 / -1;
+}
+.meta-row{background:#fff;border:1px solid #e6e6e6;padding:16px 18px;font-size:18px;color:#666}
+
+.coming-soon{background:#fff;padding:38px;box-shadow:0 8px 22px rgba(0,0,0,.06);border:1px solid #ececec;text-align:center}
+.coming-soon h2{font-size:48px;font-weight:300;margin:6px 0 10px}
+.coming-soon p{font-size:22px;color:#666;max-width:700px;margin:0 auto 12px}
+
+.contact-grid{display:grid;gap:26px}
+.contact-form,.contact-info{background:#fff;padding:28px;border:1px solid #ececec;box-shadow:0 8px 20px rgba(0,0,0,.05)}
+.contact-form input,.contact-form textarea{width:100%;padding:16px;border:1px solid #d9d9d9;margin-bottom:14px;font-size:18px}
+.contact-form button{background:#1d8f3a;color:#fff;border:0;padding:16px 28px;font-size:20px}
+
+.site-footer{position:relative;margin-top:40px;background:#efefef;border-top:1px solid #d7d7d7}
+.footer-top-line{height:1px;background:#d7d7d7}
+.footer-main{position:relative;overflow:hidden;padding:34px 0 0}
+.footer-bg-right{position:absolute;top:0;right:0;bottom:0;width:30%;background:linear-gradient(rgba(239,239,239,.78),rgba(239,239,239,.78)),url('https://images.unsplash.com/photo-1471193945509-9ad0617afabf?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;z-index:0;opacity:.62}
+.footer-bg-fade{position:absolute;top:0;right:30%;bottom:0;width:24%;background:linear-gradient(to left,rgba(239,239,239,0),rgba(239,239,239,.92) 40%,rgba(239,239,239,1));z-index:1}
+.footer-bg-mobile{display:none}
+.footer-inner{position:relative;z-index:2;max-width:1320px;margin:0 auto;padding:0 34px;display:grid;grid-template-columns:290px 230px 230px 260px;column-gap:44px;justify-content:start;align-items:start}
+.footer-col{color:#4e4e4e}
+.footer-title{margin:0;text-align:center;font-size:21px;line-height:1.2;font-weight:400;color:#444;text-transform:uppercase}
+.footer-title-line{width:108px;height:1px;background:#d7d7d7;margin:12px auto 30px}
+.footer-about p{margin:0 auto;max-width:255px;text-align:center;color:#555;font-size:18px;line-height:1.55}
+.footer-links-list{margin:0;padding:0;list-style:none}
+.footer-links-list li{position:relative;padding-left:30px;margin-bottom:24px}
+.footer-links-list li::before{content:"»";position:absolute;left:0;top:-2px;font-size:30px;line-height:1;color:#555}
+.footer-links-list a{text-decoration:none;color:#4f4f4f;font-size:17px;line-height:1.45}
+.footer-contact-list{display:flex;flex-direction:column;gap:18px}
+.footer-contact-item{display:flex;align-items:flex-start;gap:14px;color:#4f4f4f;font-size:17px;line-height:1.45}
+.footer-contact-text div+div{margin-top:18px}
+.footer-icon{min-width:28px;text-align:center;color:#17843c;font-size:28px;line-height:1;margin-top:1px}
+.footer-social{position:relative;z-index:2;display:flex;justify-content:center;padding:18px 0 14px}
+.footer-social a{text-decoration:none;color:#17843c;font-size:78px;line-height:1;font-weight:400;font-family:Arial,Helvetica,sans-serif}
+.footer-bottom{position:relative;z-index:3;background:#efefef;border-top:1px solid #d8d8d8}
+.footer-bottom-inner{max-width:1320px;margin:0 auto;padding:14px 34px 18px;display:flex;align-items:center;justify-content:space-between;gap:20px;color:#555;font-size:17px;line-height:1.3}
+.footer-made{text-align:right}
+
+.phone-fab{position:fixed;right:14px;bottom:14px;min-width:170px;height:52px;border-radius:999px;background:#1d8f3a;color:#fff;display:flex;align-items:center;justify-content:center;gap:10px;padding:0 18px;font-size:18px;font-weight:700;box-shadow:0 10px 22px rgba(0,0,0,.18);z-index:130}
+.phone-fab::before{content:'📞';font-size:20px;line-height:1}
+
+.node-header{display:flex;flex-wrap:wrap;align-items:flex-start;justify-content:space-between;gap:16px;margin-bottom:10px}
+.node-desc{font-size:19px;line-height:1.6;color:#666;max-width:900px;margin:0 0 18px}
+.node-stats{display:flex;gap:12px;flex-wrap:wrap;margin:0 0 18px}
+.node-stat{background:#fff;border:1px solid #ddd;padding:10px 14px;font-size:16px;color:#666}
+
+.section-card{background:#f7f7f7;border:1px solid #ececec;padding:20px;display:flex;align-items:center;justify-content:space-between;gap:16px;box-shadow:0 6px 16px rgba(0,0,0,.04)}
+.section-card h3{margin:0;font-size:24px;font-weight:400}
+.section-card small{display:block;margin-top:6px;font-size:15px;color:#7a7a7a}
+.section-card .card-btn{margin-left:auto}
+
+.node-list{display:flex;flex-direction:column;gap:14px}
+.product-list{display:flex;flex-direction:column;gap:14px}
+.product-row{display:grid;grid-template-columns:1fr auto;gap:16px;align-items:center;background:#f7f7f7;border:1px solid #ececec;padding:18px 20px}
+.product-row h3{margin:0;font-size:21px;font-weight:400;color:#444}
+.product-row .product-meta-mini{margin-top:6px;color:#7d7d7d;font-size:15px}
+.empty-note{background:#fff;border:1px dashed #cfcfcf;padding:20px;color:#666}
+
+.logo-inline-slot{display:inline-flex;width:160px;height:54px;background:#fff;border:2px dashed #c8c8c8;align-items:center;justify-content:center;color:#8a8a8a;font-weight:700;overflow:hidden}
+.logo-inline-slot img{width:100%;height:100%;object-fit:contain}
+
+.contact-grid-simple{display:grid;grid-template-columns:1.15fr .85fr;gap:26px}
+.contact-card{background:#fff;padding:28px;border:1px solid #ececec;box-shadow:0 8px 20px rgba(0,0,0,.05)}
+.contact-lines{display:flex;flex-direction:column;gap:18px;font-size:19px;color:#555}
+.contact-line strong{display:block;color:#333;margin-bottom:6px}
+
+.product-grid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:18px;
+  margin-top:20px;
+}
+.product-card{
+  display:block;
+  background:#f5f5f5;
+  border:1px solid #e3e3e3;
+  text-decoration:none;
+  color:#333;
+  padding:14px;
+  transition:transform .2s ease,box-shadow .2s ease;
+}
+.product-card:hover{
+  transform:translateY(-2px);
+  box-shadow:0 6px 18px rgba(0,0,0,.08);
+}
+.product-card-image{
+  width:100%;
+  aspect-ratio:1 / 1;
+  background:#fff;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  overflow:hidden;
+  margin-bottom:12px;
+}
+.product-card-image img{
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  display:block;
+}
+.product-card-placeholder{
+  color:#999;
+  font-size:14px;
+}
+.product-card-title{
+  font-size:18px;
+  line-height:1.35;
+  font-weight:500;
+  margin:0;
 }
 
-const searchInput = document.getElementById('homeSearchInput');
-const searchResults = document.getElementById('homeSearchResults');
-const searchForm = document.getElementById('homeSearchForm');
+@media(min-width:980px){
+  .nav-desktop{display:block}
+  .mobile-nav{display:none!important}
+  .category-buttons{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .contact-grid{grid-template-columns:1.2fr .8fr}
+  .phone-fab{display:none}
+}
 
-function renderResults(results){
+@media(max-width:1100px){
+  .footer-inner{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:36px}
+  .footer-bg-right{width:36%}
+  .footer-bg-fade{right:36%;width:20%}
+}
 
-  searchResults.innerHTML = '';
+@media(max-width:979px){
+  .home-topbar-inner{flex-direction:column;gap:14px;padding:14px}
+  .home-contact{font-size:17px}
+  .hero{min-height:250px}
+  .hero-card{padding:22px 18px}
+  .hero-card h1{font-size:12px}
+  .hero-card p{font-size:18px}
+  .section-title{font-size:34px}
+  .page-title{font-size:42px}
+  .big-link{font-size:24px;padding:24px 16px}
+  .filters-layout{grid-template-columns:1fr}
+  .filter-box{position:static}
+  .results-grid{grid-template-columns:1fr}
+  .footer-main{padding-top:28px}
+  .footer-bg-right,.footer-bg-fade{display:none}
+  .footer-bg-mobile{display:block;position:absolute;inset:0;background:linear-gradient(rgba(239,239,239,.96),rgba(239,239,239,.96)),url('https://images.unsplash.com/photo-1471193945509-9ad0617afabf?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;opacity:.42;z-index:0}
+  .footer-inner{grid-template-columns:1fr;padding:0 24px;row-gap:26px}
+  .footer-title-line{margin-bottom:20px}
+  .footer-about p{max-width:none}
+  .footer-bottom-inner{padding:14px 24px 18px;flex-direction:column;text-align:center}
+  .footer-made{text-align:center}
+  .product-focus{grid-template-columns:1fr;gap:18px}
+  .product-main-image{min-height:260px;font-size:20px}
+  .product-info-box{
+    grid-template-columns:1fr;
+    gap:16px;
+  }
+  .product-info-box h2{font-size:34px}
+  .product-info-box p{font-size:18px}
+  .contact-grid-simple{grid-template-columns:1fr}
+  .product-row{grid-template-columns:1fr}
+  .section-card{align-items:flex-start;flex-direction:column}
+  .section-card .card-btn{margin-left:0}
+}
 
-  if(!results.length){
-    searchResults.classList.remove('open');
-    return;
+@media(max-width:640px){
+  .product-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:12px;
+  }
+  .product-card{padding:10px}
+  .product-card-title{font-size:15px}
+  .hero-logo-slot{
+    max-width:340px;
+    min-height:110px;
+    padding:8px 12px;
+  }
+  .hero-logo{
+    max-height:95px;
+  }
+}
+
+@media(max-width:560px){
+  .mobile-brand{font-size:24px}
+  .category-strip{padding-top:22px}
+  .page-shell{padding-top:18px}
+  .breadcrumb{font-size:16px}
+  .page-title{font-size:34px}
+  .grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+  .card{min-height:136px;padding:12px}
+  .thumb{display:none}
+  .card-title{font-size:14px;line-height:1.15}
+  .card-btn{padding:9px 16px;font-size:15px}
+  .offer-card{flex-basis:84vw}
+  .section-title{font-size:30px}
+  .list-item{font-size:21px;padding:16px}
+  .drawer-link{font-size:20px}
+  .drawer-row,.drawer-link,.drawer-arrow,.drawer-back{min-height:68px}
+  .drawer-title{font-size:24px}
+  .product-gallery{padding:14px}
+  .product-main-image{min-height:220px;padding:14px}
+  .hero-logo-slot{height:170px;max-width:100%;padding:6px}
+  .phone-fab{min-width:142px;height:48px;font-size:17px;padding:0 16px}
+  .home-topbar-inner{padding:12px 14px}
+}
+
+
+.product-thumbs{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:10px;
+  margin-top:14px;
+}
+
+.thumb-slot{
+  background:#fff;
+  border:1px solid #ddd;
+  height:100px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:14px;
+  color:#888;
+  cursor:pointer;
+  transition:0.2s;
+}
+
+.thumb-slot:hover{
+  border-color:#1d8f3a;
+}
+
+.product-info-box h2{
+  font-size:42px;
+  font-weight:300;
+  margin:0 0 20px;
+  text-align:center;
+}
+
+.product-info-box p{
+  font-size:18px;
+  line-height:1.7;
+  color:#666;
+  margin:0;
+  white-space:pre-line;
+  text-align:left;
+  max-width:500px;
+}
+/* GLAVNA SLIKA */
+.product-main-image{
+  width:100%;
+  background:transparent;
+  border:none;
+  padding:0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  overflow:hidden;
+}
+
+.product-main-image img{
+  width:100%;
+  height:auto;
+  display:block;
+  object-fit:contain;
+}
+
+/* MALE SLIKE */
+.product-thumbs{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:10px;
+  margin-top:14px;
+}
+
+.thumb-slot{
+  width:100%;
+  height:110px;
+  background:#f3f3f3;
+  border:1px solid #ddd;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  overflow:hidden;
+}
+
+.thumb-slot img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
+.hero-logo{
+  width:100%;
+  height:auto;
+  object-fit:contain;
+}
+.product-main-image img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center;
+}
+.product-main-image > img{
+  width:100%;
+  height:100%;
+  object-fit:contain;
+}
+.hero-logo-slot img{
+  display:block;
+  width:auto;
+  max-width:100%;
+  height:100%;
+  object-fit:contain;
+}
+
+
+
+.breadcrumb a{
+  color:inherit;
+  text-decoration:none;
+}
+
+.breadcrumb a:hover{
+  text-decoration:underline;
+}
+
+
+.hero-logo-slot{
+  margin:0 auto;
+  width:100%;
+  max-width:900px;
+  height:220px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:10px;
+  border:none;
+
+  background:transparent; /* 👈 OVO */
+}
+
+
+
+.hero-logo{
+  transform: scale(2.3);
+  transform-origin: center;
+  will-change: transform;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* GRID KOCKICE ZA MEDJUSTRANICE */
+.category-grid{
+  display:grid;
+  grid-template-columns:repeat(4, 1fr);
+  gap:24px;
+}
+
+.category-card{
+  display:block;
+  background:#f5f5f5;
+  border-radius:10px;
+  overflow:hidden;
+  box-shadow:0 4px 14px rgba(0,0,0,0.08);
+  transition:0.2s ease;
+}
+
+.category-card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 10px 24px rgba(0,0,0,0.14);
+}
+
+.category-card-image{
+  width:100%;
+  height:170px;
+  background:#fff;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:14px;
+}
+
+.category-card-image img{
+  width:100%;
+  height:100%;
+  object-fit:contain;
+}
+
+.category-card-title{
+  background:#fff;
+  padding:16px 10px;
+  text-align:center;
+  font-weight:800;
+  font-size:15px;
+  letter-spacing:0.04em;
+  text-transform:uppercase;
+  color:#111;
+}
+
+.category-card-placeholder{
+  color:#999;
+  font-size:14px;
+}
+
+@media(max-width:900px){
+  .category-grid{
+    grid-template-columns:repeat(2, 1fr);
+    gap:14px;
   }
 
-  results.slice(0,8).forEach(product => {
-
-    const a = document.createElement('a');
-
-    a.className = 'search-item';
-
-    a.href = productHref(product.id);
-
-    a.innerHTML = `
-      <strong>${product.name}</strong>
-
-      <div class="search-meta">
-        ${product.category || ''}
-      </div>
-    `;
-
-    searchResults.appendChild(a);
-
-  });
-
-  searchResults.classList.add('open');
-}
-
-searchInput.addEventListener('input', function(){
-
-  const value = this.value
-    .toLowerCase()
-    .trim();
-
-  if(value.length < 2){
-    searchResults.classList.remove('open');
-    return;
+  .category-card-image{
+    height:125px;
+    padding:10px;
   }
 
-  const results = [];
+  .category-card-title{
+    font-size:12px;
+    padding:12px 6px;
+  }
+}
 
-  Object.values(PRODUCTS).forEach(product => {
 
-    const text = `
-      ${product.name || ''}
-      ${product.category || ''}
-      ${product.group || ''}
-      ${product.section || ''}
-    `.toLowerCase();
 
-    if(text.includes(value)){
-      results.push(product);
+.product-gallery{
+  background:transparent;
+  padding:0;
+  border:1px solid #ececec;
+}
+
+
+.page-banner{
+  display:none;
+}
+
+
+
+.top-products-grid{
+  display:grid;
+  grid-template-columns:repeat(5, 1fr);
+  gap:18px;
+}
+
+.top-product-card{
+  background:#fff;
+  border:1px solid #e3e3e3;
+  box-shadow:0 6px 18px rgba(0,0,0,.08);
+  padding:14px;
+  text-align:center;
+  transition:.2s ease;
+}
+
+.top-product-card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 10px 24px rgba(0,0,0,.14);
+}
+
+.top-product-image{
+  height:150px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:white;
+  margin-bottom:12px;
+  overflow:hidden;
+}
+
+.top-product-image img{
+  width:100%;
+  height:100%;
+  object-fit:contain;
+}
+
+.top-product-card h3{
+  font-size:17px;
+  line-height:1.3;
+  min-height:44px;
+  margin:0 0 12px;
+}
+
+.top-product-card span{
+  display:inline-block;
+  background:#1d8f3a;
+  color:#fff;
+  padding:10px 18px;
+  font-weight:700;
+}
+
+@media(max-width:900px){
+  .top-products-grid{
+    grid-template-columns:repeat(2, 1fr);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:768px){
+  .top-products-grid{
+    display:flex;
+    overflow-x:auto;
+    gap:14px;
+    scroll-snap-type:x mandatory;
+    scroll-behavior:smooth;
+    -webkit-overflow-scrolling:touch;
+    padding-bottom:14px;
+  }
+
+  .top-product-card{
+    flex:0 0 82%;
+    scroll-snap-align:center;
+  }
+}
+
+
+
+
+
+
+
+
+
+@media(max-width:768px){
+  .product-focus{
+    display:flex;
+    flex-direction:column;
+  }
+
+  .product-info-box{
+    display:contents;
+  }
+
+  #prodTitle{
+    order:1;
+    font-size:30px;
+    line-height:1.2;
+    margin:0 0 14px;
+    text-align:center;
+  }
+
+  .product-gallery{
+    order:2;
+  }
+
+  #prodText{
+    order:3;
+    background:#f7f7f7;
+    border:1px solid #ececec;
+    padding:20px;
+    max-width:none;
+  }
+
+  .product-meta{
+    order:4;
+  }
+}
+
+
+
+
+
+.product-contact{
+  margin-top:24px;
+  text-align:center;
+}
+
+/* dugme (telefon) */
+.contact-btn{
+  display:inline-block;
+  background:#1d8f3a;
+  color:#fff;
+  padding:16px 26px;
+  font-size:20px;
+  font-weight:700;
+  border-radius:6px;
+  box-shadow:0 6px 14px rgba(0,0,0,.12);
+}
+
+/* desktop info */
+.contact-desktop{
+  margin-top:14px;
+  font-size:18px;
+  color:#555;
+  line-height:1.6;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+  .contact-desktop{
+    display:none;
+  }
+
+  .contact-btn{
+    width:100%;
+    font-size:18px;
+  }
+}
+
+/* DESKTOP */
+@media(min-width:769px){
+  .contact-btn{
+    display:none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+.contact-mobile-apps{
+  display:flex;
+  gap:10px;
+  justify-content:center;
+  margin-top:12px;
+}
+
+.contact-app{
+  display:inline-block;
+  padding:12px 18px;
+  color:#fff;
+  font-weight:700;
+  border-radius:6px;
+  font-size:16px;
+}
+
+/* Viber */
+.contact-app.viber{
+  background:#7360f2;
+}
+
+/* WhatsApp */
+.contact-app.whatsapp{
+  background:#25D366;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+  .contact-desktop{
+    display:none;
+  }
+}
+
+/* DESKTOP */
+@media(min-width:769px){
+  .contact-btn,
+  .contact-mobile-apps{
+    display:none;
+  }
+}
+
+
+
+
+
+
+@media(max-width:768px){
+
+  .mobile-brand{
+    display:none !important;
+  }
+
+  .mobile-nav-inner{
+    justify-content:flex-end !important;
+  }
+
+  .hamburger{
+    margin-left:auto;
+  }
+
+}
+
+
+
+
+
+.seo-intro {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 34px 20px 10px;
+}
+
+.seo-intro h1 {
+  margin: 0 0 14px;
+  font-size: 42px;
+  line-height: 1.15;
+  color: #2f2f2f;
+  font-weight: 800;
+}
+
+.seo-intro p {
+  max-width: 920px;
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.65;
+  color: #414141;
+}
+
+@media (max-width: 700px) {
+  .seo-intro {
+    padding: 26px 16px 8px;
+  }
+
+  .seo-intro h1 {
+    font-size: 32px;
+  }
+
+  .seo-intro p {
+    font-size: 16px;
+  }
+}
+
+.hero-seo-title {
+  font-size: 18px;
+  font-weight: 400;
+  color: #444;
+  margin-top: 10px;
+  text-align: center;
+}
+
+
+.hero-seo-title {
+  font-size: 17px;
+  font-weight: 400;
+  color: #555;
+  margin-top: 8px;
+  text-align: center;
+  opacity: 0.9;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:768px){
+
+  .mobile-nav-inner{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+  }
+
+  .mobile-top-logo{
+    display:flex;
+    align-items:center;
+  }
+
+  .mobile-top-logo img{
+    height:38px;
+    width:auto;
+    object-fit:contain;
+  }
+
+}
+
+
+
+
+
+
+
+/* MOBILE TOP LOGO */
+
+.mobile-top-logo{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.mobile-top-logo img{
+  width:42px;
+  height:42px;
+  object-fit:contain;
+
+  background:#fff;
+  border-radius:50%;
+
+  padding:6px;
+
+  box-shadow:0 4px 12px rgba(0,0,0,.12);
+}
+
+
+
+
+
+/* MOBILE DRAWER */
+
+.mobile-drawer{
+  position:fixed;
+  inset:0;
+  z-index:9999;
+  pointer-events:none;
+}
+
+.mobile-drawer.open{
+  pointer-events:auto;
+}
+
+.drawer-overlay{
+  position:absolute;
+  inset:0;
+  background:rgba(0,0,0,.45);
+  opacity:0;
+  transition:.25s;
+}
+
+.mobile-drawer.open .drawer-overlay{
+  opacity:1;
+}
+
+.drawer-panel{
+  position:absolute;
+  top:0;
+  right:-320px;
+  width:300px;
+  max-width:85vw;
+  height:100%;
+  background:#fff;
+  transition:.3s;
+  display:flex;
+  flex-direction:column;
+  overflow:auto;
+  box-shadow:-10px 0 40px rgba(0,0,0,.2);
+}
+
+.mobile-drawer.open .drawer-panel{
+  right:0;
+}
+
+.drawer-header{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:18px;
+  border-bottom:1px solid #eee;
+}
+
+.drawer-logo img{
+  width:52px;
+  height:52px;
+  object-fit:contain;
+}
+
+.drawer-close{
+  border:0;
+  background:none;
+  font-size:34px;
+  cursor:pointer;
+  line-height:1;
+}
+
+.drawer-title{
+  padding:18px;
+  font-weight:700;
+  font-size:20px;
+}
+
+.drawer-list{
+  display:flex;
+  flex-direction:column;
+  padding:0 12px 24px;
+}
+
+.drawer-list a{
+  padding:16px 14px;
+  border-radius:14px;
+  text-decoration:none;
+  color:#111;
+  font-weight:600;
+}
+
+.drawer-list a:hover{
+  background:#f5f5f5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:768px){
+
+  .hero-large{
+    min-height:auto;
+    padding:4px 10px 10px;
+  }
+
+  .hero-logo{
+    width:min(120px,42vw);
+  }
+
+}
+
+
+
+.hero-large{
+  height:65vh;
+}
+
+
+.tractor-intro{
+  position:fixed;
+  inset:0;
+  z-index:9999;
+  pointer-events:none;
+  overflow:hidden;
+}
+
+.intro-cover{
+  position:absolute;
+  left:0;
+  width:100%;
+  height:34%;
+  z-index:1;
+
+  background-image:url("images/zemlja.png");
+  background-repeat:repeat-x;
+  background-size:auto 100%;
+  background-position:left center;
+}
+
+.intro-cover-top{top:0; 
+ right:0;
+  left:auto;}
+.intro-cover-middle{top:33%;
+ left:0;}
+.intro-cover-bottom{bottom:0;
+ right:0;
+  left:auto;}
+
+.intro-tractor{
+  position:absolute;
+  width:280px;
+  height:auto;
+  z-index:2;
+}
+
+.tractor-top{
+  top:0;
+  left:-20px;
+}
+
+.tractor-middle{
+  top:33%;
+  right:-20px;
+  transform:scaleX(-1);
+}
+
+.tractor-bottom{
+  bottom:0%;
+  left:-20px;
+}
+
+/* animacije */
+.tractor-intro.play .tractor-top,
+.tractor-intro.play .tractor-bottom{
+  animation:tractorGoRight 2s linear forwards;
+}
+
+.tractor-intro.play .tractor-middle{
+  animation:tractorGoLeft 2s linear forwards;
+}
+
+
+.tractor-intro.play .intro-cover-top,
+.tractor-intro.play .intro-cover-bottom{
+  animation:wipeWidth 1.7s linear forwards;
+}
+
+.tractor-intro.play .intro-cover-middle{
+  animation:wipeWidth 1.7s linear forwards;
+}
+@keyframes wipeWidth{
+  from{ width:100%; }
+  to{ width:0%; }
+}
+
+@keyframes tractorGoRight{
+  from{transform:translateX(0);}
+  to{transform:translateX(calc(100vw + 260px));}
+}
+
+@keyframes tractorGoLeft{
+  from{transform:translateX(0) scaleX(-1);}
+  to{transform:translateX(calc(-100vw - 260px)) scaleX(-1);}
+}
+
+.tractor-intro.hide{
+  display:none;
+}
+
+@media(max-width:768px){
+  .intro-tractor{
+    width:130px;
+  }
+
+  .tractor-top{
+    top:9%;
+    left:-150px;
+  }
+
+  .tractor-middle{
+    top:41%;
+    right:-150px;
+  }
+
+  .tractor-bottom{
+    bottom:8%;
+    left:-150px;
+  }
+}
+
+
+
+
+
+.hero.hero-large{
+  height:65vh !important;
+  min-height:65vh !important;
+  max-height:65vh !important;
+  padding:0 !important;
+  box-sizing:border-box;
+}
+ 
+
+
+.contact-map{
+  margin-top:26px;
+  border:1px solid #ececec;
+  overflow:hidden;
+  box-shadow:0 8px 20px rgba(0,0,0,.05);
+  background:#fff;
+  width: 40vw;
+}
+
+.contact-map iframe{
+  display:block;
+  width:100%;
+}
+
+@media(max-width:768px){
+
+  .contact-map iframe{
+    height:300px;
+  }
+
+}
+
+
+
+
+
+
+/* MOBILE TRACTOR INTRO - 1 traktor vertikalno */
+@media (max-width:768px){
+
+  .tractor-intro{
+    inset:0;
+    overflow:hidden;
+  }
+
+  /* jedan sloj zemlje preko celog ekrana */
+  .intro-cover-top{
+    top:0;
+    left:0;
+    right:auto;
+    width:100%;
+    height:100%;
+    background-image:url("images/zemlja.png");
+    background-repeat:repeat;
+    background-size:220px auto;
+    background-position:center top;
+    animation:none;
+  }
+
+  /* sakrij druga dva sloja zemlje */
+  .intro-cover-middle,
+  .intro-cover-bottom{
+    display:none;
+  }
+
+  /* koristi samo prvi traktor */
+  .tractor-middle,
+  .tractor-bottom{
+    display:none;
+  }
+
+  .tractor-top{
+    display:block;
+    width:150px;
+    left:50%;
+    top:-170px;
+    transform:translateX(-50%) rotate(90deg);
+    z-index:2;
+  }
+
+  /* brža animacija traktora */
+  .tractor-intro.play .tractor-top{
+    animation:tractorGoDownMobile 1.8s linear forwards;
+  }
+
+  /* zemlja se briše vertikalno odozgo nadole */
+  .tractor-intro.play .intro-cover-top{
+    animation:wipeHeightMobile 1.8s linear forwards;
+  }
+
+  @keyframes tractorGoDownMobile{
+    from{
+      transform:translateX(-50%) translateY(calc(100vh + 40px)) rotate(270deg);
+     
     }
-
-  });
-
-  renderResults(results);
-
-});
-
-searchForm.addEventListener('submit', function(e){
-
-  e.preventDefault();
-
-  const value = searchInput.value.trim();
-
-  if(!value) return;
-
-  searchResults.classList.remove('open');
-
-  window.location.href =
-    'pretraga.html?q=' + encodeURIComponent(value);
-
-});
-
-document.addEventListener('click', function(e){
-
-  if(!e.target.closest('.home-search')){
-    searchResults.classList.remove('open');
+    to{
+      transform:translateX(-50%) translateY(0) rotate(270deg);
+    }
+    
   }
 
-});
 
-/* MOBILE MENU */
 
-const menuToggle = document.getElementById('menuToggle');
-const mobileDrawer = document.getElementById('mobileDrawer');
-const drawerOverlay = document.getElementById('drawerOverlay');
-const drawerClose = document.getElementById('drawerClose');
 
-function closeDrawer(){
-  mobileDrawer.classList.remove('open');
+
+
+  @keyframes wipeHeightMobile{
+    from{
+      height:100%;
+    }
+    to{
+      height:0%;
+    }
+  }
 }
 
-function openDrawer(){
-  mobileDrawer.classList.add('open');
+
+
+
+.product-nav{
+  display:flex;
+  gap:14px;
+  justify-content:center;
+  margin-top:34px;
+  flex-wrap:wrap;
 }
 
-if(menuToggle){
-  menuToggle.addEventListener('click', openDrawer);
+.product-nav-btn{
+  border:0;
+  background:#1d8f3a;
+  color:#fff;
+  padding:16px 24px;
+  font-size:18px;
+  font-weight:700;
+  cursor:pointer;
+  transition:.2s ease;
+  border-radius:6px;
 }
 
-if(drawerOverlay){
-  drawerOverlay.addEventListener('click', closeDrawer);
+.product-nav-btn:hover{
+  transform:translateY(-2px);
+  box-shadow:0 8px 18px rgba(0,0,0,.12);
 }
 
-if(drawerClose){
-  drawerClose.addEventListener('click', closeDrawer);
+.product-nav-btn:disabled{
+  opacity:.45;
+  cursor:not-allowed;
+  transform:none;
+  box-shadow:none;
 }
 
-</script>
+@media(max-width:768px){
+
+  .product-nav{
+    flex-direction:column;
+  }
+
+  .product-nav-btn{
+    width:100%;
+  }
+
+}
 
 
-<section class="section-wrap">
-  <h2 class="section-title">Najprodavaniji proizvodi</h2>
 
-  <div class="top-products-grid">
 
-    <a class="top-product-card" href="proizvod.html?id=masine-bel-model-120cm">
-      <div class="top-product-image">
-        <img src="images/belmalcer.png" alt="Malčer">
-      </div>
-      <h3>Malčer BEL model 120cm</h3>
-      <span>Pogledaj</span>
-    </a>
+.product-share{
+  margin-top:18px;
+  text-align:center;
+}
 
-    <a class="top-product-card" href="proizvod.html?id=masine-bager-wg1000">
-      <div class="top-product-image">
-        <img src="images/bagermalcer.png" alt="Malčer za bager">
-      </div>
-      <h3>Malčer za bager WG1000mm</h3>
-      <span>Pogledaj</span>
-    </a>
+.share-product-btn{
+  border:1px solid #dcdcdc;
+  background:#fff;
+  color:#333;
+  padding:14px 22px;
+  font-size:17px;
+  font-weight:700;
+  cursor:pointer;
+  border-radius:6px;
+  transition:.2s ease;
+}
 
-    <a class="top-product-card" href="proizvod.html?id=drljace-direktni-proizvodi-klin-20x20-obican">
-      <div class="top-product-image">
-        <img src="images/drljace-direktni-proizvodi-klin-20x20-obican.png" alt="Klin za drljaču">
-      </div>
-      <h3>Klin 20x20 običan</h3>
-      <span>Pogledaj</span>
-    </a>
+.share-product-btn:hover{
+  transform:translateY(-2px);
+  box-shadow:0 8px 18px rgba(0,0,0,.08);
+}
 
-    <a class="top-product-card" href="proizvod.html?id=podrivaci-direktni-proizvodi-opruga-30x30">
-      <div class="top-product-image">
-        <img src="images/setvospremaci-opruge-s-opruga-32x10.webp" alt="S opruga">
-      </div>
-      <h3>S opruga</h3>
-      <span>Pogledaj</span>
-    </a>
+@media(max-width:768px){
 
-    <a class="top-product-card" href="proizvod.html?id=freze-nozevi-za-freze-noz-za-frezu-imt-619">
-      <div class="top-product-image">
-        <img src="images/freze-nozevi-za-freze-noz-za-frezu-imt-619.png" alt="Nož za frezu">
-      </div>
-      <h3>Nož za frezu IMT 619</h3>
-      <span>Pogledaj</span>
-    </a>
+  .share-product-btn{
+    width:100%;
+  }
 
-  </div>
-</section>
-<footer class="site-footer"><div class="footer-top-line"></div><div class="footer-main"><div class="footer-bg-right"></div><div class="footer-bg-fade"></div><div class="footer-bg-mobile"></div><div class="footer-inner"><div class="footer-col footer-about"><h3 class="footer-title">PLUGEKS - NAPREDNA POLJOPRIVREDA</h3><div class="footer-title-line"></div><p>Prodaja mašina i delova za poljoprivredne mašine.</p></div><div class="footer-col footer-menu"><h3 class="footer-title">MENI</h3><div class="footer-title-line"></div><ul class="footer-links-list"><li><a href="index.html">Početna</a></li><li><a href="masine.html">Mašine</a></li><li><a href="delovi-za-masine.html">Delovi za mašine</a></li><li><a href="kontakt.html">Kontakt</a></li></ul></div><div class="footer-col footer-categories"><h3 class="footer-title">KATEGORIJE</h3><div class="footer-title-line"></div><ul class="footer-links-list"><li><a href="plugovi.html">Plugovi</a></li><li><a href="podrivaci.html">Podrivači</a></li><li><a href="drljace.html">Drljače</a></li><li><a href="freze.html">Noževi za freze</a></li><li><a href="setvospremaci.html">Setvospremači</a></li></ul></div><div class="footer-col footer-contact"><h3 class="footer-title">KONTAKT</h3><div class="footer-title-line"></div><div class="footer-contact-list"><div class="footer-contact-item"><span class="footer-icon">⌖</span><div class="footer-contact-text"><div>Žabalj, Srbija</div></div></div><div class="footer-contact-item"><span class="footer-icon">☎</span><div class="footer-contact-text"><div>+381 62 194 8387</div></div></div><div class="footer-contact-item"><span class="footer-icon">✉</span><div class="footer-contact-text"><div>Pozovite nas ili pošaljite poruku preko kontakt forme</div></div></div></div></div></div><div class="footer-social"><a href="index.html" aria-label="Plugeks">⌂</a></div><div class="footer-bottom"><div class="footer-bottom-inner"><div>© PLUGEKS - NAPREDNA POLJOPRIVREDA</div><div class="footer-made">Početna · Mašine · Delovi za mašine · Kontakt</div></div></div></div></footer><a class="phone-fab" aria-label="Pozovite nas" href="tel:+381621948387">Pozovite nas</a><script src="data.js">
+}
 
+
+
+
+
+
+.footer-community{
+  position:relative;
+  z-index:2;
+  padding:34px 20px;
+  border-top:1px solid #dcdcdc;
+  border-bottom:1px solid #dcdcdc;
+  background:#f7f7f7;
+}
+
+.footer-community-inner{
+  max-width:1280px;
+  margin:0 auto;
+
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:26px;
+}
+
+.footer-community-text h3{
+  margin:0 0 10px;
+  font-size:30px;
+  line-height:1.2;
+  color:#2f2f2f;
+}
+
+.footer-community-text p{
+  margin:0;
+  font-size:18px;
+  line-height:1.6;
+  color:#555;
+  max-width:820px;
+}
+
+.footer-community-btn{
+  flex-shrink:0;
+
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+
+  background:#1d8f3a;
+  color:#fff;
+
+  padding:18px 30px;
+
+  font-size:18px;
+  font-weight:700;
+
+  border-radius:8px;
+
+  transition:.2s ease;
+
+  box-shadow:0 8px 20px rgba(0,0,0,.12);
+}
+
+.footer-community-btn:hover{
+  transform:translateY(-2px);
+  box-shadow:0 12px 28px rgba(0,0,0,.16);
+}
+
+@media(max-width:900px){
+
+  .footer-community-inner{
+    flex-direction:column;
+    align-items:flex-start;
+  }
+
+  .footer-community-text h3{
+    font-size:24px;
+  }
+
+}
+
+@media(max-width:768px){
+
+  .footer-community{
+    padding:28px 16px;
+  }
+
+  .footer-community-text h3{
+    font-size:22px;
+  }
+
+  .footer-community-text p{
+    font-size:16px;
+  }
+
+  .footer-community-btn{
+    width:100%;
+    text-align:center;
+  }
 
 
   
-</script>
-<script src="data.js"></script>
-<script src="data2.js"></script>
-
-<script src="script.js"></script>
-
-
-
-
-<script>
-  const tractorIntro = document.getElementById('tractorIntro');
-
-  function preloadImages(srcs){
-    return Promise.all(
-      srcs.map(src => new Promise(resolve => {
-        const img = new Image();
-        img.onload = resolve;
-        img.onerror = resolve;
-        img.src = src;
-      }))
-    );
-  }
-
-  if(tractorIntro){
-    preloadImages([
-      'images/traktor.png',
-      'images/zemlja.png'
-    ]).then(() => {
-      requestAnimationFrame(() => {
-        tractorIntro.classList.add('play');
-      });
-
-      setTimeout(() => {
-        tractorIntro.classList.add('hide');
-      }, 1900);
-    });
-  }
-</script>
-
-
-
-</body>
-</html>
+.hero.hero-large{
+  height:40vh !important;
+  min-height:40vh !important;
+  max-height:40vh !important;
+  padding:0 !important;
+  box-sizing:border-box;
+}
+}
