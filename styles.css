@@ -1061,3 +1061,243 @@
   }
 
 }
+
+
+
+.hero-large{
+  height:65vh;
+}
+
+
+.tractor-intro{
+  position:fixed;
+  inset:0;
+  z-index:9999;
+  pointer-events:none;
+  overflow:hidden;
+}
+
+.intro-cover{
+  position:absolute;
+  left:0;
+  width:100%;
+  height:34%;
+  z-index:1;
+
+  background-image:url("images/zemlja.png");
+  background-repeat:repeat-x;
+  background-size:auto 100%;
+  background-position:left center;
+}
+
+.intro-cover-top{top:0; 
+ right:0;
+  left:auto;}
+.intro-cover-middle{top:33%;
+ left:0;}
+.intro-cover-bottom{bottom:0;
+ right:0;
+  left:auto;}
+
+.intro-tractor{
+  position:absolute;
+  width:280px;
+  height:auto;
+  z-index:2;
+}
+
+.tractor-top{
+  top:0;
+  left:-20px;
+}
+
+.tractor-middle{
+  top:33%;
+  right:-20px;
+  transform:scaleX(-1);
+}
+
+.tractor-bottom{
+  bottom:0%;
+  left:-20px;
+}
+
+/* animacije */
+.tractor-intro.play .tractor-top,
+.tractor-intro.play .tractor-bottom{
+  animation:tractorGoRight 3.5s linear forwards;
+}
+
+.tractor-intro.play .tractor-middle{
+  animation:tractorGoLeft 3.5s linear forwards;
+}
+
+
+.tractor-intro.play .intro-cover-top,
+.tractor-intro.play .intro-cover-bottom{
+  animation:wipeWidth 3s linear forwards;
+}
+
+.tractor-intro.play .intro-cover-middle{
+  animation:wipeWidth 3s linear forwards;
+}
+
+@keyframes wipeWidth{
+  from{ width:100%; }
+  to{ width:0%; }
+}
+
+@keyframes tractorGoRight{
+  from{transform:translateX(0);}
+  to{transform:translateX(calc(100vw + 260px));}
+}
+
+@keyframes tractorGoLeft{
+  from{transform:translateX(0) scaleX(-1);}
+  to{transform:translateX(calc(-100vw - 260px)) scaleX(-1);}
+}
+
+.tractor-intro.hide{
+  display:none;
+}
+
+@media(max-width:768px){
+  .intro-tractor{
+    width:130px;
+  }
+
+  .tractor-top{
+    top:9%;
+    left:-150px;
+  }
+
+  .tractor-middle{
+    top:41%;
+    right:-150px;
+  }
+
+  .tractor-bottom{
+    bottom:8%;
+    left:-150px;
+  }
+}
+
+
+
+
+
+.hero.hero-large{
+  height:65vh !important;
+  min-height:65vh !important;
+  max-height:65vh !important;
+  padding:0 !important;
+  box-sizing:border-box;
+}
+
+
+
+.contact-map{
+  margin-top:26px;
+  border:1px solid #ececec;
+  overflow:hidden;
+  box-shadow:0 8px 20px rgba(0,0,0,.05);
+  background:#fff;
+  width: 40vw;
+}
+
+.contact-map iframe{
+  display:block;
+  width:100%;
+}
+
+@media(max-width:768px){
+
+  .contact-map iframe{
+    height:300px;
+  }
+
+}
+
+
+
+
+
+
+/* MOBILE TRACTOR INTRO - 1 traktor vertikalno */
+@media (max-width:768px){
+
+  .tractor-intro{
+    inset:0;
+    overflow:hidden;
+  }
+
+  /* jedan sloj zemlje preko celog ekrana */
+  .intro-cover-top{
+    top:0;
+    left:0;
+    right:auto;
+    width:100%;
+    height:100%;
+    background-image:url("images/zemlja.png");
+    background-repeat:repeat;
+    background-size:220px auto;
+    background-position:center top;
+    animation:none;
+  }
+
+  /* sakrij druga dva sloja zemlje */
+  .intro-cover-middle,
+  .intro-cover-bottom{
+    display:none;
+  }
+
+  /* koristi samo prvi traktor */
+  .tractor-middle,
+  .tractor-bottom{
+    display:none;
+  }
+
+  .tractor-top{
+    display:block;
+    width:150px;
+    left:50%;
+    top:-170px;
+    transform:translateX(-50%) rotate(90deg);
+    z-index:2;
+  }
+
+  /* brža animacija traktora */
+  .tractor-intro.play .tractor-top{
+    animation:tractorGoDownMobile 1.8s linear forwards;
+  }
+
+  /* zemlja se briše vertikalno odozgo nadole */
+  .tractor-intro.play .intro-cover-top{
+    animation:wipeHeightMobile 1.8s linear forwards;
+  }
+
+  @keyframes tractorGoDownMobile{
+    from{
+      transform:translateX(-50%) translateY(calc(100vh + 40px)) rotate(270deg);
+     
+    }
+    to{
+      transform:translateX(-50%) translateY(0) rotate(270deg);
+    }
+    
+  }
+
+
+
+
+
+
+  @keyframes wipeHeightMobile{
+    from{
+      height:100%;
+    }
+    to{
+      height:0%;
+    }
+  }
+}
