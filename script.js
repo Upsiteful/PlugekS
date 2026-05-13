@@ -596,6 +596,40 @@ productSchema.textContent = JSON.stringify({
 document.head.appendChild(productSchema);
 setupProductNavigation(pid);
 setupProductShare(product);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+let recent = JSON.parse(localStorage.getItem("recentProducts") || "[]");
+
+recent = recent.filter(id => id !== pid);
+recent.unshift(pid);
+recent = recent.slice(0, 6);
+
+localStorage.setItem("recentProducts", JSON.stringify(recent));
       }
   function inferBackLink(product){
     if(product.section === 'Mašine'){
@@ -803,7 +837,7 @@ function setupProductShare(product){
     if(document.body.dataset.template === 'node') renderNodePage();
     if(document.body.dataset.template === 'product') renderProductPage();
   
-  
+  renderRecentProductsHome();
   
   const topSlider = document.querySelector('.top-products-grid');
 
@@ -830,26 +864,64 @@ if(topSlider && window.innerWidth < 768){
 
 
 
+// ======================
+// Nedavno gledani proizvodi
+// ======================
 
+(function () {
 
+  const CURRENT_ID = window.currentProduct?.id;
 
+  if (!CURRENT_ID) return;
 
+  let recent = JSON.parse(localStorage.getItem("recentProducts") || "[]");
 
+  recent = recent.filter(id => id !== CURRENT_ID);
 
+  recent.unshift(CURRENT_ID);
 
+  recent = recent.slice(0, 6);
 
+  localStorage.setItem("recentProducts", JSON.stringify(recent));
 
+})();
 
+/*function renderRecentProducts() {
 
+  const recent = JSON.parse(localStorage.getItem("recentProducts") || "[]");
 
+  if (!recent.length) return;
 
+  const validProducts = recent
+    .map(id => window.SITE_DATA.products[id])
+    .filter(Boolean);
 
+  if (!validProducts.length) return;
 
+  const section = document.createElement("section");
 
+  section.className = "recent-products-section";
 
+  section.innerHTML = `
+    <div class="container">
+      <h2 class="recent-title">Nedavno ste gledali</h2>
 
+      <div class="recent-products-grid">
+        ${validProducts.map(product => `
+          <a class="recent-product-card" href="proizvod.html?id=${product.id}">
+            <img src="images/${product.id}.jpg" alt="${product.name}">
+            <span>${product.name}</span>
+          </a>
+        `).join("")}
+      </div>
+    </div>
+  `;
 
+  document.body.appendChild(section);
+}
 
+document.addEventListener("DOMContentLoaded", renderRecentProducts);
+*/
 
 
 
@@ -892,37 +964,60 @@ if(topSlider && window.innerWidth < 768){
 
 
 
-function setupProductNavigation(currentProductId){
-  const prevBtn = document.getElementById("prevProductBtn");
-  const nextBtn = document.getElementById("nextProductBtn");
 
-  if(!prevBtn || !nextBtn) return;
 
-  let productList = [];
 
-  Object.values(NODES).forEach(node => {
-    if(node.kind === "products" && node.products && node.products.includes(currentProductId)){
-      productList = node.products;
-    }
-  });
 
-  const currentIndex = productList.indexOf(currentProductId);
 
-  if(currentIndex === -1) return;
 
-  if(currentIndex > 0){
-    prevBtn.onclick = function(){
-      window.location.href = productHref(productList[currentIndex - 1]);
-    };
-  } else {
-    prevBtn.disabled = true;
-  }
 
-  if(currentIndex < productList.length - 1){
-    nextBtn.onclick = function(){
-      window.location.href = productHref(productList[currentIndex + 1]);
-    };
-  } else {
-    nextBtn.disabled = true;
-  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+function renderRecentProductsHome(){
+  const grid = document.querySelector("#recentProductsGrid");
+  const section = document.querySelector("#recentProductsSection");
+
+  if(!grid || !section) return;
+
+  const recent = JSON.parse(localStorage.getItem("recentProducts") || "[]");
+
+  const products = recent
+    .map(id => PRODUCTS[id])
+    .filter(Boolean);
+
+  if(!products.length) return;
+
+  grid.innerHTML = products.map(p => `
+    <a class="product-card" href="proizvod.html?id=${p.id}">
+      <div class="product-card-image">
+        <img 
+          src="images/${p.id}.jpg" 
+          alt="${p.name}"
+          onerror="
+            this.onerror=function(){
+              this.onerror=function(){
+                this.parentElement.innerHTML='<div class=&quot;product-card-placeholder&quot;>Slika</div>';
+              };
+              this.src='images/${p.id}.webp';
+            };
+            this.src='images/${p.id}.png';
+          "
+        >
+      </div>
+      <h3 class="product-card-title">${p.name}</h3>
+    </a>
+  `).join("");
+
+  section.style.display = "block";
 }
