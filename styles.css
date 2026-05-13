@@ -1507,25 +1507,70 @@ html.intro-ready body{
 
 
 
+/* ======================
+   Nedavno gledani proizvodi
+====================== */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.tractor-intro{
-  opacity:0;
+.recent-products-section {
+  padding: 50px 20px;
 }
 
-html.intro-ready .tractor-intro{
-  opacity:1;
+.recent-title {
+  font-size: 28px;
+  margin-bottom: 25px;
+}
+
+.recent-products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+.recent-product-card {
+  text-decoration: none;
+  color: inherit;
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: 0.2s;
+  background: #fff;
+}
+
+.recent-product-card:hover {
+  transform: translateY(-3px);
+}
+
+.recent-product-card img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  display: block;
+}
+
+.recent-product-card span {
+  display: block;
+  padding: 12px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+
+
+@media (min-width: 992px){
+
+  #recentProductsSection .product-grid{
+    grid-template-columns: repeat(6, 1fr);
+    gap: 14px;
+  }
+
+  #recentProductsSection .product-card-title{
+    font-size: 13px;
+    padding: 10px;
+    line-height: 1.3;
+  }
+
+  #recentProductsSection .product-card-image{
+    aspect-ratio: 1/1;
+  }
+
 }
