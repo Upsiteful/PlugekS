@@ -520,3 +520,316 @@ Object.assign(window.SITE_DATA.products, {
 window.SITE_DATA.nodes["plugovi-raonici-pottinger-landsberg"].products.push(
   "plugovi-landsberg-raonik-pretpluznjaka-d"
 );
+
+
+
+
+
+Object.assign(window.SITE_DATA.products, {
+
+  "plugovi-lemken-daska-b35-desna": {
+    "id": "plugovi-lemken-daska-b35-desna",
+    "name": "Daska pluga Lemken B 35 desna",
+    "section": "Plugovi",
+    "category": "Daske",
+    "group": "Lemken",
+    "description": ""
+  },
+
+  "plugovi-lemken-daska-b35-leva": {
+    "id": "plugovi-lemken-daska-b35-leva",
+    "name": "Daska pluga Lemken B 35 leva",
+    "section": "Plugovi",
+    "category": "Daske",
+    "group": "Lemken",
+    "description": ""
+  }
+
+});
+
+window.SITE_DATA.nodes["plugovi-daske-lemken"].products.push(
+  "plugovi-lemken-daska-b35-desna",
+  "plugovi-lemken-daska-b35-leva"
+);
+
+
+
+
+
+
+Object.assign(window.SITE_DATA.products, {
+
+  "plugovi-lemken-daska-pretpluznjaka-m2-desna-original": {
+    "id": "plugovi-lemken-daska-pretpluznjaka-m2-desna-original",
+    "name": "Daska pretplužnjaka Lemken M2 desna original",
+    "section": "Plugovi",
+    "category": "Daske",
+    "group": "Lemken",
+    "description": ""
+  }
+
+});
+
+window.SITE_DATA.nodes["plugovi-daske-lemken"].products.push(
+  "plugovi-lemken-daska-pretpluznjaka-m2-desna-original"
+);
+
+
+Object.assign(window.SITE_DATA.products, {
+
+  "plugovi-lemken-daska-pretpluznjaka-m2-l": {
+    "id": "plugovi-lemken-daska-pretpluznjaka-m2-l",
+    "name": "Daska pretplužnjaka Lemken M2 L",
+    "section": "Plugovi",
+    "category": "Daske",
+    "group": "Lemken",
+    "description": ""
+  }
+
+});
+
+window.SITE_DATA.nodes["plugovi-daske-lemken"].products.push(
+  "plugovi-lemken-daska-pretpluznjaka-m2-l"
+);
+
+
+
+
+
+Object.assign(window.SITE_DATA.products, {
+
+  "plugovi-lemken-daska-pretpluznjaka-m3-l-original": {
+    "id": "plugovi-lemken-daska-pretpluznjaka-m3-l-original",
+    "name": "Daska pretplužnjaka Lemken M3 L original",
+    "section": "Plugovi",
+    "category": "Daske",
+    "group": "Lemken",
+    "description": ""
+  },
+
+  "plugovi-lemken-daska-pretpluznjaka-l": {
+    "id": "plugovi-lemken-daska-pretpluznjaka-l",
+    "name": "Daska pretplužnjaka Lemken L",
+    "section": "Plugovi",
+    "category": "Daske",
+    "group": "Lemken",
+    "description": ""
+  }
+
+});
+
+window.SITE_DATA.nodes["plugovi-daske-lemken"].products.push(
+  "plugovi-lemken-daska-pretpluznjaka-m3-l-original",
+  "plugovi-lemken-daska-pretpluznjaka-l"
+);
+
+
+
+
+
+Object.assign(window.SITE_DATA.products, {
+
+  "plugovi-vogel-noot-daska-pretpluznjaka-d": {
+    "id": "plugovi-vogel-noot-daska-pretpluznjaka-d",
+    "name": "Daska pretplužnjaka V&N D",
+    "section": "Plugovi",
+    "category": "Daske",
+    "group": "Vogel & Noot",
+    "description": ""
+  }
+
+});
+
+window.SITE_DATA.nodes["plugovi-daske-vogel-noot"].products.push(
+  "plugovi-vogel-noot-daska-pretpluznjaka-d"
+);
+
+
+
+
+
+
+
+Object.assign(window.SITE_DATA.products, {
+
+  "plugovi-vogel-noot-daska-pretpluznjaka-l": {
+    "id": "plugovi-vogel-noot-daska-pretpluznjaka-l",
+    "name": "Daska pretplužnjaka V&N L",
+    "section": "Plugovi",
+    "category": "Daske",
+    "group": "Vogel & Noot",
+    "description": ""
+  }
+
+});
+
+window.SITE_DATA.nodes["plugovi-daske-vogel-noot"].products.push(
+  "plugovi-vogel-noot-daska-pretpluznjaka-l"
+);
+
+
+
+
+
+
+Object.assign(window.SITE_DATA.products, {
+
+  "plugovi-vogel-noot-plaz-kratki-d": {
+    "id": "plugovi-vogel-noot-plaz-kratki-d",
+    "name": "Plaz V&N kratki D",
+    "section": "Plugovi",
+    "category": "Plazovi",
+    "group": "Vogel & Noot",
+    "description": ""
+  },
+
+  "plugovi-vogel-noot-plaz-kratki-l": {
+    "id": "plugovi-vogel-noot-plaz-kratki-l",
+    "name": "Plaz V&N kratki L",
+    "section": "Plugovi",
+    "category": "Plazovi",
+    "group": "Vogel & Noot",
+    "description": ""
+  }
+
+});
+
+window.SITE_DATA.nodes["plugovi-plazovi-vogel-noot"].products.push(
+  "plugovi-vogel-noot-plaz-kratki-d",
+  "plugovi-vogel-noot-plaz-kratki-l"
+);
+
+
+
+
+Object.assign(window.SITE_DATA.products, {
+
+  "plugovi-regent-plaz-prednji-d": {
+    "id": "plugovi-regent-plaz-prednji-d",
+    "name": "Plaz Regent prednji D",
+    "section": "Plugovi",
+    "category": "Plazovi",
+    "group": "Regent",
+    "description": ""
+  }
+
+});
+
+window.SITE_DATA.nodes["plugovi-plazovi-regent"].products.push(
+  "plugovi-regent-plaz-prednji-d"
+);
+
+
+
+
+Object.assign(window.SITE_DATA.products, {
+
+  "plugovi-regent-plaz-prednji-desni": {
+    "id": "plugovi-regent-plaz-prednji-desni",
+    "name": "Plaz Regent prednji desni",
+    "section": "Plugovi",
+    "category": "Plazovi",
+    "group": "Regent",
+    "description": ""
+  },
+
+  "plugovi-regent-plaz-prednji-levi": {
+    "id": "plugovi-regent-plaz-prednji-levi",
+    "name": "Plaz Regent prednji levi",
+    "section": "Plugovi",
+    "category": "Plazovi",
+    "group": "Regent",
+    "description": ""
+  }
+
+});
+
+window.SITE_DATA.nodes["plugovi-plazovi-regent"].products.push(
+  "plugovi-regent-plaz-prednji-desni",
+  "plugovi-regent-plaz-prednji-levi"
+);
+
+
+
+
+
+
+
+Object.assign(window.SITE_DATA.products, {
+
+  "plugovi-regent-plaz-prednji-l": {
+    "id": "plugovi-regent-plaz-prednji-l",
+    "name": "Plaz Regent prednji L",
+    "section": "Plugovi",
+    "category": "Plazovi",
+    "group": "Regent",
+    "description": ""
+  }
+
+});
+
+window.SITE_DATA.nodes["plugovi-plazovi-regent"].products.push(
+  "plugovi-regent-plaz-prednji-l"
+);
+
+
+
+
+
+
+Object.assign(window.SITE_DATA.products, {
+
+  "plugovi-vogel-noot-spic-raonika-levi-bellota": {
+    "id": "plugovi-vogel-noot-spic-raonika-levi-bellota",
+    "name": "Špic raonika V&N levi Bellota",
+    "section": "Plugovi",
+    "category": "Špicevi",
+    "group": "Vogel & Noot",
+    "description": ""
+  }
+
+});
+
+window.SITE_DATA.nodes["plugovi-spicevi-vogel-noot"].products.push(
+  "plugovi-vogel-noot-spic-raonika-levi-bellota"
+);
+
+
+
+
+Object.assign(window.SITE_DATA.products, {
+
+  "plugovi-regent-spic-raonika-d-sws": {
+    "id": "plugovi-regent-spic-raonika-d-sws",
+    "name": "Špic raonika Regent D SWS",
+    "section": "Plugovi",
+    "category": "Špicevi",
+    "group": "Regent",
+    "description": ""
+  }
+
+});
+
+window.SITE_DATA.nodes["plugovi-spicevi-regent"].products.push(
+  "plugovi-regent-spic-raonika-d-sws"
+);
+
+
+
+
+Object.assign(window.SITE_DATA.products, {
+
+  "plugovi-rabe-raonik-ssp350-ws-l": {
+    "id": "plugovi-rabe-raonik-ssp350-ws-l",
+    "name": "Raonik Rabe SSP 350 WS L",
+    "section": "Plugovi",
+    "category": "Špicevi",
+    "group": "Rabewerk",
+    "description": ""
+  }
+
+});
+
+window.SITE_DATA.nodes["plugovi-spicevi-rabewerk"].products.push(
+  "plugovi-rabe-raonik-ssp350-ws-l"
+);
