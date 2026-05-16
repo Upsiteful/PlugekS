@@ -11,14 +11,14 @@ window.SITE_DATA = {"menuTree": [{"title": "Početna", "href": "index.html"}, {"
   "children": [
     "roto-alpego",
     "roto-amazone",
-    "roto-artera",
+    
     "roto-breviglieri",
-    "roto-carraro",
+  
     "roto-celli",
     "roto-eberhardt",
-    "roto-euroma",
+   
     "roto-feraboli",
-    "roto-forigo",
+    
     "roto-frandent",
     "roto-howard",
     "roto-kuhn",
@@ -26,14 +26,14 @@ window.SITE_DATA = {"menuTree": [{"title": "Početna", "href": "index.html"}, {"
     "roto-lemken",
     "roto-maletti",
     "roto-maschio",
-    "roto-morra",
+    
     "roto-niemeyer",
     "roto-pegoraro",
     "roto-perugini",
-    "roto-rabewerk",
     "roto-remac",
+"roto-rabewerk",
     "roto-sicma",
-    "roto-vigolo",
+    "roto-seima",
     "roto-krone",
     "roto-lely"
   ],
@@ -49,8 +49,10 @@ window.SITE_DATA = {"menuTree": [{"title": "Početna", "href": "index.html"}, {"
   "kind": "products",
   "children": [],
   "products": [
-    "roto-alpego-noz",
-    "roto-alpego-noz-d312"
+    "roto-alpego-noz-d-260-80-60-50-10-14",
+    "roto-alpego-noz-d-312-100-15-fi19-5",
+    "roto-alpego-noz-l-260-80-60-50-10-14",
+    "roto-alpego-noz-l-312-100-15-fi19-5"
   ],
   "breadcrumb": [],
   "desc": "Noževi i klinovi za roto drljače – Alpego."
@@ -63,26 +65,16 @@ window.SITE_DATA = {"menuTree": [{"title": "Početna", "href": "index.html"}, {"
   "kind": "products",
   "children": [],
   "products": [
-    "roto-amazone-noz",
-    "roto-amazone-noz-cultimix"
+    "roto-amazone-noz-d-290-150-19-15",
+    "roto-amazone-noz-l-290-150-19-15",
+    "roto-amazone-noz-cultimix-d",
+"roto-amazone-noz-cultimix-l"
   ],
   "breadcrumb": [],
   "desc": "Noževi i klinovi za roto drljače – Amazone."
 },
 
-"roto-artera": {
-  "id": "roto-artera",
-  "title": "Artera",
-  "parent": "roto-drljace",
-  "kind": "products",
-  "children": [],
-  "products": [
-    "roto-artera-noz",
-    "roto-artera-noz-brzo-menjajuci"
-  ],
-  "breadcrumb": [],
-  "desc": "Noževi i klinovi za roto drljače – Artera."
-},
+
 
 "roto-breviglieri": {
   "id": "roto-breviglieri",
@@ -91,26 +83,21 @@ window.SITE_DATA = {"menuTree": [{"title": "Početna", "href": "index.html"}, {"
   "kind": "products",
   "children": [],
   "products": [
-    "roto-breviglieri-noz",
+    "roto-breviglieri-klin-330-87-m20x1-5",
+    "roto-breviglieri-klin-d-310-77-32-10-5",
+    "roto-breviglieri-klin-l-310-77-32-10-5",
+    "roto-breviglieri-noz-d-260-50-90-12-17",
+    "roto-breviglieri-noz-d-285x55x50x13",
+    "roto-breviglieri-noz-l-285x55x50x13",
+    "roto-breviglieri-noz-d-300-100-60-15-17",
+    "roto-breviglieri-noz-l-260-50-90-12-17",
+    "roto-breviglieri-noz-l-300-100-60-15-17",
     "roto-breviglieri-klin"
   ],
   "breadcrumb": [],
   "desc": "Noževi i klinovi za roto drljače – Breviglieri."
 },
 
-"roto-carraro": {
-  "id": "roto-carraro",
-  "title": "Carraro",
-  "parent": "roto-drljace",
-  "kind": "products",
-  "children": [],
-  "products": [
-    "roto-carraro-noz",
-    "roto-carraro-klin"
-  ],
-  "breadcrumb": [],
-  "desc": "Noževi i klinovi za roto drljače – Carraro."
-},
 
 "roto-celli": {
   "id": "roto-celli",
@@ -119,8 +106,9 @@ window.SITE_DATA = {"menuTree": [{"title": "Početna", "href": "index.html"}, {"
   "kind": "products",
   "children": [],
   "products": [
-    "roto-celli-noz",
-    "roto-celli-klin"
+    "roto-celli-noz-d-300x120x72x15-fi-17mm",
+    "roto-celli-noz-l-300x120x72x15-fi-17mm",
+    "roto-celli-klin-320-83-37-16-m20"
   ],
   "breadcrumb": [],
   "desc": "Noževi i klinovi za roto drljače – Celli."
@@ -133,11 +121,13 @@ window.SITE_DATA = {"menuTree": [{"title": "Početna", "href": "index.html"}, {"
   "kind": "products",
   "children": [],
   "products": [
-    "roto-eberhardt-klin-46",
-    "roto-eberhardt-klin-51"
+    "roto-eberhardt-klin-d-46",
+    "roto-eberhardt-klin-d-51",
+    "roto-eberhardt-klin-l-46",
+    "roto-eberhardt-klin-l-51"
   ],
   "breadcrumb": [],
-  "desc": "Klinovi za roto drljače – Eberhardt."
+  "desc": "Noževi i klinovi za roto drljače – Eberhardt."
 },
 
 "roto-euroma": {
@@ -147,10 +137,11 @@ window.SITE_DATA = {"menuTree": [{"title": "Početna", "href": "index.html"}, {"
   "kind": "products",
   "children": [],
   "products": [
-    "roto-euroma-klin"
+    "roto-euroma-klin-d-320x71x32x12",
+    "roto-euroma-klin-l-320x70x32x12"
   ],
   "breadcrumb": [],
-  "desc": "Klinovi za roto drljače – Euroma."
+  "desc": "Noževi i klinovi za roto drljače – Euroma."
 },
 
 "roto-feraboli": {
@@ -160,9 +151,10 @@ window.SITE_DATA = {"menuTree": [{"title": "Početna", "href": "index.html"}, {"
   "kind": "products",
   "children": [],
   "products": [
-    "roto-feraboli-noz",
     "roto-feraboli-klin-lb25",
-    "roto-feraboli-klin-lb6"
+    "roto-feraboli-klin-lb6-l-330",
+    "roto-feraboli-noz-270-102-60-16-5",
+    "roto-feraboli-noz-305-112-95-60-20"
   ],
   "breadcrumb": [],
   "desc": "Noževi i klinovi za roto drljače – Feraboli."
@@ -175,10 +167,11 @@ window.SITE_DATA = {"menuTree": [{"title": "Početna", "href": "index.html"}, {"
   "kind": "products",
   "children": [],
   "products": [
-    "roto-forigo-noz"
+    "roto-forigo-noz-105-15-17-50",
+    "roto-forigo-noz-95-12-15-40"
   ],
   "breadcrumb": [],
-  "desc": "Noževi za roto drljače – Forigo."
+  "desc": "Noževi i klinovi za roto drljače – Forigo."
 },
 
 "roto-frandent": {
@@ -188,10 +181,11 @@ window.SITE_DATA = {"menuTree": [{"title": "Početna", "href": "index.html"}, {"
   "kind": "products",
   "children": [],
   "products": [
-    "roto-frandent-noz"
+    "roto-frandent-noz-d",
+    "roto-frandent-noz-l"
   ],
   "breadcrumb": [],
-  "desc": "Noževi za roto drljače – Frandent."
+  "desc": "Noževi i klinovi za roto drljače – Frandent."
 },
 
 "roto-howard": {
@@ -201,10 +195,17 @@ window.SITE_DATA = {"menuTree": [{"title": "Početna", "href": "index.html"}, {"
   "kind": "products",
   "children": [],
   "products": [
-    "roto-howard-noz"
+    "roto-howard-noz-d-262-100-60-12-14-5",
+    "roto-howard-noz-d-265-100-60-15-14-5",
+    "roto-howard-noz-d-265-100-60-15-17",
+    "roto-howard-noz-d-315-100-60-15-16-5",
+    "roto-howard-noz-l-265-100-60-15-14-5",
+    "roto-howard-noz-l-315-100-60-15",
+    "roto-howard-noz-desni-315-100-60-15",
+"roto-howard-noz-levi-265-100-60-15-17"
   ],
   "breadcrumb": [],
-  "desc": "Noževi za roto drljače – Howard."
+  "desc": "Noževi i klinovi za roto drljače – Howard."
 },
 
 "roto-kuhn": {
@@ -214,12 +215,19 @@ window.SITE_DATA = {"menuTree": [{"title": "Početna", "href": "index.html"}, {"
   "kind": "products",
   "children": [],
   "products": [
-    "roto-kuhn-noz",
-    "roto-kuhn-noz-ravni",
-    "roto-kuhn-kverneland-noz"
+    "roto-kuhn-noz-d-305-110-68-16-17-5",
+    "roto-kuhn-noz-d",
+    "roto-kuhn-noz-d-2",
+    "roto-kuhn-noz-d-350-110-68-14-17",
+    "roto-kuhn-noz-l",
+    "roto-kuhn-noz-l-2",
+    "roto-kuhn-noz-l-350-110-68-14-17",
+    "roto-kuhn-noz-ravni-50-40-18-320-fi17",
+    "roto-kuhn-noz-d-270-110-68-12-16-5",
+    "roto-kuhn-noz-l-270-110-68-12-16-5"
   ],
   "breadcrumb": [],
-  "desc": "Noževi za roto drljače – Kuhn."
+  "desc": "Noževi i klinovi za roto drljače – Kuhn."
 },
 
 "roto-kverneland": {
@@ -229,10 +237,11 @@ window.SITE_DATA = {"menuTree": [{"title": "Početna", "href": "index.html"}, {"
   "kind": "products",
   "children": [],
   "products": [
-    "roto-kverneland-noz"
+    "roto-kverneland-noz-d-320-100-15-fi-18",
+    "roto-kverneland-noz-l-320-100-15-fi-18"
   ],
   "breadcrumb": [],
-  "desc": "Noževi za roto drljače – Kverneland."
+  "desc": "Noževi i klinovi za roto drljače – Kverneland."
 },
 
 "roto-lemken": {
@@ -242,10 +251,15 @@ window.SITE_DATA = {"menuTree": [{"title": "Početna", "href": "index.html"}, {"
   "kind": "products",
   "children": [],
   "products": [
-    "roto-lemken-noz"
+    "roto-lemken-noz-d-300-120-110-70-18-21-5",
+    "roto-lemken-noz-d-315x60x10-fi17",
+    "roto-lemken-noz-d-320x110x72x15-fi17",
+    "roto-lemken-noz-l-300-120-110-70-18-21-5",
+    "roto-lemken-noz-l-315x60x10-fi17",
+    "roto-lemken-noz-l-320x110x72x15-fi17"
   ],
   "breadcrumb": [],
-  "desc": "Noževi za roto drljače – Lemken."
+  "desc": "Noževi i klinovi za roto drljače – Lemken."
 },
 
 "roto-maletti": {
@@ -255,8 +269,9 @@ window.SITE_DATA = {"menuTree": [{"title": "Početna", "href": "index.html"}, {"
   "kind": "products",
   "children": [],
   "products": [
-    "roto-maletti-noz",
-    "roto-maletti-klin"
+    "roto-maletti-noz-d-325-110-15-18-5-50",
+    "roto-maletti-noz-l-325-110-15-18-5-50",
+    "roto-maletti-klin-sicma-maletti-befa"
   ],
   "breadcrumb": [],
   "desc": "Noževi i klinovi za roto drljače – Maletti."
@@ -269,13 +284,29 @@ window.SITE_DATA = {"menuTree": [{"title": "Početna", "href": "index.html"}, {"
   "kind": "products",
   "children": [],
   "products": [
-    "roto-maschio-noz",
-    "roto-maschio-noz-l390",
-    "roto-maschio-noz-quickfit",
-    "roto-maschio-zastita-noza"
+    "roto-maschio-noz-d-330-60-12-44-13",
+    "roto-maschio-noz-d-60x10-13-44",
+    "roto-maschio-noz-d-90-12-17-50",
+    
+    "roto-maschio-noz-d-quickfit",
+    "roto-maschio-noz-d-100-60-12-17",
+    "roto-maschio-noz-l-330-60-12-44-13",
+    "roto-maschio-noz-l-60x10-13-44",
+    "roto-maschio-noz-l-90-12-17-50",
+   
+    "roto-maschio-noz-l-quickfit",
+    "roto-maschio-noz-l-100-60-12-17",
+    "roto-maschio-noz-l-100-60-12-17-orig",
+    "roto-maschio-noz-l-300-100-90-60-15-17",
+
+
+    "roto-maschio-noz-desni-90-12-17-50-original",
+"roto-maschio-noz-desni-100-60-12-17-original",
+"roto-maschio-noz-desni-300-100-90-60-15-17",
+"roto-maschio-noz-levi-90-12-17-50-original"
   ],
   "breadcrumb": [],
-  "desc": "Noževi za roto drljače – Maschio."
+  "desc": "Noževi i klinovi za roto drljače – Maschio."
 },
 
 "roto-morra": {
@@ -285,10 +316,11 @@ window.SITE_DATA = {"menuTree": [{"title": "Početna", "href": "index.html"}, {"
   "kind": "products",
   "children": [],
   "products": [
-    "roto-morra-klin"
+    "roto-morra-klin-323-80-20x1-5",
+    "roto-morra-klin-334-77-20x1-5"
   ],
   "breadcrumb": [],
-  "desc": "Klinovi za roto drljače – Morra."
+  "desc": "Noževi i klinovi za roto drljače – Morra."
 },
 
 "roto-niemeyer": {
@@ -298,10 +330,12 @@ window.SITE_DATA = {"menuTree": [{"title": "Početna", "href": "index.html"}, {"
   "kind": "products",
   "children": [],
   "products": [
-    "roto-niemeyer-noz"
+    "roto-niemeyer-noz-d-330-120-72-85-16-17",
+    "roto-niemeyer-noz-l-290-120-72-85-15-18",
+    "roto-niemeyer-noz-l-330-120-72-85-16-17"
   ],
   "breadcrumb": [],
-  "desc": "Noževi za roto drljače – Niemeyer."
+  "desc": "Noževi i klinovi za roto drljače – Niemeyer."
 },
 
 "roto-pegoraro": {
@@ -311,40 +345,18 @@ window.SITE_DATA = {"menuTree": [{"title": "Početna", "href": "index.html"}, {"
   "kind": "products",
   "children": [],
   "products": [
-    "roto-pegoraro-noz",
-    "roto-pegoraro-klin"
+    "roto-pegoraro-klin-390-71-32-12",
+    "roto-pegoraro-noz-285-100-60-94-16-5-14",
+    "roto-pegoraro-noz-d-100-60-16-5-305-15",
+    "roto-pegoraro-noz-d-300-12-17-60-100",
+    "roto-pegoraro-noz-d-300-12-17-60-100",
+    "roto-pegoraro-noz-l-100-60-16-5-305-15",
+  "roto-pegoraro-klin-300-65-30-12",
+"roto-pegoraro-klin-300-65-30-12-kr"
+  
   ],
   "breadcrumb": [],
   "desc": "Noževi i klinovi za roto drljače – Pegoraro."
-},
-
-"roto-perugini": {
-  "id": "roto-perugini",
-  "title": "Perugini",
-  "parent": "roto-drljace",
-  "kind": "products",
-  "children": [],
-  "products": [
-    "roto-perugini-noz",
-    "roto-perugini-klin-rh88"
-  ],
-  "breadcrumb": [],
-  "desc": "Noževi i klinovi za roto drljače – Perugini."
-},
-
-"roto-rabewerk": {
-  "id": "roto-rabewerk",
-  "title": "Rabewerk",
-  "parent": "roto-drljace",
-  "kind": "products",
-  "children": [],
-  "products": [
-    "roto-rabewerk-noz",
-    "roto-rabewerk-noz-kg26",
-    "roto-rabewerk-noz-kg30"
-  ],
-  "breadcrumb": [],
-  "desc": "Noževi za roto drljače – Rabe."
 },
 
 "roto-remac": {
@@ -354,10 +366,24 @@ window.SITE_DATA = {"menuTree": [{"title": "Početna", "href": "index.html"}, {"
   "kind": "products",
   "children": [],
   "products": [
-    "roto-remac-klin"
+    "roto-remac-klin-standard",
+    "roto-remac-klin-slam"
   ],
   "breadcrumb": [],
-  "desc": "Klinovi za roto drljače – Remac."
+  "desc": "Noževi i klinovi za roto drljače – Remac."
+},
+
+"roto-rotoital": {
+  "id": "roto-rotoital",
+  "title": "Rotoital",
+  "parent": "roto-drljace",
+  "kind": "products",
+  "children": [],
+  "products": [
+    "roto-rotoital-klin-320-85-34-k21-33-m20x1-5"
+  ],
+  "breadcrumb": [],
+  "desc": "Noževi i klinovi za roto drljače – Rotoital."
 },
 
 "roto-sicma": {
@@ -367,12 +393,60 @@ window.SITE_DATA = {"menuTree": [{"title": "Početna", "href": "index.html"}, {"
   "kind": "products",
   "children": [],
   "products": [
-    "roto-sicma-landsberg-klin-lb24"
+    "roto-sicma-klin-standard",
+    "roto-sicma-klin-lb24"
   ],
   "breadcrumb": [],
-  "desc": "Klinovi za roto drljače – Sicma / Landsberg."
+  "desc": "Noževi i klinovi za roto drljače – Sicma / Landsberg."
+},
+"roto-seima": {
+  "id": "roto-seima",
+  "title": "Seima",
+  "parent": "roto-drljace",
+  "kind": "products",
+  "children": [],
+  "products": [
+    "roto-seima-klin-l-335-m22x1-5"
+  ],
+  "breadcrumb": [],
+  "desc": "Noževi i klinovi za roto drljače – Seima."
 },
 
+
+"roto-perugini": {
+  "id": "roto-perugini",
+  "title": "Perugini",
+  "parent": "roto-drljace",
+  "kind": "products",
+  "children": [],
+  "products": [
+    "roto-perugini-noz-desni-275-100-98-54-12-14-5",
+    "roto-perugini-noz-desni-330-100-15-54-17",
+    "roto-perugini-noz-levi-275-100-98-54-12-14-5",
+    "roto-perugini-noz-levi-330-100-15-54-17",
+    "roto-perugini-noz-54-100-desni",
+    "roto-perugini-noz-54-100-levi",
+    "roto-perugini-klin-rh-88"
+  ],
+  "breadcrumb": [],
+  "desc": "Noževi i klinovi za roto drljače – Perugini."
+},
+"roto-rabewerk": {
+  "id": "roto-rabewerk",
+  "title": "Rabewerk",
+  "parent": "roto-drljace",
+  "kind": "products",
+  "children": [],
+  "products": [
+    "roto-rabewerk-noz-rabe-d",
+    "roto-rabewerk-noz-kg26-desni",
+    "roto-rabewerk-noz-kg26-levi",
+    "roto-rabewerk-noz-kg30-desni",
+    "roto-rabewerk-noz-kg30-levi"
+  ],
+  "breadcrumb": [],
+  "desc": "Noževi i klinovi za roto drljače – Rabewerk."
+},
 "roto-vigolo": {
   "id": "roto-vigolo",
   "title": "Vigolo",
@@ -380,10 +454,11 @@ window.SITE_DATA = {"menuTree": [{"title": "Početna", "href": "index.html"}, {"
   "kind": "products",
   "children": [],
   "products": [
-    "roto-vigolo-klin"
+    "roto-vigolo-klin-340-82-39-27-24",
+    "roto-vigolo-klin-345-84-m24"
   ],
   "breadcrumb": [],
-  "desc": "Klinovi za roto drljače – Vigolo."
+  "desc": "Noževi i klinovi za roto drljače – Vigolo."
 },
 
 "roto-krone": {
@@ -393,10 +468,14 @@ window.SITE_DATA = {"menuTree": [{"title": "Početna", "href": "index.html"}, {"
   "kind": "products",
   "children": [],
   "products": [
-    "roto-krone-klin"
+    "roto-krone-klin-288-67-34-8-13",
+"roto-krone-klin-345-ravni",
+"roto-krone-klin-345-ravni2",
+"roto-krone-klin-345-povinuti",
+"roto-krone-klin-350-95-34-lb-40"
   ],
   "breadcrumb": [],
-  "desc": "Klinovi za roto drljače – Krone."
+  "desc": "Noževi i klinovi za roto drljače – Krone."
 },
 
 "roto-lely": {
@@ -406,11 +485,14 @@ window.SITE_DATA = {"menuTree": [{"title": "Početna", "href": "index.html"}, {"
   "kind": "products",
   "children": [],
   "products": [
-    "roto-lely-klin",
-    "roto-lely-klin-35"
+    "roto-lely-klin-320-34-23-87-20-5",
+    "roto-lely-klin-330-24-22-103-20-5",
+    "roto-lely-klin-35-d-345-73-51-20",
+    "roto-lely-klin-35-l-345-73-51-20",
+    "roto-lely-klin-370-94-24-27-20x1-5"
   ],
   "breadcrumb": [],
-  "desc": "Klinovi za roto drljače – Lely."
+  "desc": "Noževi i klinovi za roto drljače – Lely."
 },
 
 
@@ -1375,147 +1457,87 @@ window.SITE_DATA = {"menuTree": [{"title": "Početna", "href": "index.html"}, {"
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             "products":
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              {
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              "roto-alpego-noz": {
-  "id": "roto-alpego-noz",
-  "name": "NOŽ ROTO DRLJAČE ALPEGO",
-  "section": "Delovi za mašine",
-  "category": "Noževi i klinovi za roto drljače",
-  "group": "Alpego",
-  "description": ""
-},
-
-"roto-alpego-noz-d312": {
-  "id": "roto-alpego-noz-d312",
-  "name": "NOŽ ROTO DRLJAČE ALPEGO D312",
-  "section": "Delovi za mašine",
-  "category": "Noževi i klinovi za roto drljače",
-  "group": "Alpego",
-  "description": ""
-},
-
-"roto-amazone-noz": {
-  "id": "roto-amazone-noz",
-  "name": "NOŽ ROTO DRLJAČE AMAZONE",
-  "section": "Delovi za mašine",
-  "category": "Noževi i klinovi za roto drljače",
-  "group": "Amazone",
-  "description": ""
-},
-
-"roto-amazone-noz-cultimix": {
-  "id": "roto-amazone-noz-cultimix",
-  "name": "NOŽ ROTO DRLJAČE AMAZONE CULTIMIX",
-  "section": "Delovi za mašine",
-  "category": "Noževi i klinovi za roto drljače",
-  "group": "Amazone",
-  "description": ""
-},
-
-"roto-artera-noz": {
-  "id": "roto-artera-noz",
-  "name": "NOŽ ROTO DRLJAČE ARTERA",
-  "section": "Delovi za mašine",
-  "category": "Noževi i klinovi za roto drljače",
-  "group": "Artera",
-  "description": ""
-},
-
-"roto-artera-noz-brzo-menjajuci": {
-  "id": "roto-artera-noz-brzo-menjajuci",
-  "name": "NOŽ ROTO DRLJAČE ARTERA BRZO MENJAJUĆI",
-  "section": "Delovi za mašine",
-  "category": "Noževi i klinovi za roto drljače",
-  "group": "Artera",
-  "description": ""
-},
-
-"roto-breviglieri-noz": {
-  "id": "roto-breviglieri-noz",
-  "name": "NOŽ ROTO DRLJAČE BREVIGLIERI",
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
+"roto-breviglieri-klin-330-87-m20x1-5": {
+  "id": "roto-breviglieri-klin-330-87-m20x1-5",
+  "name": "KLIN ROTO DRLJAČE BREVIGLIERI 330/87/M20x1.5",
   "section": "Delovi za mašine",
   "category": "Noževi i klinovi za roto drljače",
   "group": "Breviglieri",
   "description": ""
 },
 
-"roto-breviglieri-klin": {
-  "id": "roto-breviglieri-klin",
-  "name": "KLIN ROTO DRLJAČE BREVIGLIERI",
+"roto-breviglieri-klin-d-310-77-32-10-5": {
+  "id": "roto-breviglieri-klin-d-310-77-32-10-5",
+  "name": "KLIN ROTO DRLJAČE BREVIGLIERI D.310/77/32/10.5",
   "section": "Delovi za mašine",
   "category": "Noževi i klinovi za roto drljače",
   "group": "Breviglieri",
   "description": ""
 },
 
-"roto-carraro-noz": {
-  "id": "roto-carraro-noz",
-  "name": "NOŽ ROTO DRLJAČE CARRARO",
+"roto-breviglieri-klin-l-310-77-32-10-5": {
+  "id": "roto-breviglieri-klin-l-310-77-32-10-5",
+  "name": "KLIN ROTO DRLJAČE BREVIGLIERI L.310/77/32/10.5",
   "section": "Delovi za mašine",
   "category": "Noževi i klinovi za roto drljače",
-  "group": "Carraro",
+  "group": "Breviglieri",
   "description": ""
 },
 
-"roto-carraro-klin": {
-  "id": "roto-carraro-klin",
-  "name": "KLIN ROTO DRLJAČE CARRARO",
-  "section": "Delovi za mašine",
-  "category": "Noževi i klinovi za roto drljače",
-  "group": "Carraro",
-  "description": ""
-},
 
-"roto-celli-noz": {
-  "id": "roto-celli-noz",
-  "name": "NOŽ ROTO DRLJAČE CELLI",
-  "section": "Delovi za mašine",
-  "category": "Noževi i klinovi za roto drljače",
-  "group": "Celli",
-  "description": ""
-},
 
-"roto-celli-klin": {
-  "id": "roto-celli-klin",
-  "name": "KLIN ROTO DRLJAČE CELLI",
-  "section": "Delovi za mašine",
-  "category": "Noževi i klinovi za roto drljače",
-  "group": "Celli",
-  "description": ""
-},
-
-"roto-eberhardt-klin-46": {
-  "id": "roto-eberhardt-klin-46",
-  "name": "KLIN ROTO DRLJAČE EBERHARDT 46",
+"roto-eberhardt-klin-d-46": {
+  "id": "roto-eberhardt-klin-d-46",
+  "name": "KLIN ROTO DRLJAČE EBERHARDT D.46",
   "section": "Delovi za mašine",
   "category": "Noževi i klinovi za roto drljače",
   "group": "Eberhardt",
   "description": ""
 },
 
-"roto-eberhardt-klin-51": {
-  "id": "roto-eberhardt-klin-51",
-  "name": "KLIN ROTO DRLJAČE EBERHARDT 51",
+"roto-eberhardt-klin-d-51": {
+  "id": "roto-eberhardt-klin-d-51",
+  "name": "KLIN ROTO DRLJAČE EBERHARDT D.51",
   "section": "Delovi za mašine",
   "category": "Noževi i klinovi za roto drljače",
   "group": "Eberhardt",
   "description": ""
 },
 
-"roto-euroma-klin": {
-  "id": "roto-euroma-klin",
-  "name": "KLIN ROTO DRLJAČE EUROMA",
+"roto-eberhardt-klin-l-46": {
+  "id": "roto-eberhardt-klin-l-46",
+  "name": "KLIN ROTO DRLJAČE EBERHARDT L.46",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Eberhardt",
+  "description": ""
+},
+
+"roto-eberhardt-klin-l-51": {
+  "id": "roto-eberhardt-klin-l-51",
+  "name": "KLIN ROTO DRLJAČE EBERHARDT L.51",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Eberhardt",
+  "description": ""
+},
+
+"roto-euroma-klin-d-320x71x32x12": {
+  "id": "roto-euroma-klin-d-320x71x32x12",
+  "name": "KLIN ROTO DRLJAČE EUROMA D.320x71x32x12",
   "section": "Delovi za mašine",
   "category": "Noževi i klinovi za roto drljače",
   "group": "Euroma",
   "description": ""
 },
 
-"roto-feraboli-noz": {
-  "id": "roto-feraboli-noz",
-  "name": "NOŽ ROTO DRLJAČE FERABOLI",
+"roto-euroma-klin-l-320x70x32x12": {
+  "id": "roto-euroma-klin-l-320x70x32x12",
+  "name": "KLIN ROTO DRLJAČE EUROMA L.320x70x32x12",
   "section": "Delovi za mašine",
   "category": "Noževi i klinovi za roto drljače",
-  "group": "Feraboli",
+  "group": "Euroma",
   "description": ""
 },
 
@@ -1528,224 +1550,182 @@ window.SITE_DATA = {"menuTree": [{"title": "Početna", "href": "index.html"}, {"
   "description": ""
 },
 
-"roto-feraboli-klin-lb6": {
-  "id": "roto-feraboli-klin-lb6",
-  "name": "KLIN ROTO DRLJAČE FERABOLI LB6",
+"roto-feraboli-klin-lb6-l-330": {
+  "id": "roto-feraboli-klin-lb6-l-330",
+  "name": "KLIN ROTO DRLJAČE FERABOLI LB6 L-330",
   "section": "Delovi za mašine",
   "category": "Noževi i klinovi za roto drljače",
   "group": "Feraboli",
   "description": ""
 },
 
-"roto-forigo-noz": {
-  "id": "roto-forigo-noz",
-  "name": "NOŽ ROTO DRLJAČE FORIGO",
+"roto-krone-klin-288-67-34-8-13": {
+  "id": "roto-krone-klin-288-67-34-8-13",
+  "name": "Klin roto drljače Krone 288x67x34,8x13",
   "section": "Delovi za mašine",
   "category": "Noževi i klinovi za roto drljače",
-  "group": "Forigo",
+  "group": "Krone",
   "description": ""
 },
 
-"roto-frandent-noz": {
-  "id": "roto-frandent-noz",
-  "name": "NOŽ ROTO DRLJAČE FRANDENT",
+"roto-krone-klin-345-ravni": {
+  "id": "roto-krone-klin-345-ravni",
+  "name": "Klin roto drljače Krone 345 ravni",
   "section": "Delovi za mašine",
   "category": "Noževi i klinovi za roto drljače",
-  "group": "Frandent",
+  "group": "Krone",
+  "description": ""
+},
+"roto-krone-klin-345-ravni2": {
+  "id": "roto-krone-klin-345-ravni2",
+  "name": "Klin roto drljače Krone 345 ravni",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Krone",
+  "description": ""
+},
+"roto-krone-klin-345-povinuti": {
+  "id": "roto-krone-klin-345-povinuti",
+  "name": "Klin roto drljače Krone 345/93/35/6.5 povinuti",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Krone",
   "description": ""
 },
 
-"roto-howard-noz": {
-  "id": "roto-howard-noz",
-  "name": "NOŽ ROTO DRLJAČE HOWARD",
+"roto-krone-klin-350-95-34-lb-40": {
+  "id": "roto-krone-klin-350-95-34-lb-40",
+  "name": "Klin roto drljače Krone 350/95/34 LB/40",
   "section": "Delovi za mašine",
   "category": "Noževi i klinovi za roto drljače",
-  "group": "Howard",
+  "group": "Krone",
+  "description": ""
+},
+"roto-seima-klin-l-335-m22x1-5": {
+  "id": "roto-seima-klin-l-335-m22x1-5",
+  "name": "Klin roto drljače Seima L=335 M22x1.5",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Seima",
+  "description": ""
+},
+"roto-lely-klin-320-34-23-87-20-5": {
+  "id": "roto-lely-klin-320-34-23-87-20-5",
+  "name": "KLIN ROTO DRLJAČE LELY 320/34/23/87/20.5",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Lely",
   "description": ""
 },
 
-"roto-kuhn-noz": {
-  "id": "roto-kuhn-noz",
-  "name": "NOŽ ROTO DRLJAČE KUHN",
+"roto-lely-klin-330-24-22-103-20-5": {
+  "id": "roto-lely-klin-330-24-22-103-20-5",
+  "name": "KLIN ROTO DRLJAČE LELY 330/24/22/103/20.5",
   "section": "Delovi za mašine",
   "category": "Noževi i klinovi za roto drljače",
-  "group": "Kuhn",
+  "group": "Lely",
   "description": ""
 },
 
-"roto-kuhn-noz-ravni": {
-  "id": "roto-kuhn-noz-ravni",
-  "name": "NOŽ ROTO DRLJAČE KUHN RAVNI",
+"roto-lely-klin-35-d-345-73-51-20": {
+  "id": "roto-lely-klin-35-d-345-73-51-20",
+  "name": "KLIN ROTO DRLJAČE LELY 35 D.345/73/51/20",
   "section": "Delovi za mašine",
   "category": "Noževi i klinovi za roto drljače",
-  "group": "Kuhn",
+  "group": "Lely",
+  "description": ""
+},
+"roto-rabewerk-noz-rabe-d": {
+  "id": "roto-rabewerk-noz-rabe-d",
+  "name": "Nož roto drljače Rabe D.",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Rabewerk",
   "description": ""
 },
 
-"roto-kuhn-kverneland-noz": {
-  "id": "roto-kuhn-kverneland-noz",
-  "name": "NOŽ ROTO DRLJAČE KUHN / KVERNELAND",
+"roto-rabewerk-noz-kg26-desni": {
+  "id": "roto-rabewerk-noz-kg26-desni",
+  "name": "Nož roto drljače Rabe KG26 desni 280/105/80/40/15/15",
   "section": "Delovi za mašine",
   "category": "Noževi i klinovi za roto drljače",
-  "group": "Kuhn / Kverneland",
+  "group": "Rabewerk",
   "description": ""
 },
 
-"roto-kverneland-noz": {
-  "id": "roto-kverneland-noz",
-  "name": "NOŽ ROTO DRLJAČE KVERNELAND",
+"roto-rabewerk-noz-kg26-levi": {
+  "id": "roto-rabewerk-noz-kg26-levi",
+  "name": "Nož roto drljače Rabe KG26 L. 280/105/38/40/15/15",
   "section": "Delovi za mašine",
   "category": "Noževi i klinovi za roto drljače",
-  "group": "Kverneland",
+  "group": "Rabewerk",
   "description": ""
 },
 
-"roto-lemken-noz": {
-  "id": "roto-lemken-noz",
-  "name": "NOŽ ROTO DRLJAČE LEMKEN",
+"roto-rabewerk-noz-kg30-desni": {
+  "id": "roto-rabewerk-noz-kg30-desni",
+  "name": "Nož roto drljače Rabe KG30 D. 300/100/15/17/65",
   "section": "Delovi za mašine",
   "category": "Noževi i klinovi za roto drljače",
-  "group": "Lemken",
+  "group": "Rabewerk",
   "description": ""
 },
 
-"roto-maletti-noz": {
-  "id": "roto-maletti-noz",
-  "name": "NOŽ ROTO DRLJAČE MALETTI",
+"roto-rabewerk-noz-kg30-levi": {
+  "id": "roto-rabewerk-noz-kg30-levi",
+  "name": "Nož roto drljače Rabe KG30 L. 300/100/15/17/65",
   "section": "Delovi za mašine",
   "category": "Noževi i klinovi za roto drljače",
-  "group": "Maletti",
+  "group": "Rabewerk",
+  "description": ""
+},
+"roto-lely-klin-35-l-345-73-51-20": {
+  "id": "roto-lely-klin-35-l-345-73-51-20",
+  "name": "KLIN ROTO DRLJAČE LELY 35 L.345/73/51/20",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Lely",
   "description": ""
 },
 
-"roto-maletti-klin": {
-  "id": "roto-maletti-klin",
-  "name": "KLIN ROTO DRLJAČE MALETTI",
-  "section": "Delovi za mašine",
-  "category": "Noževi i klinovi za roto drljače",
-  "group": "Maletti",
-  "description": ""
-},
-
-"roto-maschio-noz": {
-  "id": "roto-maschio-noz",
-  "name": "NOŽ ROTO DRLJAČE MASCHIO",
-  "section": "Delovi za mašine",
-  "category": "Noževi i klinovi za roto drljače",
-  "group": "Maschio",
-  "description": ""
-},
-
-"roto-maschio-noz-l390": {
-  "id": "roto-maschio-noz-l390",
-  "name": "NOŽ ROTO DRLJAČE MASCHIO L390",
-  "section": "Delovi za mašine",
-  "category": "Noževi i klinovi za roto drljače",
-  "group": "Maschio",
-  "description": ""
-},
-
-"roto-maschio-noz-quickfit": {
-  "id": "roto-maschio-noz-quickfit",
-  "name": "NOŽ ROTO DRLJAČE MASCHIO QUICKFIT",
-  "section": "Delovi za mašine",
-  "category": "Noževi i klinovi za roto drljače",
-  "group": "Maschio",
-  "description": ""
-},
-
-"roto-maschio-zastita-noza": {
-  "id": "roto-maschio-zastita-noza",
-  "name": "ZAŠTITA NOŽA ROTO DRLJAČE MASCHIO",
-  "section": "Delovi za mašine",
-  "category": "Noževi i klinovi za roto drljače",
-  "group": "Maschio",
-  "description": ""
-},
-
-"roto-morra-klin": {
-  "id": "roto-morra-klin",
-  "name": "KLIN ROTO DRLJAČE MORRA",
+"roto-morra-klin-323-80-20x1-5": {
+  "id": "roto-morra-klin-323-80-20x1-5",
+  "name": "KLIN ROTO DRLJAČE MORRA 323/80/20x1.5",
   "section": "Delovi za mašine",
   "category": "Noževi i klinovi za roto drljače",
   "group": "Morra",
   "description": ""
 },
 
-"roto-niemeyer-noz": {
-  "id": "roto-niemeyer-noz",
-  "name": "NOŽ ROTO DRLJAČE NIEMEYER",
+"roto-morra-klin-334-77-20x1-5": {
+  "id": "roto-morra-klin-334-77-20x1-5",
+  "name": "KLIN ROTO DRLJAČE MORRA 334/77/20x1.5",
   "section": "Delovi za mašine",
   "category": "Noževi i klinovi za roto drljače",
-  "group": "Niemeyer",
+  "group": "Morra",
   "description": ""
 },
 
-"roto-pegoraro-noz": {
-  "id": "roto-pegoraro-noz",
-  "name": "NOŽ ROTO DRLJAČE PEGORARO",
-  "section": "Delovi za mašine",
-  "category": "Noževi i klinovi za roto drljače",
-  "group": "Pegoraro",
-  "description": ""
-},
-
-"roto-pegoraro-klin": {
-  "id": "roto-pegoraro-klin",
-  "name": "KLIN ROTO DRLJAČE PEGORARO",
+"roto-pegoraro-klin-390-71-32-12": {
+  "id": "roto-pegoraro-klin-390-71-32-12",
+  "name": "KLIN ROTO DRLJAČE PEGORARO,RAU 390/71/32/12",
   "section": "Delovi za mašine",
   "category": "Noževi i klinovi za roto drljače",
   "group": "Pegoraro",
   "description": ""
 },
 
-"roto-perugini-noz": {
-  "id": "roto-perugini-noz",
-  "name": "NOŽ ROTO DRLJAČE PERUGINI",
+"roto-sicma-klin-standard": {
+  "id": "roto-sicma-klin-standard",
+  "name": "KLIN ROTO DRLJAČE POTTINGER, SICMA, MALETTI, BEFA",
   "section": "Delovi za mašine",
   "category": "Noževi i klinovi za roto drljače",
-  "group": "Perugini",
+  "group": "Sicma / Landsberg",
   "description": ""
 },
 
-"roto-perugini-klin-rh88": {
-  "id": "roto-perugini-klin-rh88",
-  "name": "KLIN ROTO DRLJAČE PERUGINI RH88",
-  "section": "Delovi za mašine",
-  "category": "Noževi i klinovi za roto drljače",
-  "group": "Perugini",
-  "description": ""
-},
-
-"roto-rabewerk-noz": {
-  "id": "roto-rabewerk-noz",
-  "name": "NOŽ ROTO DRLJAČE RABEWORK",
-  "section": "Delovi za mašine",
-  "category": "Noževi i klinovi za roto drljače",
-  "group": "Rabe",
-  "description": ""
-},
-
-"roto-rabewerk-noz-kg26": {
-  "id": "roto-rabewerk-noz-kg26",
-  "name": "NOŽ ROTO DRLJAČE RABEWORK KG26",
-  "section": "Delovi za mašine",
-  "category": "Noževi i klinovi za roto drljače",
-  "group": "Rabe",
-  "description": ""
-},
-
-"roto-rabewerk-noz-kg30": {
-  "id": "roto-rabewerk-noz-kg30",
-  "name": "NOŽ ROTO DRLJAČE RABEWORK KG30",
-  "section": "Delovi za mašine",
-  "category": "Noževi i klinovi za roto drljače",
-  "group": "Rabe",
-  "description": ""
-},
-
-"roto-remac-klin": {
-  "id": "roto-remac-klin",
+"roto-remac-klin-standard": {
+  "id": "roto-remac-klin-standard",
   "name": "KLIN ROTO DRLJAČE REMAC",
   "section": "Delovi za mašine",
   "category": "Noževi i klinovi za roto drljače",
@@ -1753,52 +1733,842 @@ window.SITE_DATA = {"menuTree": [{"title": "Početna", "href": "index.html"}, {"
   "description": ""
 },
 
-"roto-sicma-landsberg-klin-lb24": {
-  "id": "roto-sicma-landsberg-klin-lb24",
-  "name": "KLIN ROTO DRLJAČE SICMA / LANDSBERG LB24",
+"roto-rotoital-klin-320-85-34-k21-33-m20x1-5": {
+  "id": "roto-rotoital-klin-320-85-34-k21-33-m20x1-5",
+  "name": "KLIN ROTO DRLJAČE ROTOITAL. 320/85/34/K21-33/m20x1.5",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Rotoital",
+  "description": ""
+},
+
+"roto-sicma-klin-lb24": {
+  "id": "roto-sicma-klin-lb24",
+  "name": "KLIN ROTO DRLJAČE SICMA/LANDSBERG LB24",
   "section": "Delovi za mašine",
   "category": "Noževi i klinovi za roto drljače",
   "group": "Sicma / Landsberg",
   "description": ""
 },
 
-"roto-vigolo-klin": {
-  "id": "roto-vigolo-klin",
-  "name": "KLIN ROTO DRLJAČE VIGOLO",
+"roto-vigolo-klin-340-82-39-27-24": {
+  "id": "roto-vigolo-klin-340-82-39-27-24",
+  "name": "KLIN ROTO DRLJAČE VIGOLO 340/82/39/27/24",
   "section": "Delovi za mašine",
   "category": "Noževi i klinovi za roto drljače",
   "group": "Vigolo",
   "description": ""
 },
 
-"roto-krone-klin": {
-  "id": "roto-krone-klin",
-  "name": "KLIN ROTO DRLJAČE KRONE",
+"roto-vigolo-klin-345-84-m24": {
+  "id": "roto-vigolo-klin-345-84-m24",
+  "name": "KLIN ROTO DRLJAČE VIGOLO 345/84/M24",
   "section": "Delovi za mašine",
   "category": "Noževi i klinovi za roto drljače",
-  "group": "Krone",
+  "group": "Vigolo",
   "description": ""
 },
 
-"roto-lely-klin": {
-  "id": "roto-lely-klin",
-  "name": "KLIN ROTO DRLJAČE LELY",
+"roto-kuhn-noz-d-305-110-68-16-17-5": {
+  "id": "roto-kuhn-noz-d-305-110-68-16-17-5",
+  "name": "NOŽ ROTO DRLJAČE KUHN D.305/110/68/16/17.5",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Kuhn",
+  "description": ""
+},
+
+"roto-alpego-noz-d-260-80-60-50-10-14": {
+  "id": "roto-alpego-noz-d-260-80-60-50-10-14",
+  "name": "NOŽ ROTO DRLJAČE ALPEGO D.260/80/60/50/10/14",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Alpego",
+  "description": ""
+},
+
+"roto-alpego-noz-d-312-100-15-fi19-5": {
+  "id": "roto-alpego-noz-d-312-100-15-fi19-5",
+  "name": "NOŽ ROTO DRLJAČE ALPEGO D.312/100/15/ FI19.5",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Alpego",
+  "description": ""
+},
+
+"roto-alpego-noz-l-260-80-60-50-10-14": {
+  "id": "roto-alpego-noz-l-260-80-60-50-10-14",
+  "name": "NOŽ ROTO DRLJAČE ALPEGO L.260/80/60/50/10/14",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Alpego",
+  "description": ""
+},
+
+"roto-alpego-noz-l-312-100-15-fi19-5": {
+  "id": "roto-alpego-noz-l-312-100-15-fi19-5",
+  "name": "NOŽ ROTO DRLJAČE ALPEGO L.312/100/15/ FI19.5",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Alpego",
+  "description": ""
+},
+
+"roto-amazone-noz-d-290-150-19-15": {
+  "id": "roto-amazone-noz-d-290-150-19-15",
+  "name": "NOŽ ROTO DRLJAČE AMAZONE D.290/150/19/15",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Amazone",
+  "description": ""
+},
+
+"roto-amazone-noz-l-290-150-19-15": {
+  "id": "roto-amazone-noz-l-290-150-19-15",
+  "name": "NOŽ ROTO DRLJAČE AMAZONE L.290/150/19/15",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Amazone",
+  "description": ""
+},
+
+
+
+"roto-breviglieri-noz-d-260-50-90-12-17": {
+  "id": "roto-breviglieri-noz-d-260-50-90-12-17",
+  "name": "NOŽ ROTO DRLJAČE BREVIGLIERI D.260/50/90/12/17",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Breviglieri",
+  "description": ""
+},
+
+"roto-breviglieri-noz-d-285x55x50x13": {
+  "id": "roto-breviglieri-noz-d-285x55x50x13",
+  "name": "NOŽ ROTO DRLJAČE BREVIGLIERI D.285x55x50x13",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Breviglieri",
+  "description": ""
+},
+"roto-breviglieri-noz-l-285x55x50x13": {
+  "id": "roto-breviglieri-noz-l-285x55x50x13",
+  "name": "NOŽ ROTO DRLJAČE BREVIGLIERI L.285x55x50x13",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Breviglieri",
+  "description": ""
+},
+"roto-breviglieri-noz-d-300-100-60-15-17": {
+  "id": "roto-breviglieri-noz-d-300-100-60-15-17",
+  "name": "NOŽ ROTO DRLJAČE BREVIGLIERI D.300/100/60/15/17",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Breviglieri",
+  "description": ""
+},
+
+"roto-breviglieri-noz-l-260-50-90-12-17": {
+  "id": "roto-breviglieri-noz-l-260-50-90-12-17",
+  "name": "NOŽ ROTO DRLJAČE BREVIGLIERI L.260/50/90/12/17",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Breviglieri",
+  "description": ""
+},
+
+"roto-breviglieri-noz-l-300-100-60-15-17": {
+  "id": "roto-breviglieri-noz-l-300-100-60-15-17",
+  "name": "NOŽ ROTO DRLJAČE BREVIGLIERI L.300/100/60/15/17",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Breviglieri",
+  "description": ""
+},
+
+
+
+"roto-celli-noz-d-300x120x72x15-fi-17mm": {
+  "id": "roto-celli-noz-d-300x120x72x15-fi-17mm",
+  "name": "NOŽ ROTO DRLJAČE CELLI D. 300x120x72x15 fi 17mm",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Celli",
+  "description": ""
+},
+
+"roto-celli-noz-l-300x120x72x15-fi-17mm": {
+  "id": "roto-celli-noz-l-300x120x72x15-fi-17mm",
+  "name": "NOŽ ROTO DRLJAČE CELLI L. 300x120x72x15 fi 17mm",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Celli",
+  "description": ""
+},
+
+"roto-perugini-noz-desni-275-100-98-54-12-14-5": {
+  "id": "roto-perugini-noz-desni-275-100-98-54-12-14-5",
+  "name": "Nož roto drljače Perug. D. 275/100/98/54/12/14.5",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Perugini",
+  "description": ""
+},
+
+"roto-perugini-noz-desni-330-100-15-54-17": {
+  "id": "roto-perugini-noz-desni-330-100-15-54-17",
+  "name": "Nož roto drljače Perug. D. 330/100/15/54/17",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Perugini",
+  "description": ""
+},
+
+"roto-perugini-noz-levi-275-100-98-54-12-14-5": {
+  "id": "roto-perugini-noz-levi-275-100-98-54-12-14-5",
+  "name": "Nož roto drljače Perug. L. 275/100/98/54/12/14.5",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Perugini",
+  "description": ""
+},
+
+"roto-perugini-noz-levi-330-100-15-54-17": {
+  "id": "roto-perugini-noz-levi-330-100-15-54-17",
+  "name": "Nož roto drljače Perug. L. 330/100/15/54/17",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Perugini",
+  "description": ""
+},
+
+"roto-perugini-noz-54-100-desni": {
+  "id": "roto-perugini-noz-54-100-desni",
+  "name": "Nož roto drljače Perugini 54/100 D.",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Perugini",
+  "description": ""
+},
+
+"roto-perugini-noz-54-100-levi": {
+  "id": "roto-perugini-noz-54-100-levi",
+  "name": "Nož roto drljače Perugini 54/100 L.",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Perugini",
+  "description": ""
+},
+
+"roto-perugini-klin-rh-88": {
+  "id": "roto-perugini-klin-rh-88",
+  "name": "Klin roto drljače Perugini RH 88",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Perugini",
+  "description": ""
+},
+"roto-feraboli-noz-270-102-60-16-5": {
+  "id": "roto-feraboli-noz-270-102-60-16-5",
+  "name": "NOŽ ROTO DRLJAČE FERABOLI 270/102/60/16.5",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Feraboli",
+  "description": ""
+},
+
+"roto-feraboli-noz-305-112-95-60-20": {
+  "id": "roto-feraboli-noz-305-112-95-60-20",
+  "name": "NOŽ ROTO DRLJAČE FERABOLI 305/112/95/60/20",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Feraboli",
+  "description": ""
+},
+
+"roto-forigo-noz-105-15-17-50": {
+  "id": "roto-forigo-noz-105-15-17-50",
+  "name": "NOŽ ROTO DRLJAČE FORIGO 105/15/17/50",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Forigo",
+  "description": ""
+},
+
+"roto-forigo-noz-95-12-15-40": {
+  "id": "roto-forigo-noz-95-12-15-40",
+  "name": "NOŽ ROTO DRLJAČE FORIGO 95/12/15/40",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Forigo",
+  "description": ""
+},
+
+"roto-frandent-noz-d": {
+  "id": "roto-frandent-noz-d",
+  "name": "NOŽ ROTO DRLJAČE FRANDENT D.",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Frandent",
+  "description": ""
+},
+
+"roto-frandent-noz-l": {
+  "id": "roto-frandent-noz-l",
+  "name": "NOŽ ROTO DRLJAČE FRANDENT L.",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Frandent",
+  "description": ""
+},
+
+"roto-howard-noz-d-262-100-60-12-14-5": {
+  "id": "roto-howard-noz-d-262-100-60-12-14-5",
+  "name": "NOŽ ROTO DRLJAČE HOWARD D.262/100/60/12/14.5",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Howard",
+  "description": ""
+},
+
+"roto-howard-noz-d-265-100-60-15-14-5": {
+  "id": "roto-howard-noz-d-265-100-60-15-14-5",
+  "name": "NOŽ ROTO DRLJAČE HOWARD D.265/100/60/15/14.5",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Howard",
+  "description": ""
+},
+
+"roto-howard-noz-d-265-100-60-15-17": {
+  "id": "roto-howard-noz-d-265-100-60-15-17",
+  "name": "NOŽ ROTO DRLJAČE HOWARD D.265/100/60/15/17",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Howard",
+  "description": ""
+},
+
+"roto-howard-noz-d-315-100-60-15-16-5": {
+  "id": "roto-howard-noz-d-315-100-60-15-16-5",
+  "name": "NOŽ ROTO DRLJAČE HOWARD D.315/100/60/15/16.5",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Howard",
+  "description": ""
+},
+
+"roto-howard-noz-l-265-100-60-15-14-5": {
+  "id": "roto-howard-noz-l-265-100-60-15-14-5",
+  "name": "NOŽ ROTO DRLJAČE HOWARD L.265/100/60/15/14.5",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Howard",
+  "description": ""
+},
+
+"roto-howard-noz-l-315-100-60-15": {
+  "id": "roto-howard-noz-l-315-100-60-15",
+  "name": "NOŽ ROTO DRLJAČE HOWARD L.315/100/60/15",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Howard",
+  "description": ""
+},
+
+"roto-kuhn-noz-d": {
+  "id": "roto-kuhn-noz-d",
+  "name": "NOŽ ROTO DRLJAČE KUHN D.",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Kuhn",
+  "description": ""
+},
+
+"roto-kuhn-noz-d-2": {
+  "id": "roto-kuhn-noz-d-2",
+  "name": "NOŽ ROTO DRLJAČE KUHN D.",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Kuhn",
+  "description": ""
+},
+
+"roto-kuhn-noz-d-350-110-68-14-17": {
+  "id": "roto-kuhn-noz-d-350-110-68-14-17",
+  "name": "NOŽ ROTO DRLJAČE KUHN D.350/110/68/14/17",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Kuhn",
+  "description": ""
+},
+"roto-maletti-klin-sicma-maletti-befa": {
+  "id": "roto-maletti-klin-sicma-maletti-befa",
+  "name": "Klin roto drljače Pottinger, Sicma, Maletti, Befa",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Maletti",
+  "description": ""
+},
+
+"roto-kuhn-noz-l": {
+  "id": "roto-kuhn-noz-l",
+  "name": "NOŽ ROTO DRLJAČE KUHN L.",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Kuhn",
+  "description": ""
+},
+
+"roto-kuhn-noz-l-2": {
+  "id": "roto-kuhn-noz-l-2",
+  "name": "NOŽ ROTO DRLJAČE KUHN L.",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Kuhn",
+  "description": ""
+},
+
+"roto-kuhn-noz-l-350-110-68-14-17": {
+  "id": "roto-kuhn-noz-l-350-110-68-14-17",
+  "name": "NOŽ ROTO DRLJAČE KUHN L.350/110/68/14/17",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Kuhn",
+  "description": ""
+},
+
+"roto-kuhn-noz-ravni-50-40-18-320-fi17": {
+  "id": "roto-kuhn-noz-ravni-50-40-18-320-fi17",
+  "name": "NOŽ ROTO DRLJAČE KUHN RAVNI 50/40/18/320 fi17",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Kuhn",
+  "description": ""
+},
+
+"roto-kuhn-noz-d-270-110-68-12-16-5": {
+  "id": "roto-kuhn-noz-d-270-110-68-12-16-5",
+  "name": "NOŽ ROTO DRLJAČE KUHN/KVER. D.270/110/68/12/16.5",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Kuhn",
+  "description": ""
+},
+
+"roto-kuhn-noz-l-270-110-68-12-16-5": {
+  "id": "roto-kuhn-noz-l-270-110-68-12-16-5",
+  "name": "NOŽ ROTO DRLJAČE KUHN/KVER. L.270/110/68/12/16.5",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Kuhn",
+  "description": ""
+},
+
+"roto-kverneland-noz-d-320-100-15-fi-18": {
+  "id": "roto-kverneland-noz-d-320-100-15-fi-18",
+  "name": "NOŽ ROTO DRLJAČE KVERN.D.320/100/15 FI 18",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Kverneland",
+  "description": ""
+},
+
+"roto-kverneland-noz-l-320-100-15-fi-18": {
+  "id": "roto-kverneland-noz-l-320-100-15-fi-18",
+  "name": "NOŽ ROTO DRLJAČE KVERN.L.320/100/15 FI 18",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Kverneland",
+  "description": ""
+},
+
+"roto-lemken-noz-d-300-120-110-70-18-21-5": {
+  "id": "roto-lemken-noz-d-300-120-110-70-18-21-5",
+  "name": "NOŽ ROTO DRLJAČE LEMKEN D. 300/120/110/70/18/21.5",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Lemken",
+  "description": ""
+},
+
+"roto-lemken-noz-d-315x60x10-fi17": {
+  "id": "roto-lemken-noz-d-315x60x10-fi17",
+  "name": "NOŽ ROTO DRLJAČE LEMKEN D. 315x60x10 fi17",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Lemken",
+  "description": ""
+},
+
+"roto-lemken-noz-d-320x110x72x15-fi17": {
+  "id": "roto-lemken-noz-d-320x110x72x15-fi17",
+  "name": "NOŽ ROTO DRLJAČE LEMKEN D. 320x110x72x15 fi17",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Lemken",
+  "description": ""
+},
+
+"roto-lemken-noz-l-300-120-110-70-18-21-5": {
+  "id": "roto-lemken-noz-l-300-120-110-70-18-21-5",
+  "name": "NOŽ ROTO DRLJAČE LEMKEN L. 300/120/110/70/18/21.5",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Lemken",
+  "description": ""
+},
+
+"roto-lemken-noz-l-315x60x10-fi17": {
+  "id": "roto-lemken-noz-l-315x60x10-fi17",
+  "name": "NOŽ ROTO DRLJAČE LEMKEN L. 315x60x10 fi17",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Lemken",
+  "description": ""
+},
+"roto-remac-klin-slam": {
+  "id": "roto-remac-klin-slam",
+  "name": "Klin roto drljače Remac, Slam",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Remac",
+  "description": ""
+},
+"roto-lemken-noz-l-320x110x72x15-fi17": {
+  "id": "roto-lemken-noz-l-320x110x72x15-fi17",
+  "name": "NOŽ ROTO DRLJAČE LEMKEN L. 320x110x72x15 fi17",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Lemken",
+  "description": ""
+},
+
+"roto-maletti-noz-d-325-110-15-18-5-50": {
+  "id": "roto-maletti-noz-d-325-110-15-18-5-50",
+  "name": "NOŽ ROTO DRLJAČE MALETTI D.325/110/15/18.5/50",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Maletti",
+  "description": ""
+},
+"roto-lely-klin-370-94-24-27-20x1-5": {
+  "id": "roto-lely-klin-370-94-24-27-20x1-5",
+  "name": "Klin roto drljače Lely 370/94/24/27/20x1.5",
   "section": "Delovi za mašine",
   "category": "Noževi i klinovi za roto drljače",
   "group": "Lely",
   "description": ""
 },
-
-"roto-lely-klin-35": {
-  "id": "roto-lely-klin-35",
-  "name": "KLIN ROTO DRLJAČE LELY 35",
+"roto-maletti-noz-l-325-110-15-18-5-50": {
+  "id": "roto-maletti-noz-l-325-110-15-18-5-50",
+  "name": "NOŽ ROTO DRLJAČE MALETTI L.325/110/15/18.5/50",
   "section": "Delovi za mašine",
   "category": "Noževi i klinovi za roto drljače",
-  "group": "Lely",
+  "group": "Maletti",
   "description": ""
 },
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
+
+"roto-maschio-noz-d-330-60-12-44-13": {
+  "id": "roto-maschio-noz-d-330-60-12-44-13",
+  "name": "NOŽ ROTO DRLJAČE MASCHIO D. 330/60/12/44/13",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Maschio",
+  "description": ""
+},
+
+"roto-maschio-noz-d-60x10-13-44": {
+  "id": "roto-maschio-noz-d-60x10-13-44",
+  "name": "NOŽ ROTO DRLJAČE MASCHIO D. 60X10/13/44",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Maschio",
+  "description": ""
+},
+
+"roto-maschio-noz-d-90-12-17-50": {
+  "id": "roto-maschio-noz-d-90-12-17-50",
+  "name": "NOŽ ROTO DRLJAČE MASCHIO D. 90/12/17/50",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Maschio",
+  "description": ""
+},
+
+
+
+"roto-maschio-noz-d-quickfit": {
+  "id": "roto-maschio-noz-d-quickfit",
+  "name": "NOŽ ROTO DRLJAČE MASCHIO D. QUICKFIT",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Maschio",
+  "description": ""
+},
+"roto-maschio-noz-desni-90-12-17-50-original": {
+  "id": "roto-maschio-noz-desni-90-12-17-50-original",
+  "name": "Nož roto drljače Maschio D. 90/12/17/50 original",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Maschio",
+  "description": ""
+},
+
+"roto-maschio-noz-desni-100-60-12-17-original": {
+  "id": "roto-maschio-noz-desni-100-60-12-17-original",
+  "name": "Nož roto drljače Maschio D. 100/60/12/17 orig.",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Maschio",
+  "description": ""
+},
+
+"roto-maschio-noz-desni-300-100-90-60-15-17": {
+  "id": "roto-maschio-noz-desni-300-100-90-60-15-17",
+  "name": "Nož roto drljače Maschio D. 300/100/90/60/15/17",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Maschio",
+  "description": ""
+},
+
+"roto-maschio-noz-levi-90-12-17-50-original": {
+  "id": "roto-maschio-noz-levi-90-12-17-50-original",
+  "name": "Nož roto drljače Maschio levi 90/12/17/50 original",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Maschio",
+  "description": ""
+},
+"roto-maschio-noz-d-100-60-12-17": {
+  "id": "roto-maschio-noz-d-100-60-12-17",
+  "name": "NOŽ ROTO DRLJAČE MASCHIO D.100/60/12/17",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Maschio",
+  "description": ""
+},
+
+"roto-maschio-noz-l-330-60-12-44-13": {
+  "id": "roto-maschio-noz-l-330-60-12-44-13",
+  "name": "NOŽ ROTO DRLJAČE MASCHIO L. 330/60/12/44/13",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Maschio",
+  "description": ""
+},
+
+"roto-maschio-noz-l-60x10-13-44": {
+  "id": "roto-maschio-noz-l-60x10-13-44",
+  "name": "NOŽ ROTO DRLJAČE MASCHIO L. 60X10/13/44",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Maschio",
+  "description": ""
+},
+
+"roto-maschio-noz-l-90-12-17-50": {
+  "id": "roto-maschio-noz-l-90-12-17-50",
+  "name": "NOŽ ROTO DRLJAČE MASCHIO L. 90/12/17/50",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Maschio",
+  "description": ""
+},
+
+
+"roto-maschio-noz-l-quickfit": {
+  "id": "roto-maschio-noz-l-quickfit",
+  "name": "NOŽ ROTO DRLJAČE MASCHIO L. QUICKFIT",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Maschio",
+  "description": ""
+},
+
+"roto-maschio-noz-l-100-60-12-17": {
+  "id": "roto-maschio-noz-l-100-60-12-17",
+  "name": "NOŽ ROTO DRLJAČE MASCHIO L.100/60/12/17",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Maschio",
+  "description": ""
+},
+
+"roto-maschio-noz-l-100-60-12-17-orig": {
+  "id": "roto-maschio-noz-l-100-60-12-17-orig",
+  "name": "NOŽ ROTO DRLJAČE MASCHIO L.100/60/12/17 ORIG.",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Maschio",
+  "description": ""
+},
+
+"roto-maschio-noz-l-300-100-90-60-15-17": {
+  "id": "roto-maschio-noz-l-300-100-90-60-15-17",
+  "name": "NOŽ ROTO DRLJAČE MASCHIO L.300/100/90/60/15/17",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Maschio",
+  "description": ""
+},
+
+"roto-niemeyer-noz-d-330-120-72-85-16-17": {
+  "id": "roto-niemeyer-noz-d-330-120-72-85-16-17",
+  "name": "NOŽ ROTO DRLJAČE NIEMEYER D.330/120/72/85/16/17",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Niemeyer",
+  "description": ""
+},
+"roto-pegoraro-klin-300-65-30-12": {
+  "id": "roto-pegoraro-klin-300-65-30-12",
+  "name": "Klin roto drljače Pegoraro 300/65/30/12",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Pegoraro",
+  "description": ""
+},
+
+"roto-pegoraro-klin-300-65-30-12-kr": {
+  "id": "roto-pegoraro-klin-300-65-30-12-kr",
+  "name": "Klin roto drljače Pegoraro 300/65/30/12 KR",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Pegoraro",
+  "description": ""
+},
+"roto-niemeyer-noz-l-290-120-72-85-15-18": {
+  "id": "roto-niemeyer-noz-l-290-120-72-85-15-18",
+  "name": "NOŽ ROTO DRLJAČE NIEMEYER L.290/120/72/85/15/18",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Niemeyer",
+  "description": ""
+},
+
+"roto-niemeyer-noz-l-330-120-72-85-16-17": {
+  "id": "roto-niemeyer-noz-l-330-120-72-85-16-17",
+  "name": "NOŽ ROTO DRLJAČE NIEMEYER L.330/120/72/85/16/17",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Niemeyer",
+  "description": ""
+},
+
+"roto-pegoraro-noz-285-100-60-94-16-5-14": {
+  "id": "roto-pegoraro-noz-285-100-60-94-16-5-14",
+  "name": "NOŽ ROTO DRLJAČE PEGORARO 285/100/60/94/16.5/14",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Pegoraro",
+  "description": ""
+},
+
+"roto-pegoraro-noz-d-100-60-16-5-305-15": {
+  "id": "roto-pegoraro-noz-d-100-60-16-5-305-15",
+  "name": "NOŽ ROTO DRLJAČE PEGORARO D.100/60/16,5/305/15",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Pegoraro",
+  "description": ""
+},
+
+"roto-pegoraro-noz-d-300-12-17-60-100": {
+  "id": "roto-pegoraro-noz-d-300-12-17-60-100",
+  "name": "NOŽ ROTO DRLJAČE PEGORARO D.300/12/17/60/100",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Pegoraro",
+  "description": ""
+},
+"roto-pegoraro-noz-l-300-12-17-60-100": {
+  "id": "roto-pegoraro-noz-l-300-12-17-60-100",
+  "name": "NOŽ ROTO DRLJAČE PEGORARO L.300/12/17/60/100",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Pegoraro",
+  "description": ""
+},
+"roto-pegoraro-noz-l-100-60-16-5-305-15": {
+  "id": "roto-pegoraro-noz-l-100-60-16-5-305-15",
+  "name": "NOŽ ROTO DRLJAČE PEGORARO L.100/60/16,5/305/15",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Pegoraro",
+  "description": ""
+},
+
+
+"roto-howard-noz-desni-315-100-60-15": {
+  "id": "roto-howard-noz-desni-315-100-60-15",
+  "name": "Nož roto drljače Howard desni 315/100/60/15",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Howard",
+  "description": ""
+},
+
+"roto-howard-noz-levi-265-100-60-15-17": {
+  "id": "roto-howard-noz-levi-265-100-60-15-17",
+  "name": "Nož roto drljače Howard L. 265/100/60/15/17",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Howard",
+  "description": ""
+},
+"roto-pegoraro-noz-l-100-60-16-5-305-52": {
+  "id": "roto-pegoraro-noz-l-100-60-16-5-305-52",
+  "name": "NOŽ ROTO DRLJAČE PEGORARO L.100/60/16,5/305/52",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Pegoraro",
+  "description": ""
+},
+
+"roto-pegoraro-noz-l-100-60-16-5-305-53": {
+  "id": "roto-pegoraro-noz-l-100-60-16-5-305-53",
+  "name": "NOŽ ROTO DRLJAČE PEGORARO L.100/60/16,5/305/53",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Pegoraro",
+  "description": ""
+},
+"roto-amazone-noz-cultimix-d": {
+  "id": "roto-amazone-noz-cultimix-d",
+  "name": "Nož roto drljače Amazone D. Cultimix",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Amazone",
+  "description": ""
+},
+
+"roto-amazone-noz-cultimix-l": {
+  "id": "roto-amazone-noz-cultimix-l",
+  "name": "Nož roto drljače Amazone L. Cultimix",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Amazone",
+  "description": ""
+},
+"roto-breviglieri-klin": {
+  "id": "roto-breviglieri-klin",
+  "name": "Klin roto drljače Breviglieri",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Breviglieri",
+  "description": ""
+},
+        
+"roto-celli-klin-320-83-37-16-m20": {
+  "id": "roto-celli-klin-320-83-37-16-m20",
+  "name": "Klin roto drljače Celli 320/83/37/16/M20",
+  "section": "Delovi za mašine",
+  "category": "Noževi i klinovi za roto drljače",
+  "group": "Celli",
+  "description": ""
+},
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               "plugovi-raonici-vogel-noot-raonik-pluga-v-n-un-350-desni-zamena-so": {"id": "plugovi-raonici-vogel-noot-raonik-pluga-v-n-un-350-desni-zamena-so", "name": "Raonik pluga V&N UN 350 desni zamena SO", "section": "Plugovi", "category": "Raonici", "group": "Vogel & Noot"}, "plugovi-raonici-vogel-noot-raonik-pluga-v-n-un-400-zamena-so":
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              {"id": "plugovi-raonici-vogel-noot-raonik-pluga-v-n-un-400-zamena-so", "name": "Raonik pluga V&N UN 400 zamena SO", "section": "Plugovi", "category": "Raonici", "group": "Vogel & Noot"}, "plugovi-raonici-vogel-noot-raonik-prednji-v-n-desni": 
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              {"id": "plugovi-raonici-vogel-noot-raonik-prednji-v-n-desni", "name": "Raonik pretplužnjaka V&N desni", "section": "Plugovi", "category": "Raonici", "group": "Vogel & Noot"},
