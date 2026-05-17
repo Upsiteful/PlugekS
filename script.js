@@ -361,12 +361,7 @@ img.onerror = function(){
     if(!node) return;
     document.title = node.title + ' | Plugeks';
 qs('#breadcrumb').innerHTML = breadcrumbHtmlForNode(nodeId);
-   qs('#pageTitle').textContent =
-  node.title + ' (' +
-  (node.kind === 'products'
-    ? node.products.length
-    : groupProductCount(nodeId)
-  ) + ')';
+ qs('#pageTitle').textContent = node.title;
     qs('#backLink').href = node.parent ? nodeHref(node.parent) : 'index.html';
     qs('#nodeDesc').textContent =  '';
     // qs('#statCount').textContent = (node.kind === 'products' ? node.products.length : groupProductCount(nodeId)) + ' proizvoda';
