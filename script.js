@@ -818,13 +818,31 @@ function setupProductShare(product){
     window.addEventListener('pageshow', function(){window.scrollTo(0,0); closeDrawer();});
   }
 
-  function setupPhoneFab(){
-    const fab = qs('.phone-fab');
-    if(fab){
-      fab.href = 'tel:' + PHONE.replace(/[^\d+]/g,'');
-      fab.textContent = 'Pozovite nas';
-    }
-  }
+function setupPhoneFab(){
+  const fab = qs('.phone-fab');
+  if(!fab) return;
+
+  fab.removeAttribute('href');
+  fab.innerHTML = `
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M22 16.92v3a2 2 0 0 1-2.18 2A19.8 19.8 0 0 1 11.19 19 19.5 19.5 0 0 1 5 12.81 19.8 19.8 0 0 1 2.08 4.18 2 2 0 0 1 4.06 2h3a2 2 0 0 1 2 1.72c.12.9.32 1.77.6 2.61a2 2 0 0 1-.45 2.11L8 9.65a16 16 0 0 0 6.35 6.35l1.21-1.21a2 2 0 0 1 2.11-.45c.84.28 1.71.48 2.61.6A2 2 0 0 1 22 16.92z"></path>
+    </svg>
+  `;
+
+  const menu = document.createElement('div');
+  menu.className = 'phone-menu';
+  menu.innerHTML = `
+    <a href="tel:+381621948387">Poziv</a>
+    <a href="viber://chat?number=%2B381621948387">Viber</a>
+    <a href="https://wa.me/381621948387" target="_blank" rel="noopener">WhatsApp</a>
+  `;
+  document.body.appendChild(menu);
+
+  fab.onclick = function(e){
+    e.preventDefault();
+    menu.classList.toggle('open');
+  };
+}
 
   document.addEventListener('DOMContentLoaded', function(){
     setupDrawer();
