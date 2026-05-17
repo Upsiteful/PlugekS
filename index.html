@@ -197,34 +197,57 @@
 
 <div class="mobile-nav">
   <div class="mobile-nav-inner">
+ <button id="quickSearchOpen" class="mobile-search-btn" type="button">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="11" cy="11" r="7"></circle>
+    <line x1="20" y1="20" x2="16.65" y2="16.65"></line>
+  </svg>
+</button>
 
-    <a href="index.html" class="mobile-top-logo">
-      <img src="images/logo2.png" alt="Plugeks">
-    </a>
+  <a href="index.html" class="mobile-logo-link">
+  <img src="images/logo.png" alt="Plugeks" class="mobile-logo-img">
+</a>
 
-    <div class="mobile-brand">
-      ⌂ <span>Meni</span>
-    </div>
+  <button class="hamburger" id="menuToggle" type="button">☰</button>
+</div>
+</div>
+<div id="quickSearchModal" class="quick-search-modal">
+  <div class="quick-search-box">
+    <button id="quickSearchClose" class="quick-search-close">×</button>
 
-    <button class="hamburger" id="menuToggle" aria-label="Meni">
-      <span></span>
-    </button>
+    <h2>Brza pretraga</h2>
 
+    <select id="quickType">
+      <option value="">Izaberi tip</option>
+      <option value="masine">Mašine</option>
+      <option value="delovi-za-masine">Delovi za mašine</option>
+    </select>
+
+    <select id="quickLevel1" disabled>
+      <option value="">Izaberi kategoriju</option>
+    </select>
+
+    <select id="quickLevel2" disabled>
+      <option value="">Izaberi podkategoriju</option>
+    </select>
+
+    <select id="quickLevel3" disabled>
+      <option value="">Izaberi brend / grupu</option>
+    </select>
+
+    <button id="quickSearchGo" class="quick-search-go">Pretraži</button>
   </div>
 </div>
-
 <div class="mobile-drawer" id="mobileDrawer">
+
+
+
+  
+
   <div class="drawer-overlay" id="drawerOverlay"></div>
 
   <div class="drawer-panel">
-    <div class="drawer-header">
-      <div class="drawer-logo">
-        <img src="images/logo.png" alt="Logo" onerror="this.style.display='none';">
-      </div>
-
-      <button class="drawer-close" id="drawerClose" aria-label="Zatvori">×</button>
-    </div>
-
+   
     <div class="drawer-title" id="drawerTitle">Meni</div>
 
     <div class="drawer-list" id="drawerList"></div>
@@ -481,7 +504,44 @@ if(drawerClose){
   
   
   
-  
+  <section class="faq-section">
+  <div class="faq-inner">
+    <div class="faq-heading">
+      <span>FAQ</span>
+      <h2>Česta pitanja</h2>
+      <p>Brzi odgovori za poručivanje delova i mašina.</p>
+    </div>
+
+    <div class="faq-list">
+
+  <details>
+    <summary>Da li postoji mogućnost vraćanja proizvoda?</summary>
+    <p>U slučaju da proizvod ne odgovara ili je došlo do greške prilikom poručivanja, kontaktirajte nas kako bismo pronašli najbolje rešenje za zamenu ili vraćanje proizvoda.</p>
+  </details>
+
+  <details>
+    <summary>Da li su delovi originalni?</summary>
+    <p>U ponudi imamo originalne delove, kao i kvalitetne zamenske delove proverene izrade, u zavisnosti od proizvođača i modela mašine.</p>
+  </details>
+
+  <details>
+    <summary>Da li postoji garancija na delove?</summary>
+    <p>Za proizvode za koje proizvođač obezbeđuje garanciju, kupac dobija odgovarajuću garanciju uz proizvod.</p>
+  </details>
+
+  <details>
+    <summary>Da li postoji mogućnost dostave?</summary>
+    <p>Da. Proizvode šaljemo kurirskim službama širom Srbije, uz mogućnost dogovora oko načina isporuke.</p>
+  </details>
+
+  <details>
+    <summary>Da li postoji mogućnost plaćanja na rate?</summary>
+    <p>Za određene proizvode i iznose postoji mogućnost dogovora oko plaćanja. Kontaktirajte nas za više informacija.</p>
+  </details>
+
+</div>
+  </div>
+</section>
   
   <div class="footer-community">
   <div class="footer-community-inner">
