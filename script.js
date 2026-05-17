@@ -828,6 +828,7 @@ function setupProductShare(product){
 
   document.addEventListener('DOMContentLoaded', function(){
     setupDrawer();
+    setupQuickSearch();
     setupPhoneFab();
     if(document.body.dataset.template === 'node') renderNodePage();
     if(document.body.dataset.template === 'product') renderProductPage();
@@ -1015,4 +1016,141 @@ function renderRecentProductsHome(){
   `).join("");
 
   section.style.display = "block";
+}
+
+
+
+
+
+
+
+
+
+
+
+function setupQuickSearch(){
+
+
+
+
+
+
+ const NODES = window.SITE_DATA.nodes;
+
+  function nodeHref(id){
+    const map = {
+      'delovi-za-masine':'delovi-za-masine.html',
+      'plugovi':'plugovi.html',
+      'podrivaci':'podrivaci.html',
+      'drljace':'drljace.html',
+      'freze':'freze.html',
+      'setvospremaci':'setvospremaci.html',
+      'masine':'masine.html',
+      'plugovi-raonici':'plugovi-raonici.html',
+      'plugovi-daske':'plugovi-daske.html',
+      'plugovi-plazovi':'plugovi-plazovi.html',
+      'plugovi-spicevi':'plugovi-spicevi.html',
+      'plugovi-grudi':'plugovi-grudi.html',
+      'plugovi-nastavci':'plugovi-nastavci.html',
+      'plugovi-povisenja':'plugovi-povisenja.html',
+      'plugovi-resetke':'plugovi-resetke.html',
+      'setvospremaci-opruge':'setvospremaci-opruge.html',
+      'setvospremaci-drzaci':'setvospremaci-drzaci.html',
+      'setvospremaci-brisaci':'setvospremaci-brisaci.html',
+      'setvospremaci-motike':'setvospremaci-motike.html',
+      'setvospremaci-rotori':'setvospremaci-rotori.html'
+    };
+
+    return map[id] || ('pregled.html?node=' + encodeURIComponent(id));
+  }
+
+
+
+
+
+
+
+
+
+
+
+  const modal = document.getElementById('quickSearchModal');
+  const openBtn = document.getElementById('quickSearchOpen');
+  const closeBtn = document.getElementById('quickSearchClose');
+
+  const type = document.getElementById('quickType');
+  const level1 = document.getElementById('quickLevel1');
+  const level2 = document.getElementById('quickLevel2');
+  const level3 = document.getElementById('quickLevel3');
+  const go = document.getElementById('quickSearchGo');
+
+  if(!modal || !openBtn) return;
+
+  let selectedNode = null;
+
+  function fillSelect(select, nodeIds, placeholder){
+    select.innerHTML = `<option value="">${placeholder}</option>`;
+    nodeIds.forEach(id => {
+      const node = NODES[id];
+      if(node){
+        select.innerHTML += `<option value="${id}">${node.title}</option>`;
+      }
+    });
+    select.disabled = false;
+  }
+
+  function reset(select, placeholder){
+    select.innerHTML = `<option value="">${placeholder}</option>`;
+    select.disabled = true;
+  }
+
+  openBtn.onclick = () => modal.classList.add('open');
+  closeBtn.onclick = () => modal.classList.remove('open');
+
+  modal.onclick = e => {
+    if(e.target === modal) modal.classList.remove('open');
+  };
+
+  type.onchange = function(){
+    selectedNode = null;
+    reset(level1, 'Izaberi kategoriju');
+    reset(level2, 'Izaberi podkategoriju');
+    reset(level3, 'Izaberi brend / grupu');
+
+    const node = NODES[this.value];
+    if(node && node.children){
+      fillSelect(level1, node.children, 'Izaberi kategoriju');
+    }
+  };
+
+  level1.onchange = function(){
+    selectedNode = this.value;
+    reset(level2, 'Izaberi podkategoriju');
+    reset(level3, 'Izaberi brend / grupu');
+
+    const node = NODES[this.value];
+    if(node && node.children && node.children.length){
+      fillSelect(level2, node.children, 'Izaberi podkategoriju');
+    }
+  };
+
+  level2.onchange = function(){
+    selectedNode = this.value;
+    reset(level3, 'Izaberi brend / grupu');
+
+    const node = NODES[this.value];
+    if(node && node.children && node.children.length){
+      fillSelect(level3, node.children, 'Izaberi brend / grupu');
+    }
+  };
+
+  level3.onchange = function(){
+    selectedNode = this.value;
+  };
+
+  go.onclick = function(){
+    if(selectedNode){
+      window.location.href = nodeHref(selectedNode);
+    }
+  };
 }
