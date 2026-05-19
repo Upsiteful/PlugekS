@@ -634,7 +634,8 @@ localStorage.setItem("recentProducts", JSON.stringify(recent));
     'Malčeri za bagere':'pregled.html?node=malceri-za-bagere',
     'Tanjirače':'pregled.html?node=tanjirace',
     'Gruberi':'pregled.html?node=gruberi',
-    'Traktori': 'pregled.html?node=traktori'
+    'Traktori': 'pregled.html?node=traktori',
+    'Robo kosilice': 'pregled.html?node=robo-kosilice'
   };
 
   return map[product.category] || 'masine.html';
