@@ -504,7 +504,7 @@ window.SITE_DATA = {"menuTree": [{"title": "Početna", "href": "index.html"}, {"
   "title": "Mašine",
   "parent": null,
   "kind": "links",
- "children": ["malceri", "malceri-za-bagere", "tanjirace", "gruberi", "traktori"],
+ "children": ["malceri", "malceri-za-bagere", "tanjirace", "gruberi", "traktori", "robo-kosilice"],
   "products": [],
   "breadcrumb": [],
   "desc": "Izaberite kategoriju mašina."
@@ -565,7 +565,19 @@ window.SITE_DATA = {"menuTree": [{"title": "Početna", "href": "index.html"}, {"
   "breadcrumb": [],
   "desc": "Profesionalne tanjirače za obradu zemljišta."
 },
-
+"robo-kosilice": {
+  "id": "robo-kosilice",
+  "title": "Robo kosilice",
+  "parent": "masine",
+  "kind": "products",
+  "children": [],
+  "products": [
+    "masine-acma-robo-kosilica-9-5ks",
+    "masine-acma-robo-kosilica-16ks"
+  ],
+  "breadcrumb": [],
+  "desc": "Daljinski upravljane robo kosilice za profesionalno košenje."
+},
 
 "gruberi": {
   "id": "gruberi",
