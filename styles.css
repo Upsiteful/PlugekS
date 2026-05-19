@@ -1895,3 +1895,102 @@ html.intro-ready body{
   font-weight:800;
   box-shadow:0 8px 22px rgba(0,0,0,.16);
 }
+
+
+
+
+
+
+.identify-section{
+  padding:0 20px 34px;
+  margin-top: 40px;
+}
+
+.identify-box{
+  max-width:1280px;
+  margin:0 auto;
+  background:linear-gradient(135deg,#1d8f3a,#157531);
+  border-radius:28px;
+  padding:34px;
+  color:#fff;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:30px;
+  box-shadow:0 16px 40px rgba(0,0,0,.16);
+}
+
+.identify-mini{
+  display:inline-block;
+  font-size:13px;
+  font-weight:800;
+  letter-spacing:2px;
+  margin-bottom:10px;
+  opacity:.9;
+}
+
+.identify-text h2{
+  margin:0 0 14px;
+  font-size:38px;
+  line-height:1.15;
+}
+
+.identify-text p{
+  margin:0;
+  max-width:700px;
+  font-size:18px;
+  line-height:1.7;
+  color:rgba(255,255,255,.92);
+}
+
+.identify-actions{
+  display:flex;
+  gap:14px;
+  flex-shrink:0;
+}
+
+.identify-btn{
+  min-width:150px;
+  height:58px;
+  border-radius:16px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:#fff;
+  color:#1d8f3a;
+  font-size:18px;
+  font-weight:800;
+  text-decoration:none;
+  transition:.2s ease;
+}
+
+.identify-btn:hover{
+  transform:translateY(-2px);
+}
+
+@media(max-width:900px){
+
+  .identify-box{
+    flex-direction:column;
+    align-items:flex-start;
+    padding:28px 24px;
+  }
+
+  .identify-text h2{
+    font-size:30px;
+  }
+
+  .identify-text p{
+    font-size:16px;
+  }
+
+  .identify-actions{
+    width:100%;
+    flex-direction:column;
+  }
+
+  .identify-btn{
+    width:100%;
+  }
+
+}
