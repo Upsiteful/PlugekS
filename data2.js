@@ -1330,3 +1330,90 @@ Startrac traktori namenjeni su Italijanskom tržištu i predstavljaju jedne od n
   }
 
 });
+
+
+
+
+
+
+
+
+
+
+Object.assign(window.SITE_DATA.products, {
+
+  "masine-acma-robo-kosilica-9-5ks": {
+    "id": "masine-acma-robo-kosilica-9-5ks",
+    "name": "ACMA robo kosilica 9.5 KS",
+    "section": "Mašine",
+    "category": "Robo kosilice",
+    "group": "ACMA",
+
+    "images": [
+      "images/masine-acma-robo-kosilica-1.png",
+      "images/masine-acma-robo-kosilica-2.png",
+      "images/masine-acma-robo-kosilica-3.png"
+    ],
+
+    "description": `ACMA robo kosilica sa daljinskim upravljanjem, namenjena profesionalnom košenju i radu na zahtevnim terenima.
+
+Model:
+9.5 KS
+
+ Daljinsko paljenje motora
+ Daljinsko upravljanje
+ Elektronsko regulaciono podizanje kose
+ Brze i spore brzine
+ Pogon preko elektromotora
+ Pogonske baterije se pune na struju
+ Punjenje baterija tokom rada preko benzinskog motora
+ Benzinski motor pokreće rotacioni malčer
+
+Težina:
+150–255 kg, zavisno od modela
+
+ACMA je premium brend iz Italije koji proizvodi ove kosilice.
+
+• Novo, nekorišćeno
+• Garancija 2 godine
+• Pozvati za cenu i dostupnost`
+  },
+
+  "masine-acma-robo-kosilica-16ks": {
+    "id": "masine-acma-robo-kosilica-16ks",
+    "name": "ACMA robo kosilica 16 KS",
+    "section": "Mašine",
+    "category": "Robo kosilice",
+    "group": "ACMA",
+
+    "images": [
+      "images/masine-acma-robo-kosilica-1.png",
+      "images/masine-acma-robo-kosilica-2.png",
+      "images/masine-acma-robo-kosilica-3.png"
+    ],
+
+    "description": `ACMA robo kosilica sa daljinskim upravljanjem, namenjena profesionalnom košenju i radu na zahtevnim terenima.
+
+Model:
+16 KS
+
+ Daljinsko paljenje motora
+ Daljinsko upravljanje
+ Elektronsko regulaciono podizanje kose
+ Brze i spore brzine
+ Pogon preko elektromotora
+ Pogonske baterije se pune na struju
+ Punjenje baterija tokom rada preko benzinskog motora
+ Benzinski motor pokreće rotacioni malčer
+
+Težina:
+150–255 kg, zavisno od modela
+
+ACMA je premium brend iz Italije koji proizvodi ove kosilice.
+
+• Novo, nekorišćeno
+• Garancija 2 godine
+• Pozvati za cenu i dostupnost`
+  }
+
+});
