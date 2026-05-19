@@ -504,7 +504,7 @@ window.SITE_DATA = {"menuTree": [{"title": "Početna", "href": "index.html"}, {"
   "title": "Mašine",
   "parent": null,
   "kind": "links",
-  "children": ["malceri", "malceri-za-bagere"],
+ "children": ["malceri", "malceri-za-bagere", "tanjirace", "gruberi", "traktori"],
   "products": [],
   "breadcrumb": [],
   "desc": "Izaberite kategoriju mašina."
@@ -548,6 +548,54 @@ window.SITE_DATA = {"menuTree": [{"title": "Početna", "href": "index.html"}, {"
   ],
   "breadcrumb": [],
   "desc": "Pregled malčera za bagere."
+},
+"tanjirace": {
+  "id": "tanjirace",
+  "title": "Tanjirače",
+  "parent": "masine",
+  "kind": "products",
+  "children": [],
+  "products": [
+    "masine-rolland-field-at-premium-tanjiraca-2-5m",
+    "masine-rolland-field-at-premium-tanjiraca-2-7m",
+    "masine-rolland-field-at-premium-tanjiraca-3m",
+    "masine-rolland-field-at-premium-tanjiraca-3-5m",
+    "masine-rolland-field-at-premium-tanjiraca-4m"
+  ],
+  "breadcrumb": [],
+  "desc": "Profesionalne tanjirače za obradu zemljišta."
+},
+
+
+"gruberi": {
+  "id": "gruberi",
+  "title": "Gruberi",
+  "parent": "masine",
+  "kind": "products",
+  "children": [],
+  "products": [
+    "masine-rolland-grander-ab-gruber-2-2m",
+    "masine-rolland-grander-ab-gruber-2-5m",
+    "masine-rolland-grander-ab-gruber-3m",
+    "masine-rolland-grander-ab-gruber-3-5m",
+    "masine-rolland-grander-ab-gruber-4m"
+  ],
+  "breadcrumb": [],
+  "desc": "Profesionalni gruberi za dubinsku obradu zemljišta."
+},
+"traktori": {
+  "id": "traktori",
+  "title": "Traktori",
+  "parent": "masine",
+  "kind": "products",
+  "children": [],
+  "products": [
+    "masine-startrac-22ks",
+    "masine-startrac-26ks",
+    "masine-startrac-26h"
+  ],
+  "breadcrumb": [],
+  "desc": "Kompaktni profesionalni traktori za različite namene."
 },
 "delovi-za-masine": {"id": "delovi-za-masine", "title": "Delovi za mašine", "parent": null, "kind": "links", "children": ["plugovi", "podrivaci", "drljace", "freze", "setvospremaci", "roto-drljace"], "products": [], "breadcrumb": [], "desc": "Izaberite grupu delova za mašine."}, "plugovi": {"id": "plugovi", "title": "Delovi za plugove", "parent": "delovi-za-masine", "kind": "links", "children": ["plugovi-raonici", "plugovi-daske", "plugovi-plazovi", "plugovi-spicevi", "plugovi-grudi", "plugovi-nastavci", "plugovi-povisenja", "plugovi-resetke"], "products": [], "breadcrumb": [], "desc": "Sve sekcije delova za plugove, razvrstane po vrsti dela."}, "podrivaci": {"id": "podrivaci", "title": "Delovi za podrivače", "parent": "delovi-za-masine", "kind": "products", "children": [], "products":
      ["podrivaci-direktni-proizvodi-opruga-20x20", 
