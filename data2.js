@@ -833,3 +833,500 @@ Object.assign(window.SITE_DATA.products, {
 window.SITE_DATA.nodes["plugovi-spicevi-rabewerk"].products.push(
   "plugovi-rabe-raonik-ssp350-ws-l"
 );
+
+
+
+
+
+Object.assign(window.SITE_DATA.nodes, {
+  "tanjirace": {
+    "id": "tanjirace",
+    "title": "Tanjirače",
+    "parent": "masine",
+    "kind": "products",
+    "children": [],
+    "products": [
+      "masine-rolland-field-at-premium-tanjiraca-2-5m",
+      "masine-rolland-field-at-premium-tanjiraca-2-7m",
+      "masine-rolland-field-at-premium-tanjiraca-3m",
+      "masine-rolland-field-at-premium-tanjiraca-3-5m",
+      "masine-rolland-field-at-premium-tanjiraca-4m"
+    ],
+    "breadcrumb": [],
+    "desc": "Profesionalne tanjirače za obradu zemljišta."
+  }
+});
+
+Object.assign(window.SITE_DATA.products, {
+  "masine-rolland-field-at-premium-tanjiraca-2-5m": {
+    "id": "masine-rolland-field-at-premium-tanjiraca-2-5m",
+    "name": "Rolland Field AT Premium tanjirača 2.5m",
+    "section": "Mašine",
+    "category": "Tanjirače",
+    "group": "Rolland Field",
+    "images": [
+      "images/masine-rolland-field-at-premium-tanjirace.png",
+      "images/masine-rolland-field-at-premium-tanjirace-2.png",
+      "images/masine-rolland-field-at-premium-tanjirace-3.png"
+    ],
+    "description": `Profesionalna kratka tanjirača sa HYDROPACK sistemom namenjena ozbiljnoj obradi zemljišta i velikom učinku u radu.
+
+Radna širina:
+2.5m
+
+ Diskovi 560mm
+ Premium glavčine bez održavanja
+ Gumeni amortizeri
+ Jaka konstrukcija
+ Veliki izbor valjaka
+ Mogućnost HYDROPACK sistema za sejalicu
+ Evropski kvalitet izrade
+
+Mogućnost različitih konfiguracija:
+✓ Packer roller
+✓ V-Type roller
+✓ Croskill roller
+✓ SKF glavčine
+✓ OFAS premium diskovi
+✓ Hidraulično podešavanje
+
+• Direktan uvoz
+• Prevoz obezbeđen
+• Pozvati za ponudu i konfiguraciju`
+  },
+
+  "masine-rolland-field-at-premium-tanjiraca-2-7m": {
+    "id": "masine-rolland-field-at-premium-tanjiraca-2-7m",
+    "name": "Rolland Field AT Premium tanjirača 2.7m",
+    "section": "Mašine",
+    "category": "Tanjirače",
+    "group": "Rolland Field",
+    "images": [
+      "images/masine-rolland-field-at-premium-tanjirace.png",
+      "images/masine-rolland-field-at-premium-tanjirace-2.png",
+      "images/masine-rolland-field-at-premium-tanjirace-3.png"
+    ],
+    "description": `Profesionalna kratka tanjirača sa HYDROPACK sistemom namenjena ozbiljnoj obradi zemljišta i velikom učinku u radu.
+
+Radna širina:
+2.7m
+
+ Diskovi 560mm
+ Premium glavčine bez održavanja
+ Gumeni amortizeri
+ Jaka konstrukcija
+ Veliki izbor valjaka
+ Mogućnost HYDROPACK sistema za sejalicu
+ Evropski kvalitet izrade
+
+Mogućnost različitih konfiguracija:
+✓ Packer roller
+✓ V-Type roller
+✓ Croskill roller
+✓ SKF glavčine
+✓ OFAS premium diskovi
+✓ Hidraulično podešavanje
+
+• Direktan uvoz
+• Prevoz obezbeđen
+• Pozvati za ponudu i konfiguraciju`
+  },
+
+  "masine-rolland-field-at-premium-tanjiraca-3m": {
+    "id": "masine-rolland-field-at-premium-tanjiraca-3m",
+    "name": "Rolland Field AT Premium tanjirača 3m",
+    "section": "Mašine",
+    "category": "Tanjirače",
+    "group": "Rolland Field",
+    "images": [
+      "images/masine-rolland-field-at-premium-tanjirace.png",
+      "images/masine-rolland-field-at-premium-tanjirace-2.png",
+      "images/masine-rolland-field-at-premium-tanjirace-3.png"
+    ],
+    "description": `Profesionalna kratka tanjirača sa HYDROPACK sistemom namenjena ozbiljnoj obradi zemljišta i velikom učinku u radu.
+
+Radna širina:
+3m
+
+ Diskovi 560mm
+ Premium glavčine bez održavanja
+ Gumeni amortizeri
+ Jaka konstrukcija
+ Veliki izbor valjaka
+ Mogućnost HYDROPACK sistema za sejalicu
+ Evropski kvalitet izrade
+
+Mogućnost različitih konfiguracija:
+✓ Packer roller
+✓ V-Type roller
+✓ Croskill roller
+✓ SKF glavčine
+✓ OFAS premium diskovi
+✓ Hidraulično podešavanje
+
+• Direktan uvoz
+• Prevoz obezbeđen
+• Pozvati za ponudu i konfiguraciju`
+  },
+
+  "masine-rolland-field-at-premium-tanjiraca-3-5m": {
+    "id": "masine-rolland-field-at-premium-tanjiraca-3-5m",
+    "name": "Rolland Field AT Premium tanjirača 3.5m",
+    "section": "Mašine",
+    "category": "Tanjirače",
+    "group": "Rolland Field",
+    "images": [
+      "images/masine-rolland-field-at-premium-tanjirace.png",
+      "images/masine-rolland-field-at-premium-tanjirace-2.png",
+      "images/masine-rolland-field-at-premium-tanjirace-3.png"
+    ],
+    "description": `Profesionalna kratka tanjirača sa HYDROPACK sistemom namenjena ozbiljnoj obradi zemljišta i velikom učinku u radu.
+
+Radna širina:
+3.5m
+
+ Diskovi 560mm
+ Premium glavčine bez održavanja
+ Gumeni amortizeri
+ Jaka konstrukcija
+ Veliki izbor valjaka
+ Mogućnost HYDROPACK sistema za sejalicu
+ Evropski kvalitet izrade
+
+Mogućnost različitih konfiguracija:
+✓ Packer roller
+✓ V-Type roller
+✓ Croskill roller
+✓ SKF glavčine
+✓ OFAS premium diskovi
+✓ Hidraulično podešavanje
+
+• Direktan uvoz
+• Prevoz obezbeđen
+• Pozvati za ponudu i konfiguraciju`
+  },
+
+  "masine-rolland-field-at-premium-tanjiraca-4m": {
+    "id": "masine-rolland-field-at-premium-tanjiraca-4m",
+    "name": "Rolland Field AT Premium tanjirača 4m",
+    "section": "Mašine",
+    "category": "Tanjirače",
+    "group": "Rolland Field",
+    "images": [
+      "images/masine-rolland-field-at-premium-tanjirace.png",
+      "images/masine-rolland-field-at-premium-tanjirace-2.png",
+      "images/masine-rolland-field-at-premium-tanjirace-3.png"
+    ],
+    "description": `Profesionalna kratka tanjirača sa HYDROPACK sistemom namenjena ozbiljnoj obradi zemljišta i velikom učinku u radu.
+
+Radna širina:
+4m
+
+ Diskovi 560mm
+ Premium glavčine bez održavanja
+ Gumeni amortizeri
+ Jaka konstrukcija
+ Veliki izbor valjaka
+ Mogućnost HYDROPACK sistema za sejalicu
+ Evropski kvalitet izrade
+
+Mogućnost različitih konfiguracija:
+✓ Packer roller
+✓ V-Type roller
+✓ Croskill roller
+✓ SKF glavčine
+✓ OFAS premium diskovi
+✓ Hidraulično podešavanje
+
+• Direktan uvoz
+• Prevoz obezbeđen
+• Pozvati za ponudu i konfiguraciju`
+  }
+});
+
+
+
+
+
+Object.assign(window.SITE_DATA.products, {
+
+  "masine-rolland-grander-ab-gruber-2-2m": {
+    "id": "masine-rolland-grander-ab-gruber-2-2m",
+    "name": "ROLLAND Grander AB gruber 2.2m",
+    "section": "Mašine",
+    "category": "Gruberi",
+    "group": "ROLLAND",
+
+    "images": [
+      "images/masine-rolland-grander-ab-gruber-1.png",
+      "images/masine-rolland-grander-ab-gruber-2.png",
+      "images/masine-rolland-grander-ab-gruber-3.png"
+    ],
+
+    "description": `ROLLAND Grander AB premium gruber za ozbiljnu obradu zemljišta.
+
+Radna širina:
+2.2m
+
+ Masivna i ojačana konstrukcija
+ 3 reda radnih tela
+ Klirens 880mm
+ Opružna zaštita
+ Diskovi Ø460mm
+ Radna dubina do 30cm
+ Premium glavčine bez održavanja
+
+• Direktan uvoz
+• Prevoz obezbeđen`
+  },
+
+  "masine-rolland-grander-ab-gruber-2-5m": {
+    "id": "masine-rolland-grander-ab-gruber-2-5m",
+    "name": "ROLLAND Grander AB gruber 2.5m",
+    "section": "Mašine",
+    "category": "Gruberi",
+    "group": "ROLLAND",
+
+    "images": [
+      "images/masine-rolland-grander-ab-gruber-1.png",
+      "images/masine-rolland-grander-ab-gruber-2.png",
+      "images/masine-rolland-grander-ab-gruber-3.png"
+    ],
+
+    "description": `ROLLAND Grander AB premium gruber za ozbiljnu obradu zemljišta.
+
+Radna širina:
+2.5m
+
+ Masivna i ojačana konstrukcija
+ 3 reda radnih tela
+ Klirens 880mm
+ Opružna zaštita
+ Diskovi Ø460mm
+ Radna dubina do 30cm
+ Premium glavčine bez održavanja
+
+• Direktan uvoz
+• Prevoz obezbeđen`
+  },
+
+  "masine-rolland-grander-ab-gruber-3m": {
+    "id": "masine-rolland-grander-ab-gruber-3m",
+    "name": "ROLLAND Grander AB gruber 3m",
+    "section": "Mašine",
+    "category": "Gruberi",
+    "group": "ROLLAND",
+
+    "images": [
+      "images/masine-rolland-grander-ab-gruber-1.png",
+      "images/masine-rolland-grander-ab-gruber-2.png",
+      "images/masine-rolland-grander-ab-gruber-3.png"
+    ],
+
+    "description": `ROLLAND Grander AB premium gruber za ozbiljnu obradu zemljišta.
+
+Radna širina:
+3m
+
+ Masivna i ojačana konstrukcija
+ 3 reda radnih tela
+ Klirens 880mm
+ Opružna zaštita
+ Diskovi Ø460mm
+ Radna dubina do 30cm
+ Premium glavčine bez održavanja
+
+• Direktan uvoz
+• Prevoz obezbeđen`
+  },
+
+  "masine-rolland-grander-ab-gruber-3-5m": {
+    "id": "masine-rolland-grander-ab-gruber-3-5m",
+    "name": "ROLLAND Grander AB gruber 3.5m",
+    "section": "Mašine",
+    "category": "Gruberi",
+    "group": "ROLLAND",
+
+    "images": [
+      "images/masine-rolland-grander-ab-gruber-1.png",
+      "images/masine-rolland-grander-ab-gruber-2.png",
+      "images/masine-rolland-grander-ab-gruber-3.png"
+    ],
+
+    "description": `ROLLAND Grander AB premium gruber za ozbiljnu obradu zemljišta.
+
+Radna širina:
+3.5m
+
+ Masivna i ojačana konstrukcija
+ 3 reda radnih tela
+ Klirens 880mm
+ Opružna zaštita
+ Diskovi Ø460mm
+ Radna dubina do 30cm
+ Premium glavčine bez održavanja
+
+• Direktan uvoz
+• Prevoz obezbeđen`
+  },
+
+  "masine-rolland-grander-ab-gruber-4m": {
+    "id": "masine-rolland-grander-ab-gruber-4m",
+    "name": "ROLLAND Grander AB gruber 4m",
+    "section": "Mašine",
+    "category": "Gruberi",
+    "group": "ROLLAND",
+
+    "images": [
+      "images/masine-rolland-grander-ab-gruber-1.png",
+      "images/masine-rolland-grander-ab-gruber-2.png",
+      "images/masine-rolland-grander-ab-gruber-3.png"
+    ],
+
+    "description": `ROLLAND Grander AB premium gruber za ozbiljnu obradu zemljišta.
+
+Radna širina:
+4m
+
+ Masivna i ojačana konstrukcija
+ 3 reda radnih tela
+ Klirens 880mm
+ Opružna zaštita
+ Diskovi Ø460mm
+ Radna dubina do 30cm
+ Premium glavčine bez održavanja
+
+• Direktan uvoz
+• Prevoz obezbeđen`
+  }
+
+});
+
+
+
+
+
+
+
+
+Object.assign(window.SITE_DATA.products, {
+
+  "masine-startrac-22ks": {
+    "id": "masine-startrac-22ks",
+    "name": "Startrac traktor 22 KS",
+    "section": "Mašine",
+    "category": "Traktori",
+    "group": "Startrac",
+
+    "images": [
+      "images/masine-startrac-1.png",
+      "images/masine-startrac-2.png",
+      "images/masine-startrac-3.png"
+    ],
+
+    "description": `Startrac kompaktni profesionalni traktor sa Mitsubishi motorom namenjen ozbiljnom radu i dugotrajnoj eksploataciji.
+
+Model:
+22 KS
+
+ Mitsubishi motor – 3 cilindra
+ Menjač 4 brzine + 3 grupe napred
+ 3 brzine unazad
+ 540/750 o/min kardanskog vratila
+ Blokada diferencijala
+ 2 hidraulične pumpe
+ 2 hidraulična izvoda kiper ventila
+
+Mogućnosti opreme:
+✓ Rotaciona kosilica ispod traktora
+✓ Prednji industrijski utovarivač
+✓ Grejna kabina
+
+Dostupno više modela i dimenzija točkova.
+
+Startrac traktori namenjeni su Italijanskom tržištu i predstavljaju jedne od najkvalitetnijih kompaktnih traktora na zapadnoevropskom tržištu.
+
+• Direktan uvoz
+• Prevoz obezbeđen
+• Pozvati za cenu i dostupnost`
+  },
+
+  "masine-startrac-26ks": {
+    "id": "masine-startrac-26ks",
+    "name": "Startrac traktor 26 KS",
+    "section": "Mašine",
+    "category": "Traktori",
+    "group": "Startrac",
+
+    "images": [
+      "images/masine-startrac-1.png",
+      "images/masine-startrac-2.png",
+      "images/masine-startrac-3.png"
+    ],
+
+    "description": `Startrac kompaktni profesionalni traktor sa Mitsubishi motorom namenjen ozbiljnom radu i dugotrajnoj eksploataciji.
+
+Model:
+26 KS – mehanički menjač
+ Mitsubishi motor – 3 cilindra
+ Menjač 4 brzine + 3 grupe napred
+ 3 brzine unazad
+ 540/750 o/min kardanskog vratila
+ Blokada diferencijala
+ 2 hidraulične pumpe
+ 2 hidraulična izvoda kiper ventila
+
+Mogućnosti opreme:
+✓ Rotaciona kosilica ispod traktora
+✓ Prednji industrijski utovarivač
+✓ Grejna kabina
+
+Dostupno više modela i dimenzija točkova.
+
+Startrac traktori namenjeni su Italijanskom tržištu i predstavljaju jedne od najkvalitetnijih kompaktnih traktora na zapadnoevropskom tržištu.
+
+• Direktan uvoz
+• Prevoz obezbeđen
+• Pozvati za cenu i dostupnost`
+  },
+
+  "masine-startrac-26h": {
+    "id": "masine-startrac-26h",
+    "name": "Startrac traktor 26H",
+    "section": "Mašine",
+    "category": "Traktori",
+    "group": "Startrac",
+
+    "images": [
+      "images/masine-startrac-1.png",
+      "images/masine-startrac-2.png",
+      "images/masine-startrac-3.png"
+    ],
+
+    "description": `Startrac profesionalni kompaktni traktor sa hidrostatskim prenosom.
+
+Model:
+26H – hidrostatski prenos
+
+ Mitsubishi motor – 3 cilindra
+ Hidrostatski prenos
+ 540/750 o/min kardanskog vratila
+ Blokada diferencijala
+ 2 hidraulične pumpe
+ 2 hidraulična izvoda kiper ventila
+
+Mogućnosti opreme:
+✓ Rotaciona kosilica ispod traktora
+✓ Prednji industrijski utovarivač
+✓ Grejna kabina
+
+Dostupno više modela i dimenzija točkova.
+
+Startrac traktori namenjeni su Italijanskom tržištu i predstavljaju jedne od najkvalitetnijih kompaktnih traktora na zapadnoevropskom tržištu.
+
+• Direktan uvoz
+• Prevoz obezbeđen
+• Pozvati za cenu i dostupnost`
+  }
+
+});
