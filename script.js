@@ -627,11 +627,17 @@ recent = recent.slice(0, 6);
 localStorage.setItem("recentProducts", JSON.stringify(recent));
       }
   function inferBackLink(product){
-    if(product.section === 'Mašine'){
-  if(product.category === 'Malčeri za bagere'){
-    return 'pregled.html?node=malceri-za-bagere';
-  }
-  return 'pregled.html?node=malceri';
+  if(product.section === 'Mašine'){
+
+  const map = {
+    'Malčeri':'pregled.html?node=malceri',
+    'Malčeri za bagere':'pregled.html?node=malceri-za-bagere',
+    'Tanjirače':'pregled.html?node=tanjirace',
+    'Gruberi':'pregled.html?node=gruberi',
+    'Traktori': 'pregled.html?node=traktori'
+  };
+
+  return map[product.category] || 'masine.html';
 }
     if(product.section === 'Plugovi'){
       const map = {
