@@ -880,9 +880,7 @@ Object.assign(window.SITE_DATA.products, {
  Mogućnost HYDROPACK sistema za sejalicu
  Evropski kvalitet izrade
 
-• Direktan uvoz
-• Prevoz obezbeđen
-• Pozvati za ponudu i konfiguraciju`
+`
   },
 
   "masine-rolland-grander-ab-gruber": {
@@ -928,10 +926,7 @@ Object.assign(window.SITE_DATA.products, {
 • Prevoz obezbeđen
 • Pozvati za ponudu i konfiguraciju
  Radna dubina do 30cm
- Premium glavčine bez održavanja
-
-• Direktan uvoz
-• Prevoz obezbeđen`
+`
   }
 
 });
