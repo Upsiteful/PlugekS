@@ -31,6 +31,7 @@
       'setvospremaci-brisaci':'setvospremaci-brisaci.html',
       'setvospremaci-motike':'setvospremaci-motike.html',
       'masine':'masine.html',
+      'traktori':'pregled.html?node=traktori',
     
       'setvospremaci-rotori':'setvospremaci-rotori.html'
     };
@@ -390,12 +391,19 @@ node.products.forEach(pid => {
   imageWrap.className = 'product-card-image';
 
   const img = document.createElement('img');
-  img.src = 'images/' + p.id + '.jpg';
+
+img.src = (p.images && p.images.length)
+  ? p.images[0]
+  : 'images/' + p.id + '.jpg';
   img.loading = "lazy";
   img.alt = p.name;
   img.onerror = function () {
     this.onerror = null;
-    this.src = 'images/' + p.id + '.png';
+    if(p.images && p.images.length > 1){
+  this.src = p.images[0];
+} else {
+  this.src = 'images/' + p.id + '.png';
+}
     this.onerror = function () {
       this.onerror = null;
       this.src = 'images/' + p.id + '.webp';
@@ -493,8 +501,9 @@ canonical.setAttribute(
 qs('#breadcrumb').innerHTML = breadcrumbHtmlForProduct(product);
     qs('#backLink').href = inferBackLink(product);
    qs('#prodTitle').textContent = product.name;
-qs('#prodText').innerHTML = (product.description || 'Za više informacija i dostupnost pozovite nas.').replace(/\n/g, '<br>');
-qs('#metaSection').textContent = product.section;
+qs('#prodText').innerHTML = (product.description || 'Za više informacija i dostupnost pozovite nas.')
+  .replace(/\n/g, '<br>')
+  .replace(/(<br>\s*)+(<table)/g, '$2');qs('#metaSection').textContent = product.section;
 qs('#metaCategory').textContent = product.category;
 qs('#metaGroup').textContent = product.group || 'Direktan proizvod';
    const formats = ["jpg", "png", "webp"];
@@ -514,7 +523,7 @@ for (let ext of formats) {
 }
 
 setTimeout(() => {
-  if (!imgFound) {
+  if (!imgFound && !(product.images && product.images.length)) {
     qs('#imageSlot').innerHTML =
       '<div style="padding:40px;text-align:center;color:#888;">Slika uskoro</div>';
   }
