@@ -838,361 +838,90 @@ window.SITE_DATA.nodes["plugovi-spicevi-rabewerk"].products.push(
 
 
 
-Object.assign(window.SITE_DATA.nodes, {
-  "tanjirace": {
-    "id": "tanjirace",
-    "title": "Tanjirače",
-    "parent": "masine",
-    "kind": "products",
-    "children": [],
-    "products": [
-      "masine-rolland-field-at-premium-tanjiraca-2-5m",
-      "masine-rolland-field-at-premium-tanjiraca-2-7m",
-      "masine-rolland-field-at-premium-tanjiraca-3m",
-      "masine-rolland-field-at-premium-tanjiraca-3-5m",
-      "masine-rolland-field-at-premium-tanjiraca-4m"
-    ],
-    "breadcrumb": [],
-    "desc": "Profesionalne tanjirače za obradu zemljišta."
-  }
-});
-
-Object.assign(window.SITE_DATA.products, {
-  "masine-rolland-field-at-premium-tanjiraca-2-5m": {
-    "id": "masine-rolland-field-at-premium-tanjiraca-2-5m",
-    "name": "Rolland Field AT Premium tanjirača 2.5m",
-    "section": "Mašine",
-    "category": "Tanjirače",
-    "group": "Rolland Field",
-    "images": [
-      "images/masine-rolland-field-at-premium-tanjirace.png",
-      "images/masine-rolland-field-at-premium-tanjirace-2.png",
-      "images/masine-rolland-field-at-premium-tanjirace-3.png"
-    ],
-    "description": `Profesionalna kratka tanjirača sa HYDROPACK sistemom namenjena ozbiljnoj obradi zemljišta i velikom učinku u radu.
-
-Radna širina:
-2.5m
-
- Diskovi 560mm
- Premium glavčine bez održavanja
- Gumeni amortizeri
- Jaka konstrukcija
- Veliki izbor valjaka
- Mogućnost HYDROPACK sistema za sejalicu
- Evropski kvalitet izrade
-
-Mogućnost različitih konfiguracija:
-✓ Packer roller
-✓ V-Type roller
-✓ Croskill roller
-✓ SKF glavčine
-✓ OFAS premium diskovi
-✓ Hidraulično podešavanje
-
-• Direktan uvoz
-• Prevoz obezbeđen
-• Pozvati za ponudu i konfiguraciju`
-  },
-
-  "masine-rolland-field-at-premium-tanjiraca-2-7m": {
-    "id": "masine-rolland-field-at-premium-tanjiraca-2-7m",
-    "name": "Rolland Field AT Premium tanjirača 2.7m",
-    "section": "Mašine",
-    "category": "Tanjirače",
-    "group": "Rolland Field",
-    "images": [
-      "images/masine-rolland-field-at-premium-tanjirace.png",
-      "images/masine-rolland-field-at-premium-tanjirace-2.png",
-      "images/masine-rolland-field-at-premium-tanjirace-3.png"
-    ],
-    "description": `Profesionalna kratka tanjirača sa HYDROPACK sistemom namenjena ozbiljnoj obradi zemljišta i velikom učinku u radu.
-
-Radna širina:
-2.7m
-
- Diskovi 560mm
- Premium glavčine bez održavanja
- Gumeni amortizeri
- Jaka konstrukcija
- Veliki izbor valjaka
- Mogućnost HYDROPACK sistema za sejalicu
- Evropski kvalitet izrade
-
-Mogućnost različitih konfiguracija:
-✓ Packer roller
-✓ V-Type roller
-✓ Croskill roller
-✓ SKF glavčine
-✓ OFAS premium diskovi
-✓ Hidraulično podešavanje
-
-• Direktan uvoz
-• Prevoz obezbeđen
-• Pozvati za ponudu i konfiguraciju`
-  },
-
-  "masine-rolland-field-at-premium-tanjiraca-3m": {
-    "id": "masine-rolland-field-at-premium-tanjiraca-3m",
-    "name": "Rolland Field AT Premium tanjirača 3m",
-    "section": "Mašine",
-    "category": "Tanjirače",
-    "group": "Rolland Field",
-    "images": [
-      "images/masine-rolland-field-at-premium-tanjirace.png",
-      "images/masine-rolland-field-at-premium-tanjirace-2.png",
-      "images/masine-rolland-field-at-premium-tanjirace-3.png"
-    ],
-    "description": `Profesionalna kratka tanjirača sa HYDROPACK sistemom namenjena ozbiljnoj obradi zemljišta i velikom učinku u radu.
-
-Radna širina:
-3m
-
- Diskovi 560mm
- Premium glavčine bez održavanja
- Gumeni amortizeri
- Jaka konstrukcija
- Veliki izbor valjaka
- Mogućnost HYDROPACK sistema za sejalicu
- Evropski kvalitet izrade
-
-Mogućnost različitih konfiguracija:
-✓ Packer roller
-✓ V-Type roller
-✓ Croskill roller
-✓ SKF glavčine
-✓ OFAS premium diskovi
-✓ Hidraulično podešavanje
-
-• Direktan uvoz
-• Prevoz obezbeđen
-• Pozvati za ponudu i konfiguraciju`
-  },
-
-  "masine-rolland-field-at-premium-tanjiraca-3-5m": {
-    "id": "masine-rolland-field-at-premium-tanjiraca-3-5m",
-    "name": "Rolland Field AT Premium tanjirača 3.5m",
-    "section": "Mašine",
-    "category": "Tanjirače",
-    "group": "Rolland Field",
-    "images": [
-      "images/masine-rolland-field-at-premium-tanjirace.png",
-      "images/masine-rolland-field-at-premium-tanjirace-2.png",
-      "images/masine-rolland-field-at-premium-tanjirace-3.png"
-    ],
-    "description": `Profesionalna kratka tanjirača sa HYDROPACK sistemom namenjena ozbiljnoj obradi zemljišta i velikom učinku u radu.
-
-Radna širina:
-3.5m
-
- Diskovi 560mm
- Premium glavčine bez održavanja
- Gumeni amortizeri
- Jaka konstrukcija
- Veliki izbor valjaka
- Mogućnost HYDROPACK sistema za sejalicu
- Evropski kvalitet izrade
-
-Mogućnost različitih konfiguracija:
-✓ Packer roller
-✓ V-Type roller
-✓ Croskill roller
-✓ SKF glavčine
-✓ OFAS premium diskovi
-✓ Hidraulično podešavanje
-
-• Direktan uvoz
-• Prevoz obezbeđen
-• Pozvati za ponudu i konfiguraciju`
-  },
-
-  "masine-rolland-field-at-premium-tanjiraca-4m": {
-    "id": "masine-rolland-field-at-premium-tanjiraca-4m",
-    "name": "Rolland Field AT Premium tanjirača 4m",
-    "section": "Mašine",
-    "category": "Tanjirače",
-    "group": "Rolland Field",
-    "images": [
-      "images/masine-rolland-field-at-premium-tanjirace.png",
-      "images/masine-rolland-field-at-premium-tanjirace-2.png",
-      "images/masine-rolland-field-at-premium-tanjirace-3.png"
-    ],
-    "description": `Profesionalna kratka tanjirača sa HYDROPACK sistemom namenjena ozbiljnoj obradi zemljišta i velikom učinku u radu.
-
-Radna širina:
-4m
-
- Diskovi 560mm
- Premium glavčine bez održavanja
- Gumeni amortizeri
- Jaka konstrukcija
- Veliki izbor valjaka
- Mogućnost HYDROPACK sistema za sejalicu
- Evropski kvalitet izrade
-
-Mogućnost različitih konfiguracija:
-✓ Packer roller
-✓ V-Type roller
-✓ Croskill roller
-✓ SKF glavčine
-✓ OFAS premium diskovi
-✓ Hidraulično podešavanje
-
-• Direktan uvoz
-• Prevoz obezbeđen
-• Pozvati za ponudu i konfiguraciju`
-  }
-});
-
-
-
-
-
 Object.assign(window.SITE_DATA.products, {
 
-  "masine-rolland-grander-ab-gruber-2-2m": {
-    "id": "masine-rolland-grander-ab-gruber-2-2m",
-    "name": "ROLLAND Grander AB gruber 2.2m",
+  "masine-rolland-field-at-premium-tanjiraca": {
+    "id": "masine-rolland-field-at-premium-tanjiraca",
+    "name": "Rolland Field AT Premium tanjirača",
     "section": "Mašine",
-    "category": "Gruberi",
-    "group": "ROLLAND",
-
+    "category": "Tanjirače",
+    "group": "Rolland Field",
     "images": [
-      "images/masine-rolland-grander-ab-gruber-1.png",
-      "images/masine-rolland-grander-ab-gruber-2.png",
-      "images/masine-rolland-grander-ab-gruber-3.png"
+      "images/masine-rolland-field-at-premium-tanjiraca-3m.png",
+      "images/masine-rolland-field-at-premium-tanjirace-2.png",
+      "images/masine-rolland-field-at-premium-tanjirace-3.png"
     ],
+    "description": `Profesionalna kratka tanjirača sa HYDROPACK sistemom namenjena ozbiljnoj obradi zemljišta i velikom učinku u radu.
 
-    "description": `ROLLAND Grander AB premium gruber za ozbiljnu obradu zemljišta.
+<table class="spec-table">
+  <thead>
+    <tr>
+      <th>Model</th>
+      <th>Radna širina</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>Rolland Field AT</td><td>2.5m</td></tr>
+    <tr><td>Rolland Field AT</td><td>2.7m</td></tr>
+    <tr><td>Rolland Field AT</td><td>3m</td></tr>
+    <tr><td>Rolland Field AT</td><td>3.5m</td></tr>
+    <tr><td>Rolland Field AT</td><td>4m</td></tr>
+  </tbody>
+</table>
 
-Radna širina:
-2.2m
-
- Masivna i ojačana konstrukcija
- 3 reda radnih tela
- Klirens 880mm
- Opružna zaštita
- Diskovi Ø460mm
- Radna dubina do 30cm
+ Diskovi 560mm
  Premium glavčine bez održavanja
+ Gumeni amortizeri
+ Jaka konstrukcija
+ Veliki izbor valjaka
+ Mogućnost HYDROPACK sistema za sejalicu
+ Evropski kvalitet izrade
 
 • Direktan uvoz
-• Prevoz obezbeđen`
+• Prevoz obezbeđen
+• Pozvati za ponudu i konfiguraciju`
   },
 
-  "masine-rolland-grander-ab-gruber-2-5m": {
-    "id": "masine-rolland-grander-ab-gruber-2-5m",
-    "name": "ROLLAND Grander AB gruber 2.5m",
+  "masine-rolland-grander-ab-gruber": {
+    "id": "masine-rolland-grander-ab-gruber",
+    "name": "ROLLAND Grander AB gruber",
     "section": "Mašine",
     "category": "Gruberi",
     "group": "ROLLAND",
-
     "images": [
       "images/masine-rolland-grander-ab-gruber-1.png",
       "images/masine-rolland-grander-ab-gruber-2.png",
       "images/masine-rolland-grander-ab-gruber-3.png"
     ],
-
     "description": `ROLLAND Grander AB premium gruber za ozbiljnu obradu zemljišta.
 
-Radna širina:
-2.5m
+<table class="spec-table">
+  <thead>
+    <tr>
+      <th>Model</th>
+      <th>Radna širina</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>ROLLAND Grander AB</td><td>2.2m</td></tr>
+    <tr><td>ROLLAND Grander AB</td><td>2.5m</td></tr>
+    <tr><td>ROLLAND Grander AB</td><td>3m</td></tr>
+    <tr><td>ROLLAND Grander AB</td><td>3.5m</td></tr>
+    <tr><td>ROLLAND Grander AB</td><td>4m</td></tr>
+  </tbody>
+</table>
 
- Masivna i ojačana konstrukcija
- 3 reda radnih tela
- Klirens 880mm
- Opružna zaštita
- Diskovi Ø460mm
- Radna dubina do 30cm
+ Diskovi 560mm
  Premium glavčine bez održavanja
+ Gumeni amortizeri
+ Jaka konstrukcija
+ Veliki izbor valjaka
+ Mogućnost HYDROPACK sistema za sejalicu
+ Evropski kvalitet izrade
 
 • Direktan uvoz
-• Prevoz obezbeđen`
-  },
-
-  "masine-rolland-grander-ab-gruber-3m": {
-    "id": "masine-rolland-grander-ab-gruber-3m",
-    "name": "ROLLAND Grander AB gruber 3m",
-    "section": "Mašine",
-    "category": "Gruberi",
-    "group": "ROLLAND",
-
-    "images": [
-      "images/masine-rolland-grander-ab-gruber-1.png",
-      "images/masine-rolland-grander-ab-gruber-2.png",
-      "images/masine-rolland-grander-ab-gruber-3.png"
-    ],
-
-    "description": `ROLLAND Grander AB premium gruber za ozbiljnu obradu zemljišta.
-
-Radna širina:
-3m
-
- Masivna i ojačana konstrukcija
- 3 reda radnih tela
- Klirens 880mm
- Opružna zaštita
- Diskovi Ø460mm
- Radna dubina do 30cm
- Premium glavčine bez održavanja
-
-• Direktan uvoz
-• Prevoz obezbeđen`
-  },
-
-  "masine-rolland-grander-ab-gruber-3-5m": {
-    "id": "masine-rolland-grander-ab-gruber-3-5m",
-    "name": "ROLLAND Grander AB gruber 3.5m",
-    "section": "Mašine",
-    "category": "Gruberi",
-    "group": "ROLLAND",
-
-    "images": [
-      "images/masine-rolland-grander-ab-gruber-1.png",
-      "images/masine-rolland-grander-ab-gruber-2.png",
-      "images/masine-rolland-grander-ab-gruber-3.png"
-    ],
-
-    "description": `ROLLAND Grander AB premium gruber za ozbiljnu obradu zemljišta.
-
-Radna širina:
-3.5m
-
- Masivna i ojačana konstrukcija
- 3 reda radnih tela
- Klirens 880mm
- Opružna zaštita
- Diskovi Ø460mm
- Radna dubina do 30cm
- Premium glavčine bez održavanja
-
-• Direktan uvoz
-• Prevoz obezbeđen`
-  },
-
-  "masine-rolland-grander-ab-gruber-4m": {
-    "id": "masine-rolland-grander-ab-gruber-4m",
-    "name": "ROLLAND Grander AB gruber 4m",
-    "section": "Mašine",
-    "category": "Gruberi",
-    "group": "ROLLAND",
-
-    "images": [
-      "images/masine-rolland-grander-ab-gruber-1.png",
-      "images/masine-rolland-grander-ab-gruber-2.png",
-      "images/masine-rolland-grander-ab-gruber-3.png"
-    ],
-
-    "description": `ROLLAND Grander AB premium gruber za ozbiljnu obradu zemljišta.
-
-Radna širina:
-4m
-
- Masivna i ojačana konstrukcija
- 3 reda radnih tela
- Klirens 880mm
- Opružna zaštita
- Diskovi Ø460mm
+• Prevoz obezbeđen
+• Pozvati za ponudu i konfiguraciju
  Radna dubina do 30cm
  Premium glavčine bez održavanja
 
@@ -1201,10 +930,6 @@ Radna širina:
   }
 
 });
-
-
-
-
 
 
 
@@ -1342,9 +1067,9 @@ Startrac traktori namenjeni su Italijanskom tržištu i predstavljaju jedne od n
 
 Object.assign(window.SITE_DATA.products, {
 
-  "masine-acma-robo-kosilica-9-5ks": {
-    "id": "masine-acma-robo-kosilica-9-5ks",
-    "name": "ACMA robo kosilica 9.5 KS",
+  "masine-acma-robo-kosilica": {
+    "id": "masine-acma-robo-kosilica",
+    "name": "ACMA robo kosilica",
     "section": "Mašine",
     "category": "Robo kosilice",
     "group": "ACMA",
@@ -1357,45 +1082,18 @@ Object.assign(window.SITE_DATA.products, {
 
     "description": `ACMA robo kosilica sa daljinskim upravljanjem, namenjena profesionalnom košenju i radu na zahtevnim terenima.
 
-Model:
-9.5 KS
-
- Daljinsko paljenje motora
- Daljinsko upravljanje
- Elektronsko regulaciono podizanje kose
- Brze i spore brzine
- Pogon preko elektromotora
- Pogonske baterije se pune na struju
- Punjenje baterija tokom rada preko benzinskog motora
- Benzinski motor pokreće rotacioni malčer
-
-Težina:
-150–255 kg, zavisno od modela
-
-ACMA je premium brend iz Italije koji proizvodi ove kosilice.
-
-• Novo, nekorišćeno
-• Garancija 2 godine
-• Pozvati za cenu i dostupnost`
-  },
-
-  "masine-acma-robo-kosilica-16ks": {
-    "id": "masine-acma-robo-kosilica-16ks",
-    "name": "ACMA robo kosilica 16 KS",
-    "section": "Mašine",
-    "category": "Robo kosilice",
-    "group": "ACMA",
-
-    "images": [
-      "images/masine-acma-robo-kosilica-1.png",
-      "images/masine-acma-robo-kosilica-2.png",
-      "images/masine-acma-robo-kosilica-3.png"
-    ],
-
-    "description": `ACMA robo kosilica sa daljinskim upravljanjem, namenjena profesionalnom košenju i radu na zahtevnim terenima.
-
-Model:
-16 KS
+<table class="spec-table">
+  <thead>
+    <tr>
+      <th>Model</th>
+      <th>Snaga</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>ACMA robo kosilica</td><td>9.5 KS</td></tr>
+    <tr><td>ACMA robo kosilica</td><td>16 KS</td></tr>
+  </tbody>
+</table>
 
  Daljinsko paljenje motora
  Daljinsko upravljanje
