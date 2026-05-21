@@ -2036,3 +2036,60 @@ html.intro-ready body{
     line-height:1.3;
   }
 }
+
+
+
+.spec-table{
+  width:100%;
+  border-collapse:collapse;
+  margin:22px 0;
+  background:#fff;
+  font-size:17px;
+}
+
+.spec-table th,
+.spec-table td{
+  padding:16px 18px;
+  border-bottom:1px solid #ddd;
+  text-align:left;
+}
+
+.spec-table thead{
+  background:#efefef;
+  font-weight:800;
+}
+
+.spec-table tr:nth-child(even){
+  background:#f4f4f4;
+}
+
+@media(max-width:768px){
+  .spec-table{
+    font-size:14px;
+  }
+
+  .spec-table th,
+  .spec-table td{
+    padding:12px 10px;
+  }
+}
+
+
+
+.product-info-box{
+  gap:8px !important;
+}
+
+#prodTitle{
+  margin-bottom:4px !important;
+}
+
+#prodText{
+  margin:0 !important;
+  padding:0 !important;
+}
+
+#prodText .spec-table,
+.product-info-box .spec-table{
+  margin-top:0 !important;
+}
