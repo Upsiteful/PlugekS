@@ -857,15 +857,18 @@ Object.assign(window.SITE_DATA.products, {
   <thead>
     <tr>
       <th>Model</th>
-      <th>Radna širina</th>
+      <th>Širina [m]</th>
+      <th>Broj ploča [kom]</th>
+      <th>Snaga [KS]</th>
+      <th>Težina [kg]</th>
     </tr>
   </thead>
   <tbody>
-    <tr><td>Rolland Field AT</td><td>2.5m</td></tr>
-    <tr><td>Rolland Field AT</td><td>2.7m</td></tr>
-    <tr><td>Rolland Field AT</td><td>3m</td></tr>
-    <tr><td>Rolland Field AT</td><td>3.5m</td></tr>
-    <tr><td>Rolland Field AT</td><td>4m</td></tr>
+    <tr><td>AT-2.5</td><td>2.5</td><td>20</td><td>70–120</td><td>1050</td></tr>
+    <tr><td>AT-2.7</td><td>2.7</td><td>22</td><td>80–120</td><td>1200</td></tr>
+    <tr><td>AT-3.0</td><td>3.0</td><td>24</td><td>90–120</td><td>1300</td></tr>
+    <tr><td>AT-3.5</td><td>3.5</td><td>28</td><td>100–140</td><td>1450</td></tr>
+    <tr><td>AT-4.0</td><td>4.0</td><td>32</td><td>115–150</td><td>1700</td></tr>
   </tbody>
 </table>
 
@@ -899,15 +902,17 @@ Object.assign(window.SITE_DATA.products, {
   <thead>
     <tr>
       <th>Model</th>
-      <th>Radna širina</th>
+      <th>Širina [m]</th>
+      <th>Broj raonika [kom]</th>
+      <th>Snaga [KS]</th>
+      <th>Težina [kg]</th>
     </tr>
   </thead>
   <tbody>
-    <tr><td>ROLLAND Grander AB</td><td>2.2m</td></tr>
-    <tr><td>ROLLAND Grander AB</td><td>2.5m</td></tr>
-    <tr><td>ROLLAND Grander AB</td><td>3m</td></tr>
-    <tr><td>ROLLAND Grander AB</td><td>3.5m</td></tr>
-    <tr><td>ROLLAND Grander AB</td><td>4m</td></tr>
+    <tr><td>ABL-2.2</td><td>2.2</td><td>6</td><td>70–110</td><td>1150</td></tr>
+    <tr><td>ABL-2.5</td><td>2.5</td><td>7</td><td>90–140</td><td>1350</td></tr>
+    <tr><td>ABL-2.7</td><td>2.7</td><td>7</td><td>100–150</td><td>1400</td></tr>
+    <tr><td>ABL-3.0</td><td>3.0</td><td>9</td><td>130–180</td><td>1800</td></tr>
   </tbody>
 </table>
 
