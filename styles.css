@@ -46,7 +46,28 @@
 
 .category-strip{padding:28px 20px 18px}
 .category-buttons{max-width:1280px;margin:0 auto;display:grid;gap:24px}
-.big-link{background:var(--green);color:#fff;text-align:center;padding:28px 20px;font-size:34px;font-weight:800;letter-spacing:.03em;text-transform:uppercase;box-shadow:0 6px 18px rgba(0,0,0,.08)}
+.big-link{
+  background:var(--green);
+  color:#fff;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  min-height:130px;
+
+  text-align:center;
+  padding:20px;
+
+  font-size:34px;
+  font-weight:800;
+  line-height:1.25;
+
+  letter-spacing:.03em;
+  text-transform:uppercase;
+
+  box-shadow:0 6px 18px rgba(0,0,0,.08);
+}
 
 .section-wrap{max-width:1280px;margin:0 auto;padding:30px 20px 50px}
 .section-title{font-size:48px;font-weight:300;letter-spacing:.02em;margin:10px 0 26px}
@@ -266,7 +287,11 @@
   .hero-card p{font-size:18px}
   .section-title{font-size:34px}
   .page-title{font-size:42px}
-  .big-link{font-size:24px;padding:24px 16px}
+  .big-link{
+  font-size:24px;
+  padding:18px 16px;
+  min-height:100px;
+}
   .filters-layout{grid-template-columns:1fr}
   .filter-box{position:static}
   .results-grid{grid-template-columns:1fr}
