@@ -1,4 +1,4 @@
-window.SITE_DATA = {"menuTree": [{"title": "Početna", "href": "index.html"}, {"title": "Mašine", "href": "masine.html"}, {"title": "Delovi za mašine", "href": "delovi-za-masine.html", "children": [{"title": "Plugovi", "href": "plugovi.html", "children": [{"title": "Raonici", "href": "plugovi-raonici.html"}, {"title": "Daske za plug", "href": "plugovi-daske.html"}, {"title": "Plazovi", "href": "plugovi-plazovi.html"}, {"title": "Vrh / špic raonika", "href": "plugovi-spicevi.html"}, {"title": "Umetak / grudi daske", "href": "plugovi-grudi.html"}, {"title": "Nastavak / produžetak daske", "href": "plugovi-nastavci.html"}, {"title": "Deflektor / povišenje daske", "href": "plugovi-povisenja.html"}, {"title": "Rešetke daske", "href": "plugovi-resetke.html"}]}, {"title": "Podrivači", "href": "podrivaci.html"}, {"title": "Drljače", "href": "drljace.html"}, {"title": "Noževi za freze", "href": "freze.html"}, {"title": "Setvospremači", "href": "setvospremaci.html", "children": [{"title": "Opruge", "href": "setvospremaci-opruge.html"}, {"title": "Držači / nosači", "href": "setvospremaci-drzaci.html"}, {"title": "Brisači traga", "href": "setvospremaci-brisaci.html"}, {"title": "Motike i radni delovi", "href": "setvospremaci-motike.html"}, {"title": "Rotori i delovi", "href": "setvospremaci-rotori.html"}]}]}, {"title": "Kontakt", "href": "kontakt.html"}], "nodes": { 
+window.SITE_DATA = {"menuTree": [{"title": "Početna", "href": "index.html"}, {"title": "Mašine", "href": "masine.html"},{"title": "Traktori", "href": "pregled.html?node=traktori"}, {"title": "Delovi za mašine", "href": "delovi-za-masine.html", "children": [{"title": "Plugovi", "href": "plugovi.html", "children": [{"title": "Raonici", "href": "plugovi-raonici.html"}, {"title": "Daske za plug", "href": "plugovi-daske.html"}, {"title": "Plazovi", "href": "plugovi-plazovi.html"}, {"title": "Vrh / špic raonika", "href": "plugovi-spicevi.html"}, {"title": "Umetak / grudi daske", "href": "plugovi-grudi.html"}, {"title": "Nastavak / produžetak daske", "href": "plugovi-nastavci.html"}, {"title": "Deflektor / povišenje daske", "href": "plugovi-povisenja.html"}, {"title": "Rešetke daske", "href": "plugovi-resetke.html"}]}, {"title": "Podrivači", "href": "podrivaci.html"}, {"title": "Drljače", "href": "drljace.html"}, {"title": "Noževi za freze", "href": "freze.html"}, {"title": "Setvospremači", "href": "setvospremaci.html", "children": [{"title": "Opruge", "href": "setvospremaci-opruge.html"}, {"title": "Držači / nosači", "href": "setvospremaci-drzaci.html"}, {"title": "Brisači traga", "href": "setvospremaci-brisaci.html"}, {"title": "Motike i radni delovi", "href": "setvospremaci-motike.html"}, {"title": "Rotori i delovi", "href": "setvospremaci-rotori.html"}]}]}, {"title": "Kontakt", "href": "kontakt.html"}], "nodes": { 
 
 
 
@@ -504,7 +504,7 @@ window.SITE_DATA = {"menuTree": [{"title": "Početna", "href": "index.html"}, {"
   "title": "Mašine",
   "parent": null,
   "kind": "links",
- "children": ["malceri", "malceri-za-bagere", "tanjirace", "gruberi", "traktori", "robo-kosilice"],
+ "children": ["malceri", "malceri-za-bagere", "tanjirace", "gruberi", "robo-kosilice"],
   "products": [],
   "breadcrumb": [],
   "desc": "Izaberite kategoriju mašina."
@@ -556,12 +556,8 @@ window.SITE_DATA = {"menuTree": [{"title": "Početna", "href": "index.html"}, {"
   "kind": "products",
   "children": [],
   "products": [
-    "masine-rolland-field-at-premium-tanjiraca-2-5m",
-    "masine-rolland-field-at-premium-tanjiraca-2-7m",
-    "masine-rolland-field-at-premium-tanjiraca-3m",
-    "masine-rolland-field-at-premium-tanjiraca-3-5m",
-    "masine-rolland-field-at-premium-tanjiraca-4m"
-  ],
+  "masine-rolland-field-at-premium-tanjiraca"
+],
   "breadcrumb": [],
   "desc": "Profesionalne tanjirače za obradu zemljišta."
 },
@@ -572,9 +568,8 @@ window.SITE_DATA = {"menuTree": [{"title": "Početna", "href": "index.html"}, {"
   "kind": "products",
   "children": [],
   "products": [
-    "masine-acma-robo-kosilica-9-5ks",
-    "masine-acma-robo-kosilica-16ks"
-  ],
+  "masine-acma-robo-kosilica"
+],
   "breadcrumb": [],
   "desc": "Daljinski upravljane robo kosilice za profesionalno košenje."
 },
@@ -586,19 +581,15 @@ window.SITE_DATA = {"menuTree": [{"title": "Početna", "href": "index.html"}, {"
   "kind": "products",
   "children": [],
   "products": [
-    "masine-rolland-grander-ab-gruber-2-2m",
-    "masine-rolland-grander-ab-gruber-2-5m",
-    "masine-rolland-grander-ab-gruber-3m",
-    "masine-rolland-grander-ab-gruber-3-5m",
-    "masine-rolland-grander-ab-gruber-4m"
-  ],
+  "masine-rolland-grander-ab-gruber"
+],
   "breadcrumb": [],
   "desc": "Profesionalni gruberi za dubinsku obradu zemljišta."
 },
 "traktori": {
   "id": "traktori",
   "title": "Traktori",
-  "parent": "masine",
+  "parent": null,
   "kind": "products",
   "children": [],
   "products": [
