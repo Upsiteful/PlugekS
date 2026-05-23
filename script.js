@@ -706,10 +706,8 @@ localStorage.setItem("recentProducts", JSON.stringify(recent));
 
 
 function setupProductNavigation(currentProductId){
-  const prevBtn = document.getElementById("prevProductBtn");
-  const nextBtn = document.getElementById("nextProductBtn");
-
-  if(!prevBtn || !nextBtn) return;
+  const nav = document.getElementById("productNav");
+  if(!nav) return;
 
   let productList = [];
 
@@ -720,26 +718,39 @@ function setupProductNavigation(currentProductId){
   });
 
   const currentIndex = productList.indexOf(currentProductId);
-
   if(currentIndex === -1) return;
 
+  function productNavCard(type, productId){
+    const p = PRODUCTS[productId];
+    if(!p) return '';
+
+    const label = type === 'prev' ? '← Prethodni proizvod' : 'Sledeći proizvod →';
+    const imgSrc = (p.images && p.images.length) ? p.images[0] : 'images/' + p.id + '.jpg';
+
+    return `
+      <a class="product-nav-card ${type}" href="${productHref(productId)}">
+        <div class="product-nav-image">
+          <img src="${imgSrc}" alt="${escapeHtml(p.name)}" loading="lazy"
+            onerror="this.onerror=null; this.src='images/${p.id}.png';">
+        </div>
+        <div class="product-nav-text">
+          <span>${label}</span>
+          <strong>${escapeHtml(p.name)}</strong>
+        </div>
+      </a>
+    `;
+  }
+
+  nav.innerHTML = '';
+
   if(currentIndex > 0){
-    prevBtn.onclick = function(){
-      window.location.href = productHref(productList[currentIndex - 1]);
-    };
-  } else {
-    prevBtn.disabled = true;
+    nav.innerHTML += productNavCard('prev', productList[currentIndex - 1]);
   }
 
   if(currentIndex < productList.length - 1){
-    nextBtn.onclick = function(){
-      window.location.href = productHref(productList[currentIndex + 1]);
-    };
-  } else {
-    nextBtn.disabled = true;
+    nav.innerHTML += productNavCard('next', productList[currentIndex + 1]);
   }
 }
-
 
 
 
