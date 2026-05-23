@@ -1082,16 +1082,79 @@ Object.assign(window.SITE_DATA.products, {
 
     "description": `ACMA robo kosilica sa daljinskim upravljanjem, namenjena profesionalnom košenju i radu na zahtevnim terenima.
 
-<table class="spec-table">
+"table": <table class="spec-table robo-table">
   <thead>
     <tr>
       <th>Model</th>
-      <th>Snaga</th>
+      <th>R 550</th>
+      <th>R 800</th>
+      <th>R 1000</th>
     </tr>
   </thead>
+
   <tbody>
-    <tr><td>ACMA robo kosilica</td><td>9.5 KS</td></tr>
-    <tr><td>ACMA robo kosilica</td><td>16 KS</td></tr>
+    <tr>
+      <td>Snaga motora</td>
+      <td>9 hp</td>
+      <td>16 hp</td>
+      <td>22 hp</td>
+    </tr>
+
+    <tr>
+      <td>Zapremina motora</td>
+      <td>224 cc</td>
+      <td>452 cc</td>
+      <td>608 cc</td>
+    </tr>
+
+    <tr>
+      <td>Širina košenja</td>
+      <td>55 cm</td>
+      <td>80 cm</td>
+      <td>100 cm</td>
+    </tr>
+
+    <tr>
+      <td>Visina košenja</td>
+      <td>20–180 mm</td>
+      <td>20–180 mm</td>
+      <td>20–180 mm</td>
+    </tr>
+
+    <tr>
+      <td>Upravljanje</td>
+      <td>Daljinska kontrola</td>
+      <td>Daljinska kontrola</td>
+      <td>Daljinska kontrola</td>
+    </tr>
+
+    <tr>
+      <td>Brzina</td>
+      <td>0–3 km/h</td>
+      <td>0–5 km/h</td>
+      <td>0–5 km/h</td>
+    </tr>
+
+    <tr>
+      <td>Pokretanje</td>
+      <td>Gusenice</td>
+      <td>Gusenice</td>
+      <td>Gusenice</td>
+    </tr>
+
+    <tr>
+      <td>Način startovanja</td>
+      <td>Ručno / automatski</td>
+      <td>Automatski</td>
+      <td>Automatski</td>
+    </tr>
+
+    <tr>
+      <td>Težina</td>
+      <td>137 kg</td>
+      <td>233 kg</td>
+      <td>137 kg</td>
+    </tr>
   </tbody>
 </table>
 
