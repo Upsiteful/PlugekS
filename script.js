@@ -725,13 +725,24 @@ function setupProductNavigation(currentProductId){
     if(!p) return '';
 
     const label = type === 'prev' ? '← Prethodni proizvod' : 'Sledeći proizvod →';
-    const imgSrc = (p.images && p.images.length) ? p.images[0] : 'images/' + p.id + '.jpg';
+const imgSrc = (p.images && p.images.length) ? p.images[0] : `images/${p.id}.webp`;
 
     return `
       <a class="product-nav-card ${type}" href="${productHref(productId)}">
         <div class="product-nav-image">
-          <img src="${imgSrc}" alt="${escapeHtml(p.name)}" loading="lazy"
-            onerror="this.onerror=null; this.src='images/${p.id}.png';">
+         <img src="${imgSrc}" alt="${escapeHtml(p.name)}" loading="lazy"
+  onerror="
+    if(this.dataset.try === 'webp'){
+      this.dataset.try='jpg';
+      this.src='images/${p.id}.jpg';
+    } else if(this.dataset.try === 'jpg'){
+      this.dataset.try='png';
+      this.src='images/${p.id}.png';
+    } else {
+      this.style.display='none';
+    }
+  "
+  data-try="webp">
         </div>
         <div class="product-nav-text">
           <span>${label}</span>
