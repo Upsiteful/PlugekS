@@ -2108,3 +2108,31 @@ html.intro-ready body{
 .product-info-box .spec-table{
   margin-top:0 !important;
 }
+
+
+
+@media(max-width:768px){
+  .product-focus{
+  display:flex;
+  flex-direction:column;
+}
+
+.product-gallery{
+  order:1;
+  width:100%;
+  margin-bottom:20px;
+}
+
+.product-info-box{
+  order:2;
+  width:100%;
+}
+
+.product-main-image{
+  width:100%;
+}
+
+.product-thumbs{
+  width:100%;
+}
+}
