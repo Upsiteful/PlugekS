@@ -858,7 +858,7 @@ Object.assign(window.SITE_DATA.products, {
     <tr>
       <th>Model</th>
       <th>Širina [m]</th>
-      <th>Broj ploča [kom]</th>
+      <th>Broj drljača [kom]</th>
       <th>Snaga [KS]</th>
       <th>Težina [kg]</th>
     </tr>
