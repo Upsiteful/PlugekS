@@ -501,9 +501,22 @@ canonical.setAttribute(
 qs('#breadcrumb').innerHTML = breadcrumbHtmlForProduct(product);
     qs('#backLink').href = inferBackLink(product);
    qs('#prodTitle').textContent = product.name;
-qs('#prodText').innerHTML = (product.description || 'Za više informacija i dostupnost pozovite nas.')
-  .replace(/\n/g, '<br>')
-  .replace(/(<br>\s*)+(<table)/g, '$2');qs('#metaSection').textContent = product.section;
+const desc = (product.description || 'Za više informacija i dostupnost pozovite nas.').trim();
+
+qs('#prodText').innerHTML = desc
+  .split(/(<table[\s\S]*?<\/table>)/gi)
+  .map(part => {
+    const clean = part.trim();
+
+    if (!clean) return '';
+
+    if (clean.startsWith('<table')) {
+      return clean;
+    }
+
+    return clean.replace(/\n+/g, '<br>');
+  })
+  .join('');qs('#metaSection').textContent = product.section;
 qs('#metaCategory').textContent = product.category;
 qs('#metaGroup').textContent = product.group || 'Direktan proizvod';
    const formats = ["jpg", "png", "webp"];
